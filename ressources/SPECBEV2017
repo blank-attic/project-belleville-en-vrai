@@ -50,10 +50,10 @@ PAGES : 5 pages // INDEX / PROGRAMME / INSCRIPTIONS / BeV TV / PHOTOS / CONTACT 
 
 COULEURS :
 	
-		Background:
-		Titre Page:
-		Titre:
-		Paragraphe : Black
+		Background: svg 
+		Titre Page:blanc
+		Titre:jaune
+		Paragraphe : blanc
 
 
 
