@@ -11,17 +11,17 @@
       <h2>TA CATEGORIE :</h2>
       <p>Tu es dans quelle catégorie ?</p>
       <div class="radiobutt">
-        <input type="radio" name="categorie" value="Petit(e)s">
-        <input type="radio" name="categorie" value="Moyen(ne)s">
-        <input type="radio" name="categorie" value="Grands(e)s">
+        Petit(e)s<input type="radio" name="categorie" value="Petit(e)s">
+        Moyen(ne)s<input type="radio" name="categorie" value="Moyen(ne)s">
+        Grands(e)s<input type="radio" name="categorie" value="Grands(e)s">
       </div>
       <h2>TON QUARTIER :</h2>
       <p>Quel est ton Quartier ?</p>
       <div class="check">
-        <input type="checkbox" name="quartier[]" value="rebeval">REBEVAL<br>
-        <input type="checkbox" name="quartier[]" value="piat">PIAT<br>
-        <input type="checkbox" name="quartier[]" value="ramponeau">RAMPONEAU<br>
-        <input type="checkbox" name="quartier[]" value="orillon">ORILLON<br>
+        <input type="radio" name="quartier[]" value="rebeval">REBEVAL<br>
+        <input type="radio" name="quartier[]" value="piat">PIAT<br>
+        <input type="radio" name="quartier[]" value="ramponeau">RAMPONEAU<br>
+        <input type="radio" name="quartier[]" value="orillon">ORILLON<br>
       </div>
       <h2>VOTRE EQUIPE :</h2>
       <p>Quel est le nom de votre équipe ?
