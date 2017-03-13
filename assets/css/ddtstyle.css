@@ -1,0 +1,45 @@
+html, body {
+  padding : 0;
+  margin : 0;
+}
+
+body{
+  font-family: 'Sansita', sans-serif;
+  color : #FFFFFF;
+  background: #002255 url('../images/bevsplat_bg.svg');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 3px 3px #000000;
+}
+
+h2 {
+  font-size:2em;
+  text-align: center;
+  text-shadow: 2px 2px #000000;
+}
+
+p {
+  font-size:1.5em;
+  text-shadow: 2px 2px #000000;
+  margin: 23px;
+}
+
+.formbase {
+
+  background-color: #002255;
+  font-size: 1.2em;
+  width: 100%;
+
+}
+
+input {
+
+}
