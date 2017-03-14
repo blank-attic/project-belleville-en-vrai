@@ -1,27 +1,28 @@
 html, body {
   padding : 0;
-  margin : 0;
+  margin : 10px;
 }
 
 body{
   font-family: 'Sansita', sans-serif;
   color : #FFFFFF;
   background: #002255 url('../images/bevsplat_bg.svg');
-    background-position: center top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /*background-attachment: fixed;*/
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*background-attachment: fixed;*/
 }
 
 h1 {
-  font-size: 3em;
+  color: #fff600;
+  font-size:3.5em;
   text-align: center;
   font-weight: bold;
   text-shadow: 3px 3px #000000;
 }
 
 h2 {
-  font-size:2em;
+  font-size:2.5em;
   text-align: center;
   text-shadow: 2px 2px #000000;
 }
@@ -29,17 +30,102 @@ h2 {
 p {
   font-size:1.5em;
   text-shadow: 2px 2px #000000;
-  margin: 23px;
+  text-align: center;
+  margin: 20px;
 }
 
 .formbase {
-
-  background-color: #002255;
-  font-size: 1.2em;
+  display: flex;
+  background-color: rgba(0, 34, 85, 0.8);
   width: 100%;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  justify-content: center;
+  margin: auto;
+}
+
+.divrow {
+  font-size: 1.2em;
+  display: flex;
+  /*flex-direction: row;*/
+  justify-content: center;
+}
+
+.divcol {
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
 
 }
 
-input {
+.divrow input {
+  padding: 10px 77px;
+  margin: 15px 15px;
+  background-color: transparent;
+  border : none;
+  border-bottom:2px solid #fff600;
+  box-sizing: border-box;
+  color: white;
+  font-size: 1.3em;
+}
 
+.divcol input {
+  padding: 10px 10px;
+  margin: 10px 1px;
+  width: 98%;
+  background-color: transparent;
+  border : none;
+  border-bottom: 2px solid #fff600;
+  box-sizing: border-box;
+  color: white;
+  font-size: 1.2em;
+}
+.check,  #volmsg, #bsub{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  font-size: 1.5em;
+  margin: auto;
+  padding-bottom: 30px;
+  /*justify-content: center;*/
+}
+
+.radiobutt {
+  display: flex;
+  width: 55%;
+  font-size: 1.5em;
+  margin: auto;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+textarea{
+  color : #002255;
+  font-size: 1.5em;
+  font-weight: bold;
+  background-color: #fff600;
+  border: 4px solid #ff7e00;
+  border-radius: 10px;
+  box-sizing: border-box;
+  resize: none;
+}
+
+#bsub {
+  background-color: #ff7e00;
+  color: #002255;
+  font-size: 1.2em;
+  font-weight: bold;
+  width: 32%;
+  border: none;
+  box-shadow: 3px 3px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  border: 4px solid #fff600;
+  cursor: pointer;
+}
+
+#choixtache {
+  color: #fff600;
+  font-size: 0.9em;
 }
