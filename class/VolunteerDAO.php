@@ -1,25 +1,25 @@
 <?php
 
+
 class VolunteerDAO {
 
   //save in db
   public function save($db, $volunteer) {
-
     //prepare request
-    $request = $db->prepare("INSERT INTO benevole (prenom, nom, tel, email, dispo, tache, taille_tshirt, message) VALUES (:firstname, :name, :tel, :email, :dispo, :tache, :tsize, :volmsg)");
-
+    $request = $db->prepare("INSERT INTO benevole (prenom, nom, tel, email, dispo, tache, taille_tshirt, message) VALUES (:prenom, :nom, :tel, :email, :dispo, :tache, :tsize, :volmsg)");
     //execute request
     try {
-      $request->execute(array(
-        "firstname" => $volunteer->getFirstname(),
-        "name" => $volunteer->getName(),
+      $data = array(
+        "prenom" => $volunteer->getFirstname(),
+        "nom" => $volunteer->getName(),
         "tel" => $volunteer->getTel(),
         "email" => $volunteer->getEmail(),
-        "dispo" => $volunteer->getDispo(),
-        "task" => $volunteer->getTask(),
+        "dispo" => $volunteer->getDispos()->getValue(),
+        "tache" => $volunteer->getTask()->getValue(),
         "tsize" => $volunteer->getTsize(),
         "volmsg" => $volunteer->getVolmsg()
-      ));
+      );
+      $request->execute($data);
     } catch (PDOException $e) {
       print("error while writing in DB new user." . $e->getMessage());
       return false;
@@ -46,13 +46,13 @@ class VolunteerDAO {
   public function find($db, $firstname, $name, $tel) {
 
     //prepare request
-    $request = $db->prepare("SELECT * FROM benevole WHERE (firstname = :firstname) AND (name = :name) AND (tel = :tel) LIMIT 1");
+    $request = $db->prepare("SELECT * FROM benevole WHERE (prenom = :prenom) AND (nom = :nom) AND (tel = :tel) LIMIT 1");
 
     //execute request
     try {
       $request->execute(array(
-        "firstname" => $firstname,
-        "name" => $name,
+        "prenom" => $firstname,
+        "nom" => $name,
         "tel" => $tel
       ));
       return $request->fetch();

@@ -1,4 +1,10 @@
 <?php
+ require_once('Task.php');
+ require_once('Dispo.php');
+
+ ?>
+
+<?php
 
 class Volunteer {
 
@@ -16,8 +22,9 @@ class Volunteer {
     $this->firstname = $firstname;
     $this->tel = $tel;
     $this->email = $email;
-    $this->dispo = $dispo;
-    $this->task = $task;
+    //créé un objet dispo
+    $this->dispo = new Dispo($dispo);
+    $this->task = new Task($task);
     $this->tsize = $tsize;
     $this->volmsg = $volmsg;
   }
@@ -38,9 +45,10 @@ class Volunteer {
     return $this->email;
   }
 
-  public function getDispo() {
+  public function getDispos() {
     return $this->dispo;
   }
+
   public function getTask() {
     return $this->task;
   }
