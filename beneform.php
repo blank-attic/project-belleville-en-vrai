@@ -1,18 +1,19 @@
 <?php
 // //connection bdd
-require_once ("_db.php");
+require_once('_db.php');
 // charge les classes
 spl_autoload_register(function($blaze) {
  return require("class/" . $blaze . ".php");
 });
+
 //vérifie si il y a une requete post en cours
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-$email = isset($_POST["email"]) ? $_POST["email"] : "";
+ $email = isset($_POST["email"]) ? $_POST["email"] : "";
  $firstname = isset($_POST["firstname"]) ? $_POST["firstname"] : "";
  $name = isset($_POST["name"]) ? $_POST["name"] : "";
  $tel = isset($_POST["tel"]) ? $_POST["tel"] : "";
- $dispo = isset($_POST["dispo"]) ? $_POST["dispo"] : "";
- $tache = isset($_POST["tache"]) ? $_POST["tache"] : "";
+ $dispo = isset($_POST["dispo"]) ? $_POST["dispo"] : array();
+ $tache = isset($_POST["tache"]) ? $_POST["tache"] : array();
  $tsize = isset($_POST["tsize"]) ? $_POST["tsize"] : "";
  $message = isset($_POST["volmsg"]) ? $_POST["volmsg"] : "";
 
@@ -54,28 +55,27 @@ $email = isset($_POST["email"]) ? $_POST["email"] : "";
  <link rel="stylesheet" href="assets/css/ddtstyle.css" type="text/css">
 </head>
 <body>
-<<<<<<< 2bceb99e971c613bb18bda836a71e33888176529
   <div class="formbase" id="bform">
     <form action="beneform.php" method="POST">
       <p>Remplis ce formulaire pour t'inscrire afin que l'on sache Qui, Quand et Quoi pour pouvoir organiser le Comment !</p>
       <div class="divrow">
         <div>
           <label for="firstname">TON PRENOM :</label>
-          <input type="text" id="firstname" name="firstname" placeholder="écris ici ton prenom" value="<?php echo $_POST['firstname'];?>"/>
+          <input type="text" id="firstname" name="firstname" placeholder="écris ici ton prenom" value="<?php echo isset($_POST["firstname"]) ? $_POST["firstname"] : "";?>"/>
         </div>
         <div>
           <label for="nom">TON NOM :</label>
-          <input type="text" id="nom" name="name" placeholder="écris ici ton nom" value="<?php echo $_POST['name'];?>"/>
+          <input type="text" id="nom" name="name" placeholder="écris ici ton nom" value="<?php echo isset($_POST["name"]) ? $_POST["name"] : "";?>"/>
         </div>
       </div>
       <div class="divcol">
         <div>
           <label for="tel">TON NUMERO DE TEL :</label>
-          <input type="tel" id="tel" name="tel" placeholder="écris ici ton numéro de téléphone" value="<?php echo $_POST['tel'];?>"/>
+          <input type="tel" id="tel" name="tel" placeholder="écris ici ton numéro de téléphone" value="<?php echo isset($_POST["tel"]) ? $_POST["tel"] : "";?>"/>
         </div>
         <div>
           <label for="mail">TON E-MAIL :</label>
-          <input type="email" id="mail" name="email" placeholder="écris ici ton E-mail" value="<?php echo $_POST['email'];?>"/>
+          <input type="email" id="mail" name="email" placeholder="écris ici ton E-mail" value="<?php echo isset($_POST["email"]) ? $_POST["email"] : "";?>"/>
         </div>
       </div>
       <p> Choisis quand tu peux nous aider :</p>

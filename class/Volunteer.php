@@ -88,6 +88,9 @@ class Volunteer {
     if (filter_var($this->email, FILTER_VALIDATE_EMAIL) === false) {
       array_push($errorArray, "Vérifies ton e-mail s'il te plaît..." . $this->email . " ");
     }
+    if (empty($this->getflag)){
+      array_push($errorArray, "Choisi(e) au moin une Disponibilité & une Tache SVP");
+    }
 
     return $errorArray;
   }
