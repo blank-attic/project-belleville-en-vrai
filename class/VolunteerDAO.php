@@ -46,7 +46,7 @@ class VolunteerDAO {
   public function find($db, $firstname, $name, $tel) {
 
     //prepare request
-    $request = $db->prepare("SELECT * FROM User WHERE (firstname = :firstname) AND (name = :name) AND (tel = :tel) LIMIT 1");
+    $request = $db->prepare("SELECT * FROM benevole WHERE (firstname = :firstname) AND (name = :name) AND (tel = :tel) LIMIT 1");
 
     //execute request
     try {

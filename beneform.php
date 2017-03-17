@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
       }
     } else {
-      echo "<li>Tu fais déja partie de la TEAM !!</li>";
+      echo "<li>Tu fais déja partie de la TEAM BENEVOLES !!</li>";
     }
   } else {
     for ($i = 0; $i < count($errors); $i++) {
@@ -57,9 +57,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <link rel="stylesheet" href="assets/css/ddtstyle.css" type="text/css">
 </head>
 <body>
-  <!-- <h1>BELLEVILLE EN VRAI 8 a besoin de TOI !</h1>
-  <p>Pour sa 8ème édition (et oui déja !!!), le Festival BELLEVILLE EN VRAI,qui aura lieu du 19 au 21 Mai 2017, recrute des Bénévoles !!</p>
-  <h2>REJOINS NOUS pour 3 jours de Fête tous ensemble !</h2> -->
   <div class="formbase" id="bform">
     <form action="beneform.php" method="POST">
       <p>Remplis ce formulaire pour t'inscrire afin que l'on sache Qui, Quand et Quoi pour pouvoir organiser le Comment !</p>
@@ -106,7 +103,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           <label for="dpm">Dimanche 21 mai (13h-20h)</label>
         </div>
       </div>
-      <p> Dis nous ce que tu aimerais faire pour nous aider :</p>
+      <p> Dis nous ce que tu aimerais faire pour nous aider <span class="yel">*</span> :</p>
       <div class="check" id="tacheck">
         <div>
           <input id="es" type="checkbox" name="tache[]" value="encadrement sportif"/>
@@ -137,7 +134,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           <label for="acprop">Accueil/Propreté</label>
         </div>
       </div>
-      <p id="choixtache">ATTENTION ! Ce choix reste indicatif, tu pourras éventuellement être placé là où l'organisation en a le plus besoin</p>
+      <p id="choixtache">* Ce choix reste indicatif, tu pourras éventuellement être placé là où l'organisation en a le plus besoin</p>
       <p>Choisis la taille de ton T-shirt Belleville en vrai 8 :</p>
       <div class="radiobutt">
         <div>
@@ -162,7 +159,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <textarea id="message" name="volmsg" rows="5">...</textarea>
       </div>
       <div class="bsub">
-        <input id="bsub" type="submit" value="CLIQUE ICI POUR T'INSCRIRE, MERCI !"/>
+        <input id="bsub" type="submit" value="CLIQUES ICI POUR T'INSCRIRE, MERCI !"/>
       </div>
     </form>
   </div>
