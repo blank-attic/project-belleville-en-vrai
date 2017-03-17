@@ -81,54 +81,54 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <p> Choisis quand tu peux nous aider :</p>
       <div class="check" id="dispocheck">
         <div>
-          <input id="ven" type="checkbox" name="dispo[]" value="1"/>
+          <input id="ven" type="checkbox" name="dispo[]" value="1" "<?php echo (isset($_POST["dispo"]) && in_array("1", $_POST["dispo"])) ? "checked" : "";?>"/>
           <label for="ven">Vendredi 19 mai (18h-21h)</label>
         </div>
         <div>
-          <input id="sam" type="checkbox" name="dispo[]" value="2"/>
+          <input id="sam" type="checkbox" name="dispo[]" value="2"  "<?php echo (isset($_POST["dispo"]) && in_array("2", $_POST["dispo"])) ? "checked" : "";?>"/>
           <label for="sam">Samedi 20 mai (8h-13h)</label>
         </div>
         <div>
-          <input id="spm" type="checkbox" name="dispo[]" value="4"/>
+          <input id="spm" type="checkbox" name="dispo[]" value="4"  "<?php echo (isset($_POST["dispo"]) && in_array("4", $_POST["dispo"])) ? "checked" : "";?>"/>
           <label for="spm">Samedi 20 mai (13h-20h)</label>
         </div>
         <div>
-          <input id="dam" type="checkbox" name="dispo[]" value="8"/>
+          <input id="dam" type="checkbox" name="dispo[]" value="8"  "<?php echo (isset($_POST["dispo"]) && in_array("8", $_POST["dispo"])) ? "checked" : "";?>"/>
           <label for="dam">Dimanche 21 mai (8h-13h)</label>
         </div>
         <div>
-          <input id="dpm" type="checkbox" name="dispo[]" value="16"/>
+          <input id="dpm" type="checkbox" name="dispo[]" value="16"  "<?php echo (isset($_POST["dispo"]) && in_array("16", $_POST["dispo"])) ? "checked" : "";?>"/>
           <label for="dpm">Dimanche 21 mai (13h-20h)</label>
         </div>
       </div>
       <p> Dis nous ce que tu aimerais faire pour nous aider <span class="yel">*</span> :</p>
       <div class="check" id="tacheck">
         <div>
-          <input id="es" type="checkbox" name="tache[]" value="1"/>
+          <input id="es" type="checkbox" name="tache[]" value="1"  "<?php echo (isset($_POST["tache"]) && in_array("1", $_POST["tache"])) ? "checked" : "";?>"/>
           <label for="es">Encadrement Sportif</label>
         </div>
         <div>
-          <input id="logis" type="checkbox" name="tache[]" value="2"/>
+          <input id="logis" type="checkbox" name="tache[]" value="2" "<?php echo (isset($_POST["tache"]) && in_array("2", $_POST["tache"])) ? "checked" : "";?>"/>
           <label for="logis">Logistique</label>
         </div>
         <div>
-          <input id="photo" type="checkbox" name="tache[]" value="4"/>
+          <input id="photo" type="checkbox" name="tache[]" value="4" "<?php echo (isset($_POST["tache"]) && in_array("4", $_POST["tache"])) ? "checked" : "";?>"/>
           <label for="photo">Photo</label>
         </div>
         <div>
-          <input id="video" type="checkbox" name="tache[]" value="8"/>
+          <input id="video" type="checkbox" name="tache[]" value="8" "<?php echo (isset($_POST["tache"]) && in_array("8", $_POST["tache"])) ? "checked" : "";?>"/>
           <label for="video">Vidéo</label>
         </div>
         <div>
-          <input id="acloge" type="checkbox" name="tache[]" value="16"/>
+          <input id="acloge" type="checkbox" name="tache[]" value="16" "<?php echo (isset($_POST["tache"]) && in_array("16", $_POST["tache"])) ? "checked" : "";?>"/>
           <label for="acloge">Accueil/Loges Artistes</label>
         </div>
         <div>
-          <input id="cuisine" type="checkbox" name="tache[]" value="32"/>
+          <input id="cuisine" type="checkbox" name="tache[]" value="32" "<?php echo (isset($_POST["tache"]) && in_array("32", $_POST["tache"])) ? "checked" : "";?>"/>
           <label for="cuisine">Cuisine</label>
         </div>
         <div>
-          <input id="acprop" type="checkbox" name="tache[]" value="64"/>
+          <input id="acprop" type="checkbox" name="tache[]" value="64" "<?php echo (isset($_POST["tache"]) && in_array("64", $_POST["tache"])) ? "checked" : "";?>"/>
           <label for="acprop">Accueil/Propreté</label>
         </div>
       </div>
