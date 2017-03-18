@@ -42,23 +42,18 @@ class Player {
     $errorArray = array();
 
     //player_name check
-    if (empty($this->getName())) {
+    if (empty($this->player_name)) {
       array_push($errorArray, "Il manque le nom du joueur ...");
     }
 
     //tel check
     if (empty($this->player_tel)) {
-      array_push($errorArray, "Il manque ton téléphone...");
+      array_push($errorArray, "Il manque le numéro de téléphone...");
     }
 
     //birthday date check
     if (empty($this->player_date)) {
-      array_push($errorArray, "Il manque la date de ton anniversaire...");
-    }
-
-    //email check
-    if (empty($this->refname)) {
-      array_push($errorArray, "Il manque le nom du grand de ton quartier, ton référent...");
+      array_push($errorArray, "Il manque la date anniversaire...");
     }
 
     return $errorArray;

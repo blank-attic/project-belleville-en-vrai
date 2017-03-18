@@ -6,7 +6,7 @@ class TeamDAO {
   public function save($db, $team) {
 
     //prepare request
-    $request = $db->prepare("INSERT INTO team (teamname, categorie, quartier, refname) VALUES (:teamname, :categorie, :quartier, :refname)");
+    $request = $db->prepare("INSERT INTO team (teamname, categorie, quartier, refname, natation, course, pingpong) VALUES (:teamname, :categorie, :quartier, :refname, :natation, :course, :pingpong)");
 
     //execute request
     try {
@@ -15,6 +15,9 @@ class TeamDAO {
         "categorie" => $team->getCategorie(),
         "quartier" => $team->getQuartier(),
         "refname" => $team->getRefname(),
+        "natation" => $team->getNatation(),
+        "course" => $team->getCourse(),
+        "pingpong" => $team->getPingPong(),
 
       ));
     } catch (PDOException $e) {
@@ -36,7 +39,7 @@ class TeamDAO {
         "teamname" => $teamname,
       ));
       return $request->fetch();
-    } catch (PDOException $e) {
+        } catch (PDOException $e) {
       print("error while writing in DB new team." . $e->getMessage());
       return false;
     }

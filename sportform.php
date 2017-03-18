@@ -11,13 +11,45 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $categorie = isset($_POST["categorie"]) ? $_POST["categorie"] : "";
   $quartier = isset($_POST["quartier"]) ? $_POST["quartier"] : "";
   $refname = isset($_POST["refname"]) ? $_POST["refname"] : "";
+  $natation = isset($_POST["natation"]) ? $_POST["natation"] : "";
+  $course = isset($_POST["course"]) ? $_POST["course"] : "";
+  $pingpong = isset($_POST["pingpong"]) ? $_POST["pingpong"] : "";
 
-
-
+  // $player_name1 = isset($_POST["player_name1"]) ? $_POST["player_name1"] : "";
+  // $player_tel1 = isset($_POST["player_tel1"]) ? $_POST["player_tel1"] : "";
+  // $player_date1 = isset($_POST["player_date1"]) ? $_POST["player_date1"] : "";
+  //
+  // $player_name2 = isset($_POST["player_name2"]) ? $_POST["player_name2"] : "";
+  // $player_tel2 = isset($_POST["player_tel2"]) ? $_POST["player_tel2"] : "";
+  // $player_date2 = isset($_POST["player_date2"]) ? $_POST["player_date2"] : "";
+  //
+  // $player_name3 = isset($_POST["player_name3"]) ? $_POST["player_name3"] : "";
+  // $player_tel3 = isset($_POST["player_tel3"]) ? $_POST["player_tel3"] : "";
+  // $player_date3 = isset($_POST["player_date3"]) ? $_POST["player_date3"] : "";
+  //
+  // $player_name4 = isset($_POST["player_name4"]) ? $_POST["player_name4"] : "";
+  // $player_tel4 = isset($_POST["player_tel4"]) ? $_POST["player_tel4"] : "";
+  // $player_date4 = isset($_POST["player_date4"]) ? $_POST["player_date4"] : "";
+  //
+  // $player_name5 = isset($_POST["player_name5"]) ? $_POST["player_name5"] : "";
+  // $player_tel5 = isset($_POST["player_tel5"]) ? $_POST["player_tel5"] : "";
+  // $player_date5 = isset($_POST["player_date5"]) ? $_POST["player_date5"] : "";
+  //
+  // $player_name6 = isset($_POST["player_name6"]) ? $_POST["player_name6"] : "";
+  // $player_tel6 = isset($_POST["player_tel6"]) ? $_POST["player_tel6"] : "";
+  // $player_date6 = isset($_POST["player_date6"]) ? $_POST["player_date6"] : "";
+  //
+  // $player_name7 = isset($_POST["player_name7"]) ? $_POST["player_name7"] : "";
+  // $player_tel7 = isset($_POST["player_tel7"]) ? $_POST["player_tel7"] : "";
+  // $player_date7 = isset($_POST["player_date7"]) ? $_POST["player_date7"] : "";
+  //
+  // $player_name8 = isset($_POST["player_name8"]) ? $_POST["player_name8"] : "";
+  // $player_tel8 = isset($_POST["player_tel8"]) ? $_POST["player_tel8"] : "";
+  // $player_date8 = isset($_POST["player_date8"]) ? $_POST["player_date8"] : "";
 
 
   //creation d'une nouvelle équipe
-  $team = new Team($teamname, $categorie, $quartier, $refname);
+  $team = new Team($teamname, $categorie, $quartier, $refname, $natation, $course, $pingpong);
   //validation des data-inputs team
   $errors = $team->validate();
   echo "<ul id='error'>";
@@ -28,8 +60,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($checkteam["teamname"] !== $team->getTeamname()) {
       //save in db
       if($dao->save($_DB, $team)) {
-        echo "<h1 id='thxmsg'>MERCI ".$teamname." ! Bonne Chance !</h1>";
-
+        echo "<h2 id='thxmsg'>MERCI ".$teamname." ! Bonne Chance !</h2>";
       }
     } else {
       echo "<li>le nom de votre équipe est déja utilisé, !!</li>";
@@ -40,6 +71,32 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
   }
   echo "</ul>";
+}
+
+//creation d'un nouveau player
+$player = new Player($team_id, $player_name, $player_tel, $player_date, $player_number);
+//validation des data-inputs player
+$errors = $player->validate();
+echo "<ul id='error'>";
+if (count($errors) == 0) {
+  $dao = new PlayerDAO();
+  //vérifie si le player existe déja
+  $checkplayer = $dao->find($_DB, $player->getName());
+  if ($checkplayer["player_name"] !== $player>getName()) {
+    //save in db
+    if($dao->save($_DB, $team)) {
+      echo "<h2 id='thxmsg'>MERCI ".$teamname." ! Bonne Chance !</h2>";
+
+    }
+  } else {
+    echo "<li>le nom de votre équipe est déja utilisé, !!</li>";
+  }
+} else {
+  for ($i = 0; $i < count($errors); $i++) {
+    echo "<li>" . $errors[$i] . "</li>";
+  }
+}
+echo "</ul>";
 }
 ?>
 <!DOCTYPE html>
@@ -248,42 +305,42 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
         <!-- a partir de là  -->
-        <p>Les Nageur(se)s :</p>
+        <!-- <p>Les Nageur(se)s :</p> -->
         <div class="divcol">
         <div>
-          <label for="nat1">Nageur(se) 1 :</label>
-          <input id="nat1"type="text" name="sport_add[]" placeholder="écris le prénom du Nageur(se) 1" >
+          <label for="nat1">les 3 Nageur(se)s :</label>
+          <input id="nat1"type="text" name="natation" placeholder="écris ici les prenoms Nageur(se)1 / Nageur(se)2 / Nageur(se)3" >
         </div>
-        <div>
+        <!-- <div>
           <label for="nat2">Nageur(se) 2 :</label>
-          <input id="nat2"type="text" name="sport_add[]" placeholder="écris le prénom du Nageur(se) 2" >
+          <input id="nat2"type="text" name="natation[]" placeholder="écris le prénom du Nageur(se) 2" >
         </div>
         <div>
           <label for="nat3">Nageur(se) 3 :</label>
-          <input id="nat3"type="text" name="sport_add[]" placeholder="écris le prénom du Nageur(se) 3" >
-        </div>
+          <input id="nat3"type="text" name="natation[]" placeholder="écris le prénom du Nageur(se) 3" >
+        </div> -->
       </div>
-        <p>Les Coureur(se)s :</p>
+        <!-- <p>Les Coureur(se)s :</p> -->
         <div class="divcol">
         <div>
-          <label for="run1">Coureur(se) 1 :</label>
-          <input id="run1"type="text" name="sport_add[]" placeholder="écris le prénom du Coureur(se) 1" >
+          <label for="run1">Les 2 Coureur(se)s:</label>
+          <input id="run1"type="text" name="course" placeholder="écris ici les prénoms Coureur(se)1 / Coureur(se)2" >
         </div>
-        <div>
+        <!-- <div>
           <label for="run2">Coureur(se) 2 :</label>
-          <input id="run2"type="text" name="sport_add[]" placeholder="écris le prénom du Coureur(se) 2" >
-        </div>
+          <input id="run2"type="text" name="course" placeholder="écris le prénom du Coureur(se) 2" >
+        </div> -->
       </div>
-      <p>Les Joueur(se)s de PING-PONG :</p>
+      <!-- <p>Les Joueur(se)s de PING-PONG :</p> -->
       <div class="divcol">
         <div>
-          <label for="pp1">Joueur(se) 1 :</label>
-          <input type="text" name="sport_add[]" placeholder="écris le prénom du Joueur(se) 1" >
+          <label for="pp1">Les 2 Joueur(se)s :</label>
+          <input type="text" name="pingpong" placeholder="écris ici les prénoms du Joueur(se)1 / Joueur(se)2" >
         </div>
-        <div>
+        <!-- <div>
           <label for="pp2">Joueur(se) 2 :</label>
-          <input type="text" name="sport_add[]" placeholder="écris le prénom du Joueur(se) 2" >
-        </div>
+          <input type="text" name="pingpong" placeholder="écris le prénom du Joueur(se) 2" >
+        </div> -->
       </div>
       <div>
         <input id="spsub" type="submit" name="sportsub" value="CLIQUES ICI POUR INSCRIRE VOTRE EQUIPE">
