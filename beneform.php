@@ -55,7 +55,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
  <link rel="stylesheet" href="assets/css/ddtstyle.css" type="text/css">
 </head>
 <body>
-  <div class="formbase" id="bform">
     <form action="beneform.php" method="POST">
       <p>Remplis ce formulaire pour t'inscrire afin que l'on sache Qui, Quand et Quoi pour pouvoir organiser le Comment !</p>
       <div class="divrow">

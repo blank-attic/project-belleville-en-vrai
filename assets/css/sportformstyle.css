@@ -7,10 +7,10 @@ body{
   font-family: 'Sansita', sans-serif;
   color : #ffffff;
   background: #002255 url('../images/bevsplat_bg.svg');
-  background-position: center bottom;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  /*background-attachment: fixed;*/
+  background-attachment: fixed;
   margin : 20px;
 }
 
@@ -61,6 +61,9 @@ p {
   /*flex-direction: row;*/
   justify-content: center;
   margin: 20px;
+  padding-bottom: 40px;
+  /*border-bottom:2px dotted #ffffff;*/
+
 }
 
 .divcol {
@@ -72,9 +75,9 @@ p {
 }
 
 .divrow input {
-  width: 70%;
+  width: 55%;
   padding: 5px 10px;
-  margin: 15px 5px;
+  margin: 15px 0px;
   background-color: transparent;
   border : none;
   border-bottom:2px solid #fff600;
@@ -87,7 +90,7 @@ p {
   padding: 5px 10px;
   margin: 10px 0;
   margin-bottom: 30px;
-  width: 95%;
+  width: 70%;
   background-color: transparent;
   border : none;
   border-bottom: 2px solid #fff600;
@@ -95,7 +98,8 @@ p {
   color: white;
   font-size: 1.1em;
 }
-.check,  #volmsg, #bsub, #spsub{
+/*.check,  #volmsg, #bsub, */
+#spsub{
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -115,35 +119,6 @@ p {
   margin: auto;
   justify-content: center;
   padding-bottom: 40px;
-}
-
-textarea{
-  color : #002255;
-  font-size: 1.2em;
-  font-weight: bold;
-  /*background-color: #fff600;*/
-  border: 2px solid #ff7e00;
-  border-radius: 10px;
-  box-sizing: border-box;
-  resize: none;
-}
-
-#bsub {
-  background-color: #fff600;
-  color: #002255;
-  font-size: 1.2em;
-  font-weight: bold;
-  width: 50%;
-  border: none;
-  border-radius: 5px;
-  margin-bottom: 30px;
-  border: 3px groove #ff7e00;
-  cursor: pointer;
-}
-
-#choixtache {
-  color: #fff600;
-  font-size: 0.9em;
 }
 
 #spsub {
