@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Inscription Participants</title>
+
   <link rel="stylesheet" href="assets/css/sportformstyle.css" type="text/css">
 </head>
 <body>

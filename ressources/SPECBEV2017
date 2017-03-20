@@ -25,7 +25,6 @@ PAGES : 5 pages // INDEX / PROGRAMME / INSCRIPTIONS / BeV TV / PHOTOS / CONTACT 
 
 	PROGRAMME : ...Carte de Evénements interactive ;)
 
-
 	INSCRIPTIONS : ...Formulaires Bénévolat / Participants / Open MIC
 
 
@@ -51,8 +50,11 @@ PAGES : 5 pages // INDEX / PROGRAMME / INSCRIPTIONS / BeV TV / PHOTOS / CONTACT 
 COULEURS :
 	
 		Background: svg 
-		Titre Page:blanc
-		Titre:jaune
+		blanc
+                orange ff7e00
+	       	jaune fff600
+		bleu 002255
+		turqouise aaeeff
 		Paragraphe : blanc
 
 
@@ -66,19 +68,21 @@ COULEURS :
 TYPOGRAPHIE :
 
 
-	Font:
+	Font:	
 	
-		Titre Page:  Boulevard Saint Denis, <H1>
+		// Titre Page:  Sansita, <H1>
 	
-		Titre :  Merriweather, <H3>   
+		// Titre :  Sansita , <H3>   
 	
-		Paragraphe:  Merriweather Sans , 16px 
+		// Paragraphe:  Sansita , 16px 
 
 
-			<link href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
 
-			css :   font-family: 'Merriweather', serif;
-				font-family: 'Merriweather Sans', sans-serif;		
+			css :   font-family: 'Sansita', sans-serif;
+				
+		
+
 
 
 
