@@ -81,54 +81,54 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <p> Choisis quand tu peux nous aider :</p>
       <div class="check" id="dispocheck">
         <div>
-          <input id="ven" type="checkbox" name="dispo[]" value="1" "<?php echo (isset($_POST["dispo"]) && in_array("1", $_POST["dispo"])) ? "checked" : "";?>"/>
+          <input id="ven" type="checkbox" name="dispo[]" value="1" <?php echo (isset($_POST["dispo"]) && in_array("1", $_POST["dispo"])) ? "checked" : "";?>/>
           <label for="ven">Vendredi 19 mai (18h-21h)</label>
         </div>
         <div>
-          <input id="sam" type="checkbox" name="dispo[]" value="2"  "<?php echo (isset($_POST["dispo"]) && in_array("2", $_POST["dispo"])) ? "checked" : "";?>"/>
+          <input id="sam" type="checkbox" name="dispo[]" value="2"  <?php echo (isset($_POST["dispo"]) && in_array("2", $_POST["dispo"])) ? "checked" : "";?>/>
           <label for="sam">Samedi 20 mai (8h-13h)</label>
         </div>
         <div>
-          <input id="spm" type="checkbox" name="dispo[]" value="4"  "<?php echo (isset($_POST["dispo"]) && in_array("4", $_POST["dispo"])) ? "checked" : "";?>"/>
+          <input id="spm" type="checkbox" name="dispo[]" value="4"  <?php echo (isset($_POST["dispo"]) && in_array("4", $_POST["dispo"])) ? "checked" : "";?>/>
           <label for="spm">Samedi 20 mai (13h-20h)</label>
         </div>
         <div>
-          <input id="dam" type="checkbox" name="dispo[]" value="8"  "<?php echo (isset($_POST["dispo"]) && in_array("8", $_POST["dispo"])) ? "checked" : "";?>"/>
+          <input id="dam" type="checkbox" name="dispo[]" value="8"  <?php echo (isset($_POST["dispo"]) && in_array("8", $_POST["dispo"])) ? "checked" : "";?>/>
           <label for="dam">Dimanche 21 mai (8h-13h)</label>
         </div>
         <div>
-          <input id="dpm" type="checkbox" name="dispo[]" value="16"  "<?php echo (isset($_POST["dispo"]) && in_array("16", $_POST["dispo"])) ? "checked" : "";?>"/>
+          <input id="dpm" type="checkbox" name="dispo[]" value="16"  <?php echo (isset($_POST["dispo"]) && in_array("16", $_POST["dispo"])) ? "checked" : "";?>/>
           <label for="dpm">Dimanche 21 mai (13h-20h)</label>
         </div>
       </div>
       <p> Dis nous ce que tu aimerais faire pour nous aider <span class="yel">*</span> :</p>
       <div class="check" id="tacheck">
         <div>
-          <input id="es" type="checkbox" name="tache[]" value="1"  "<?php echo (isset($_POST["tache"]) && in_array("1", $_POST["tache"])) ? "checked" : "";?>"/>
+          <input id="es" type="checkbox" name="tache[]" value="1"  <?php echo (isset($_POST["tache"]) && in_array("1", $_POST["tache"])) ? "checked" : "";?>/>
           <label for="es">Encadrement Sportif</label>
         </div>
         <div>
-          <input id="logis" type="checkbox" name="tache[]" value="2" "<?php echo (isset($_POST["tache"]) && in_array("2", $_POST["tache"])) ? "checked" : "";?>"/>
+          <input id="logis" type="checkbox" name="tache[]" value="2" <?php echo (isset($_POST["tache"]) && in_array("2", $_POST["tache"])) ? "checked" : "";?>/>
           <label for="logis">Logistique</label>
         </div>
         <div>
-          <input id="photo" type="checkbox" name="tache[]" value="4" "<?php echo (isset($_POST["tache"]) && in_array("4", $_POST["tache"])) ? "checked" : "";?>"/>
+          <input id="photo" type="checkbox" name="tache[]" value="4" <?php echo (isset($_POST["tache"]) && in_array("4", $_POST["tache"])) ? "checked" : "";?>/>
           <label for="photo">Photo</label>
         </div>
         <div>
-          <input id="video" type="checkbox" name="tache[]" value="8" "<?php echo (isset($_POST["tache"]) && in_array("8", $_POST["tache"])) ? "checked" : "";?>"/>
+          <input id="video" type="checkbox" name="tache[]" value="8" <?php echo (isset($_POST["tache"]) && in_array("8", $_POST["tache"])) ? "checked" : "";?>/>
           <label for="video">Vidéo</label>
         </div>
         <div>
-          <input id="acloge" type="checkbox" name="tache[]" value="16" "<?php echo (isset($_POST["tache"]) && in_array("16", $_POST["tache"])) ? "checked" : "";?>"/>
+          <input id="acloge" type="checkbox" name="tache[]" value="16" <?php echo (isset($_POST["tache"]) && in_array("16", $_POST["tache"])) ? "checked" : "";?>/>
           <label for="acloge">Accueil/Loges Artistes</label>
         </div>
         <div>
-          <input id="cuisine" type="checkbox" name="tache[]" value="32" "<?php echo (isset($_POST["tache"]) && in_array("32", $_POST["tache"])) ? "checked" : "";?>"/>
+          <input id="cuisine" type="checkbox" name="tache[]" value="32" <?php echo (isset($_POST["tache"]) && in_array("32", $_POST["tache"])) ? "checked" : "";?>/>
           <label for="cuisine">Cuisine</label>
         </div>
         <div>
-          <input id="acprop" type="checkbox" name="tache[]" value="64" "<?php echo (isset($_POST["tache"]) && in_array("64", $_POST["tache"])) ? "checked" : "";?>"/>
+          <input id="acprop" type="checkbox" name="tache[]" value="64" <?php echo (isset($_POST["tache"]) && in_array("64", $_POST["tache"])) ? "checked" : "";?>/>
           <label for="acprop">Accueil/Propreté</label>
         </div>
       </div>
@@ -137,24 +137,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <div class="radiobutt">
         <div>
           <label for="s">S</label>
-          <input id="s" type="radio" name="tsize" value="S" checked/>
+          <input id="s" type="radio" name="tsize" value="S"<?php echo (isset($_POST["tsize"]) && ($_POST["tsize"] == "S")) ? "checked" : "";?>/>
         </div>
         <div>
           <label for="m">M</label>
-          <input id="m" type="radio" name="tsize" value="M"/>
+          <input id="m" type="radio" name="tsize" value="M"<?php echo (isset($_POST["tsize"]) && ( $_POST["tsize"] == "M")) ? "checked" : "";?>/>
         </div>
         <div>
           <label for="l">L</label>
-          <input id="l" type="radio" name="tsize" value="L"/>
+          <input id="l" type="radio" name="tsize" value="L"<?php echo (isset($_POST["tsize"]) && ( $_POST["tsize"] == "L")) ? "checked" : "";?>/>
         </div>
         <div>
           <label for="xl">XL</label>
-          <input id="xl" type="radio" name="tsize" value="XL"/>
+          <input id="xl" type="radio" name="tsize" value="XL"<?php echo (isset($_POST["tsize"]) && ( $_POST["tsize"] == "XL")) ? "checked" : "";?>/>
         </div>
       </div>
       <div id="volmsg">
         <label for="message">As-tu quelques mots de plus à ajouter ?..</label><br>
-        <textarea id="message" name="volmsg" rows="5">...</textarea>
+        <textarea id="message" name="volmsg" rows="5"><?php echo (isset($_POST["volmsg"]) ? $_POST["volmsg"] : "...");?></textarea>  
       </div>
       <div class="bsub">
         <input id="bsub" type="submit" value="CLIQUES ICI POUR T'INSCRIRE, MERCI !"/>
