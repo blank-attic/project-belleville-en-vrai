@@ -52,10 +52,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <!-- <h1>BELLEVILLE EN VRAI 8 a besoin de TOI !</h1>
   <p>Pour sa 8ème édition (et oui déja !!!), le Festival BELLEVILLE EN VRAI,qui aura lieu du 19 au 21 Mai 2017, recrute des Bénévoles !!</p>
   <h2>REJOINS NOUS pour 3 jours de Fête tous ensemble !</h2> -->
-  <div id="bform">
+  <div class="formbase"id="bform">
     <form action="beneform.php" method="POST">
       <p>Remplis ce formulaire pour t'inscrire afin que l'on sache Qui, Quand et Quoi pour pouvoir organiser le Comment !</p>
-      <div class="pers">
+      <div class="divcol">
         <label for="firstname">TON PRENOM :</label>
         <input type="text" id="firstname" name="firstname" placeholder="écris ici ton prenom"/><br>
         <label for="nom">TON NOM :</label>

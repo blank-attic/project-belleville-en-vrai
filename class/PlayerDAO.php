@@ -3,44 +3,44 @@
 class PlayerDAO {
 
   //save in db
-  public function save($db, $players) {
+  public function save($db, $player) {
 
     //prepare request
-    $request = $db->prepare("INSERT INTO player (team_id, player_name, player_tel, player_date, player_number) VALUES (:team_id, :player_name, :player_tel, :player_date, :player_number)");
+    $request = $db->prepare("INSERT INTO player (name, tel, bdate, team_id) VALUES (:name, :tel, :bdate, :team_id)");
 
     //execute request
     try {
       $request->execute(array(
         "team_id" => $player->getTeamId(),
-        "player_name" => $player->getName(),
-        "player_tel" => $player->getTel(),
-        "player_date" => $player->getDate(),
-        "player_number" => $player->getNumber()
+        "name" => $player->getName(),
+        "tel" => $player->getTel(),
+        "bdate" => $player->getDate(),
       ));
     } catch (PDOException $e) {
       print("error while writing in DB new player." . $e->getMessage());
       return false;
     }
     return true;
-    return $players
-  }
+    }
 
-  public function find($db, $team_id, $player_name, $player_tel, $player_number) {
+  public function find($db, $team_id, $name, $tel, $bdate, $team_leader) {
 
     //prepare request
-    $request = $db->prepare("SELECT * FROM player WHERE (team_id = :team_id) AND (player_name = :player_name) AND (player_tel = :player_tel) AND (player_number = :player_number) LIMIT 1");
+    $request = $db->prepare("SELECT * FROM player WHERE (team_id = :team_id) AND (name = :name) AND (tel = :tel) AND (bdate = :bdate) AND (team_leader = :team_leader) LIMIT 1");
 
     //execute request
     try {
       $request->execute(array(
         "team_id" => $team_id,
-        "player_name" => $player_name,
-        "player_tel" => $player_tel,
-        "player_number" => $player_number
+        "name" => $name,
+        "tel" => $tel,
+        "bdate" => $bdate,
+        "team_leader" => $team_leader
       ));
+
       return $request->fetch();
     } catch (PDOException $e) {
-      print("error while writing in DB new volunteer." . $e->getMessage());
+      print("error while writing in DB new player." . $e->getMessage());
       return false;
     }
   }

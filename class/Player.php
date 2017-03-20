@@ -3,18 +3,19 @@
 class Player {
 
   private $team_id;
-  private $player_name;
-  private $player_tel;
-  private $player_date;
-  private $player_number;
+  private $name;
+  private $tel;
+  private $bdate;
+  private $team_leader;
 
 
-  public function __construct($team_id, $player_name, $player_tel, $player_date, $player_number) {
-    $this->team_id = $team_id;
-    $this->player_name = $player_name
-    $this->player_tel = $player_tel;
-    $this->player_date = $player_date;
-    $this->player_number = $player_number;
+
+  public function __construct($name, $tel, $bdate) {
+    // $this->team_id = $team_id;
+    $this->name = $name;
+    $this->tel = $tel;
+    $this->bdate = $bdate;
+    // $this->team_leader = $team_leader;
   }
 
 
@@ -22,38 +23,54 @@ class Player {
     return $this->team_id;
   }
 
+  public function setTeamId($team_id){
+    $this ->team_id = $team_id;
+  }
+
   public function getName() {
-    return $this->player_name;
+    return $this->name;
   }
   public function getTel() {
-    return $this->player_tel;
+    return $this->tel;
   }
 
   public function getDate() {
-    return $this->player_date;
+    return $this->bdate;
   }
 
-  public function getNumber() {
-    return $this->player_number;
+  public function getTeamLeader() {
+    return $this->team_leader;
+  }
+
+  public function setTeamLeader($team_leader){
+    $this ->team_leader = $team_leader;
+  }
+
+  public function __toString() {
+    echo "id : " . $this->getTeamId() . " // " .
+         "name : " . $this->getName() . " // " .
+         "tel : " . $this->getTel() . " // " .
+         "bdate : " . $this->getDate() . " // " .
+         "teamLeader : " . $this->getTeamLeader();
   }
 
   public function validate() {
 
     $errorArray = array();
 
-    //player_name check
-    if (empty($this->player_name)) {
-      array_push($errorArray, "Il manque le nom du joueur ...");
+    //player name check
+    if (empty($this->name)) {
+      array_push($errorArray, "Il manque un nom du joueur ...");
     }
 
     //tel check
-    if (empty($this->player_tel)) {
-      array_push($errorArray, "Il manque le numéro de téléphone...");
+    if (empty($this->tel)) {
+      array_push($errorArray, "Il manque un numéro de téléphone...");
     }
 
     //birthday date check
-    if (empty($this->player_date)) {
-      array_push($errorArray, "Il manque la date anniversaire...");
+    if (empty($this->bdate)) {
+      array_push($errorArray, "Il manque un date anniversaire...");
     }
 
     return $errorArray;
