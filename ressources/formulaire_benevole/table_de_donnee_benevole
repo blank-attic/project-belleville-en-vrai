@@ -1,0 +1,42 @@
+
+table de donnée pour les benevoles :
+
+ID : INT , primary key , A_I ,
+ 
+NOM : TYNITEXT , UTF8_general_ci ,
+
+
+PRENOM : TYNITEXT , UTF8_general_ci
+
+
+MAIL : TYNITEXT , UTF8_general_ci
+
+
+TEL : INT  , 10 
+
+tache : 
+
+ En																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						cadrement sportif
+ Logistique
+ Photo
+ Vidéo
+ Loges/Accueil artistes
+ Cuisine
+ Accueil/Propreté
+
+disponibilité :
+
+Vendredi 19 mai (18h-21h) 
+Samedi 20 mai(8h-13h) 
+Samedi 20 mai(13h-20h)  
+Dimanche 21 mai(8h-13h) 
+Dimanche 21 mai(13h-20h) 
+
+tshirt :
+
+S
+M
+L
+XL
+
+Informations complémentaires : VARCHAR , 140 , UTF8_general_ci
