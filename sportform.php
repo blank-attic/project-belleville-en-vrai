@@ -40,7 +40,7 @@
       if ($checkteam["teamname"] !== $team->getTeamname()) {
         //save in db
         if($dao->save($_DB, $team)) {
-          echo "<h2 id='thxmsg'>MERCI ".$teamname." ! Bonne Chance !</h2>";
+
         }
       } else {
         echo "<li>le nom de votre équipe est déja utilisé, !!</li>";
@@ -53,42 +53,44 @@
     echo "</ul>";
 
     $team = $dao->find($_DB, $team->getTeamname());
-    $errors = array();
 
-    for ($i = 0 ; $i < count($name); $i++){
-      //creation d'un nouveau player
-      $player = new Player($name[$i], $tel, $bdate[$i]);
-      //validation des data-inputs player
-      $errors = array_merge($errors, $player->validate());
-      echo "<ul id='error'>";
-      if (count($errors) == 0) {
-        $dao = new PlayerDAO();
-        //vérifie si le player existe déja
-        $checkplayer = $dao->find($_DB, $player->getTeamId(), $player->getName(), $player->getTel(), $player->getDate(), $player->getTeamLeader());
-        if ($checkplayer["name"] !== $player->getName()
-        || $checkplayer["bdate"] !== $player->getDate()){
+    if (count($errors) == 0 ||
+        isset($team["id"])) {
+      for ($i = 0 ; $i < count($name); $i++){
+        //creation d'un nouveau player
+        $player = new Player($name[$i], $tel, $bdate[$i]);
+        //validation des data-inputs player
+        $errors = array_merge($errors, $player->validate());
+        echo "<ul id='error'>";
+        if (count($errors) == 0) {
+          $dao = new PlayerDAO();
+          //vérifie si le player existe déja
+          $checkplayer = $dao->find($_DB, $player->getTeamId(), $player->getName(), $player->getTel(), $player->getDate(), $player->getTeamLeader());
+          if ($checkplayer["name"] !== $player->getName()
+          || $checkplayer["bdate"] !== $player->getDate()){
 
-          if ($i > 0) {
-            $player->setTeamLeader(0);
+            if ($i > 0) {
+              $player->setTeamLeader(0);
+            } else {
+              $player->setTeamLeader(1);
+            }
+
+            $player->setTeamId($team["id"]);
+            var_dump($player);
+            //save in db
+            if($dao->save($_DB, $player)) {
+              header('Location: bravo.php');
+            }
           } else {
-            $player->setTeamLeader(1);
-          }
-
-          $player->setTeamId($team["id"]);
-          var_dump($player);
-          //save in db
-          if($dao->save($_DB, $player)) {
-            header('Location: bravo.php'); 
+            echo "<li>l'un de vos Joueur est déja présent dans une autre équipe !</li>";
           }
         } else {
-          echo "<li>l'un de vos Joueur est déja présent dans une autre équipe !</li>";
+          for ($i = 0; $i < count($errors); $i++) {
+            echo "<li>" . $errors[$i] . "</li>";
+          }
         }
-      } else {
-        for ($i = 0; $i < count($errors); $i++) {
-          echo "<li>" . $errors[$i] . "</li>";
-        }
+        echo "</ul>";
       }
-      echo "</ul>";
     }
   }
   ?>
