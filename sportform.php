@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>Inscription Participants</title>
-
   <link rel="stylesheet" href="assets/css/sportformstyle.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
 </head>
 <body>
   <?php

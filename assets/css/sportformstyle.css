@@ -66,6 +66,18 @@ p {
 
 }
 
+.divrowb {
+  font-size: 1.2em;
+  display: flex;
+  /*flex-direction: row;*/
+  justify-content: center;
+  margin: 20px;
+  padding-bottom: 40px;
+  /*border-bottom:2px dotted #ffffff;*/
+
+}
+
+
 .divcol {
   font-size: 1.2em;
   display: flex;
@@ -83,7 +95,19 @@ p {
   border-bottom:2px solid #fff600;
   box-sizing: border-box;
   color: white;
-  font-size: 1.1em;
+  font-size: 1.2em;
+}
+
+.divrowb input {
+  width: 65%;
+  padding: 5px 20px;
+  margin: 5px 0px;
+  background-color: transparent;
+  border : none;
+  border-bottom:2px solid #fff600;
+  box-sizing: border-box;
+  color: white;
+  font-size: 1.2em;
 }
 
 .divcol input {
@@ -98,15 +122,14 @@ p {
   color: white;
   font-size: 1.1em;
 }
-/*.check,  #volmsg, #bsub, */
-#spsub{
+.check,  #volmsg, #bsub, #spsub{
   display: flex;
   flex-direction: column;
   width: 50%;
   font-size: 1.2em;
   margin: auto;
   margin-bottom: 30px;
-  /*justify-content: center;*/
+  justify-content: center;
 }
 
 .yel {
@@ -119,6 +142,35 @@ p {
   margin: auto;
   justify-content: center;
   padding-bottom: 40px;
+}
+
+textarea{
+  color : #002255;
+  font-size: 1.2em;
+  font-weight: bold;
+  /*background-color: #fff600;*/
+  border: 2px solid #ff7e00;
+  border-radius: 10px;
+  box-sizing: border-box;
+  resize: none;
+}
+
+#bsub {
+  background-color: #fff600;
+  color: #002255;
+  font-size: 1.2em;
+  font-weight: bold;
+  width: 50%;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  border: 3px groove #ff7e00;
+  cursor: pointer;
+}
+
+#choixtache {
+  color: #fff600;
+  font-size: 0.9em;
 }
 
 #spsub {

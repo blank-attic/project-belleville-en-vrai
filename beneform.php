@@ -52,12 +52,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
  <meta charset="utf-8">
  <title>Inscription Bénévole</title>
- <link rel="stylesheet" href="assets/css/ddtstyle.css" type="text/css">
+ <link rel="stylesheet" href="assets/css/sportformstyle.css" type="text/css">
+ <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
 </head>
 <body>
+  <div class="formbase">
     <form action="beneform.php" method="POST">
       <p>Remplis ce formulaire pour t'inscrire afin que l'on sache Qui, Quand et Quoi pour pouvoir organiser le Comment !</p>
-      <div class="divrow">
+      <div class="divrowb">
         <div>
           <label for="firstname">TON PRENOM :</label>
           <input type="text" id="firstname" name="firstname" placeholder="écris ici ton prenom" value="<?php echo isset($_POST["firstname"]) ? $_POST["firstname"] : "";?>"/>
@@ -153,7 +155,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       </div>
       <div id="volmsg">
         <label for="message">As-tu quelques mots de plus à ajouter ?..</label><br>
-        <textarea id="message" name="volmsg" rows="5"><?php echo (isset($_POST["volmsg"]) ? $_POST["volmsg"] : "...");?></textarea>  
+        <textarea id="message" name="volmsg" rows="5"><?php echo (isset($_POST["volmsg"]) ? $_POST["volmsg"] : "...");?></textarea>
       </div>
       <div class="bsub">
         <input id="bsub" type="submit" value="CLIQUES ICI POUR T'INSCRIRE, MERCI !"/>
