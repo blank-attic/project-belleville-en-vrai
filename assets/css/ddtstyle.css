@@ -10,7 +10,7 @@ body{
   background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
-  /*background-attachment: fixed;*/
+  background-attachment: fixed;
   margin : 20px;
 }
 
@@ -37,9 +37,19 @@ h3 {
 }
 
 p {
-  font-size:1.4em;
+  font-size:1.3em;
   text-shadow: 2px 2px #000000;
   text-align: center;
   margin: 40px 0;
   color: #ffffff;
+}
+
+.bluebg {
+
+  display: flex;
+  background-color: rgba(0, 34, 85, 0.92);
+  width: 77%;
+  color: #ffffff;
+  border-radius: 10px;
+  margin: auto;
 }
