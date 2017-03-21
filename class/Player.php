@@ -13,7 +13,7 @@ class Player {
   public function __construct($name, $tel, $bdate) {
     // $this->team_id = $team_id;
     $this->name = $name;
-    $this->tel = $tel;
+    $this->tel = str_replace(' ','',$tel);
     $this->bdate = $bdate;
     // $this->team_leader = $team_leader;
   }

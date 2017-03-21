@@ -153,7 +153,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       </div>
       <div id="volmsg">
         <label for="message">As-tu quelques mots de plus à ajouter ?..</label><br>
-        <textarea id="message" name="volmsg" rows="5"><?php echo (isset($_POST["volmsg"]) ? $_POST["volmsg"] : "...");?></textarea>  
+        <textarea id="message" name="volmsg" rows="5"><?php echo (isset($_POST["volmsg"]) ? $_POST["volmsg"] : "...");?></textarea>
       </div>
       <div class="bsub">
         <input id="bsub" type="submit" value="CLIQUES ICI POUR T'INSCRIRE, MERCI !"/>

@@ -20,7 +20,7 @@ class Volunteer {
   public function __construct($name, $firstname, $tel, $email, $dispo, $task, $tsize, $volmsg) {
     $this->name = $name;
     $this->firstname = $firstname;
-    $this->tel = $tel;
+    $this->tel = str_replace(' ','',$tel);
     $this->email = $email;
     //créé un objet dispo
     $this->dispo = new Dispo($dispo);
