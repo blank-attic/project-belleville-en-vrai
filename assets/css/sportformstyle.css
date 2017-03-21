@@ -16,7 +16,7 @@ body{
 
 h1 {
   /*color: #ffffff;*/
-  font-size:2.5em;
+  font-size:2.1em;
   text-align: center;
   font-weight: bolder;
   text-shadow: 3px 3px #000000;
@@ -24,13 +24,13 @@ h1 {
 
 h2 {
   /*color: #ffffff;*/
-  font-size:2em;
+  font-size:1.8em;
   text-align: center;
   text-shadow: 2px 2px #000000;
 }
 
 h3 {
-  /*color: #ffffff;*/
+  color: #fff600;
   font-size: 1.5em;
   text-align: center;
   text-shadow: 1px 1px #000000;
@@ -44,12 +44,16 @@ p {
   color: #ffffff;
 }
 
+.space {
+  width: 100%;
+  height: 30px;
+}
+
 .formbase {
   display: flex;
   background-color: rgba(0, 34, 85, 0.92);
   width: 77%;
   color: #ffffff;
-  /*border: 2px solid #fff600;*/
   border-radius: 10px;
   justify-content: center;
   margin: auto;
@@ -58,23 +62,17 @@ p {
 .divrow {
   font-size: 1.2em;
   display: flex;
-  /*flex-direction: row;*/
   justify-content: center;
   margin: 20px;
   padding-bottom: 40px;
-  /*border-bottom:2px dotted #ffffff;*/
-
 }
 
 .divrowb {
   font-size: 1.2em;
   display: flex;
-  /*flex-direction: row;*/
   justify-content: center;
   margin: 20px;
   padding-bottom: 40px;
-  /*border-bottom:2px dotted #ffffff;*/
-
 }
 
 
