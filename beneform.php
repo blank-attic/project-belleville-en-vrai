@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
    $dao = new VolunteerDAO();
    //vérifie si le bénévole existe déja
    $checkvolunteer = $dao->find($_DB, $volunteer->getEmail());
-   if ($checkvolunteer["email"] !== $volunteer->getEmail(){
+   if ($checkvolunteer["email"] !== $volunteer->getEmail()) {
      //save in db
      if($dao->save($_DB, $volunteer)) {
        echo "<h1 id='thxmsg'>MERCI ".$firstname." ! Tu es MA-GNI-FIQUE !</h1>";
