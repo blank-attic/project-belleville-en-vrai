@@ -17,7 +17,6 @@
   });
   //vérifie si il y a une requete post en cours
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    var_dump($_POST);
     $teamname = isset($_POST["teamname"]) ? $_POST["teamname"] : "";
     $categorie = isset($_POST["categorie"]) ? $_POST["categorie"] : "";
     $quartier = isset($_POST["quartier"]) ? $_POST["quartier"] : "";
@@ -78,10 +77,9 @@
             }
 
             $player->setTeamId($team["id"]);
-            var_dump($player);
             //save in db
             if($dao->save($_DB, $player)) {
-              header('Location: bravo.php');
+              header('Location: bravo.php?teamname=' . $teamname);
             }
           } else {
             echo "<li>l'un de vos Joueur est déja présent dans une autre équipe !</li>";
