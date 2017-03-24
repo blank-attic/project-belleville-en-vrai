@@ -55,9 +55,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
  <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
 </head>
 <body>
+  <div class="bio">
+    <h1>Venez nous aider à organiser Belleville en vrai !</h1>
+    <h2>Chaque année, une centaine de bénévoles (reconnaissables à leurs t shirts) sont présents pour rendre l’événement encore plus vivant et participatif.
+    Munissez vous de votre bonne humeur et de vos muscles saillants et
+    remplissez le formulaire suivant :</h2>
+  </div>
+  <div class="formbase">
     <form action="beneform.php" method="POST">
-      <p>Remplis ce formulaire pour t'inscrire afin que l'on sache Qui, Quand et Quoi pour pouvoir organiser le Comment !</p>
-      <div class="divrow">
+      <h3>FORMULAIRE BENEVOLE </h3>
+      <div class="space">      
+      </div>
+      <div class="divrowb">
         <div>
           <label for="firstname">TON PRENOM :</label>
           <input type="text" id="firstname" name="firstname" placeholder="écris ici ton prenom" value="<?php echo isset($_POST["firstname"]) ? $_POST["firstname"] : "";?>"/>

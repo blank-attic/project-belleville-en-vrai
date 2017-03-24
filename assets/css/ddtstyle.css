@@ -45,14 +45,13 @@ p {
   color: #ffffff;
 }
 
-.formbase {
+.bluebg {
+
   display: flex;
   background-color: rgba(0, 34, 85, 0.92);
   width: 77%;
   color: #ffffff;
-  /*border: 2px solid #fff600;*/
   border-radius: 10px;
-  justify-content: center;
   margin: auto;
 }
 
