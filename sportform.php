@@ -184,10 +184,6 @@
           </div>
         </div>
         <div class="divrow">
-          <!-- <div>
-          <label for="telj2">Quel est son numéro de Téléphone :</label>
-          <input type="tel" id="telj2" name="tel2" value="" placeholder="numéro de tél.">
-        </div> -->
         <div>
           <label for="datej2">Quel est sa date de Naissance :</label>
           <input type="date" id="datej2" name="bdate[]" placeholder="JJ/MM/AAAA">
@@ -201,10 +197,6 @@
         </div>
       </div>
       <div class="divrow">
-        <!-- <div>
-        <label for="telj3">Quel est son numéro de Téléphone :</label>
-        <input type="tel" id="telj3" name="tel3" value="" placeholder="numéro de tél.">
-      </div> -->
       <div>
         <label for="datej3">Quel est sa date de Naissance :</label>
         <input type="date" id="datej3" name="bdate[]" placeholder="JJ/MM/AAAA">
@@ -218,10 +210,6 @@
       </div>
     </div>
     <div class="divrow">
-      <!-- <div>
-      <label for="telj4">Quel est son numéro de Téléphone :</label>
-      <input type="tel" id="telj4" name="tel4" value="" placeholder="numéro de tél.">
-    </div> -->
     <div>
       <label for="datej4">Quel est sa date de Naissance :</label>
       <input type="date" id="datej4" name="bdate[]" placeholder="JJ/MM/AAAA">
@@ -235,10 +223,6 @@
     </div>
   </div>
   <div class="divrow">
-    <!-- <div>
-    <label for="telj5">Quel est son numéro de Téléphone :</label>
-    <input type="tel" id="telj5" name="tel5" value="" placeholder="numéro de tél.">
-  </div> -->
   <div>
     <label for="datej5">Quel est sa date de Naissance :</label>
     <input type="date" id="datej5" name="bdate[]" placeholder="JJ/MM/AAAA">
@@ -252,10 +236,6 @@
   </div>
 </div>
 <div class="divrow">
-  <!-- <div>
-  <label for="telj6">Quel est son numéro de Téléphone :</label>
-  <input type="tel" id="telj6" name="tel6" value="" placeholder="numéro de tél.">
-</div> -->
 <div>
   <label for="datej6">Quel est sa date de Naissance :</label>
   <input type="date" id="datej6" name="bdate[]" placeholder="JJ/MM/AAAA">
@@ -269,10 +249,6 @@
   </div>
 </div>
 <div class="divrow">
-  <!-- <div>
-  <label for="telj7">Quel est son numéro de Téléphone :</label>
-  <input type="tel" id="telj7" name="tel7" value="" placeholder="numéro de tél.">
-</div> -->
 <div>
   <label for="datej7">Quel est sa date de Naissance :</label>
   <input type="date" id="datej7" name="bdate[]" placeholder="JJ/MM/AAAA">
@@ -286,10 +262,6 @@
   </div>
 </div>
 <div class="divrow">
-  <!-- <div>
-  <label for="telj8">Quel est son numéro de Téléphone :</label>
-  <input type="tel" id="telj8" name="tel8" value="" placeholder="numéro de tél.">
-</div> -->
 <div>
   <label for="datej8">Quel est sa date de Naissance :</label>
   <input type="date" id="datej8" name="bdate[]" placeholder="JJ/MM/AAAA">
@@ -297,50 +269,31 @@
 </div>
 <br/>
 <br/>
-<!-- <h2>Disciplines Sportives :</h2> -->
+
 <h3>Choisis parmi les 8 Joueurs de votre équipe :</h3>
 
-
-<!-- a partir de là  -->
-<!-- <p>Les Nageur(se)s :</p> -->
 <div class="divcol">
   <div>
     <label for="nat1">les 3 Nageur(se)s :</label>
     <input id="nat1"type="text" name="natation" placeholder="écris ici les prenoms Nageur(se)1 / Nageur(se)2 / Nageur(se)3" >
   </div>
-  <!-- <div>
-  <label for="nat2">Nageur(se) 2 :</label>
-  <input id="nat2"type="text" name="natation[]" placeholder="écris le prénom du Nageur(se) 2" >
 </div>
-<div>
-<label for="nat3">Nageur(se) 3 :</label>
-<input id="nat3"type="text" name="natation[]" placeholder="écris le prénom du Nageur(se) 3" >
-</div> -->
-</div>
-<!-- <p>Les Coureur(se)s :</p> -->
+
 <div class="divcol">
   <div>
     <label for="run1">Les 2 Coureur(se)s:</label>
     <input id="run1"type="text" name="course" placeholder="écris ici les prénoms Coureur(se)1 / Coureur(se)2" >
   </div>
-  <!-- <div>
-  <label for="run2">Coureur(se) 2 :</label>
-  <input id="run2"type="text" name="course" placeholder="écris le prénom du Coureur(se) 2" >
-</div> -->
 </div>
-<!-- <p>Les Joueur(se)s de PING-PONG :</p> -->
+
 <div class="divcol">
   <div>
     <label for="pp1">Les 2 Joueur(se)s :</label>
     <input type="text" name="pingpong" placeholder="écris ici les prénoms du Joueur(se)1 / Joueur(se)2" >
   </div>
-  <!-- <div>
-  <label for="pp2">Joueur(se) 2 :</label>
-  <input type="text" name="pingpong" placeholder="écris le prénom du Joueur(se) 2" >
-</div> -->
 </div>
-<div>
-  <input id="spsub" type="submit" name="sportsub" value="CLIQUES ICI POUR INSCRIRE VOTRE EQUIPE">
+<div class="divrow">
+  <input id="spsub" type="submit" name="submit" value="GO">
 </div>
 </form>
 </div>

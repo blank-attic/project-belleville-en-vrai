@@ -51,7 +51,7 @@ p {
 
 .formbase {
   display: flex;
-  background-color: rgba(0, 34, 85, 0.92);
+  background-color: rgba(0, 34, 85, 0.88);
   width: 77%;
   color: #ffffff;
   border-radius: 10px;
@@ -206,11 +206,12 @@ textarea{
 .bluebg {
 
   display: flex;
-  background-color: rgba(0, 34, 85, 0.92);
+  background-color: rgba(0, 34, 85, 0.8);
   width: 100%;
   color: #ffffff;
   border-radius: 10px;
   margin: auto;
+  /*justify-content: flex-start;*/
 }
 
 td, th {
@@ -219,6 +220,13 @@ td, th {
     border-left:1px solid grey;
 }
 .bigx {
-  font-size: 1.5em;
+  font-size: 2em;
   color: #ff7e00;
+}
+
+.bio{
+  width: 75%;
+  margin: auto;
+  background-color: rgba(0, 34, 85, 0.7);
+
 }
