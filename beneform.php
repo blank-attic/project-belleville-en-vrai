@@ -26,10 +26,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
  if (count($errors) == 0) {
    $dao = new VolunteerDAO();
    //vérifie si le bénévole existe déja
-   $checkvolunteer = $dao->find($_DB, $volunteer->getFirstname(), $volunteer->getName(), $volunteer->getTel());
-   if ($checkvolunteer["prenom"] !== $volunteer->getFirstname()
-   || $checkvolunteer["nom"] !== $volunteer->getName()
-   || $checkvolunteer["tel"] !== $volunteer->getTel()) {
+   $checkvolunteer = $dao->find($_DB, $volunteer->getEmail());
+   if ($checkvolunteer["email"] !== $volunteer->getEmail(){
      //save in db
      if($dao->save($_DB, $volunteer)) {
        echo "<h1 id='thxmsg'>MERCI ".$firstname." ! Tu es MA-GNI-FIQUE !</h1>";
@@ -51,8 +49,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html>
 <head>
  <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
  <title>Inscription Bénévole</title>
- <link rel="stylesheet" href="assets/css/ddtstyle.css" type="text/css">
+ <link rel="stylesheet" href="assets/css/sportformstyle.css" type="text/css">
+ <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
 </head>
 <body>
     <form action="beneform.php" method="POST">
@@ -153,7 +153,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       </div>
       <div id="volmsg">
         <label for="message">As-tu quelques mots de plus à ajouter ?..</label><br>
-        <textarea id="message" name="volmsg" rows="5"><?php echo (isset($_POST["volmsg"]) ? $_POST["volmsg"] : "...");?></textarea>  
+        <textarea id="message" name="volmsg" rows="5"><?php echo (isset($_POST["volmsg"]) ? $_POST["volmsg"] : "...");?></textarea>
       </div>
       <div class="bsub">
         <input id="bsub" type="submit" value="CLIQUES ICI POUR T'INSCRIRE, MERCI !"/>

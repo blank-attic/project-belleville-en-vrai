@@ -39,11 +39,11 @@ class Task extends BitwiseFlag
     return $this->isFlagSet(self::FLAG_CUISINE);
   }
 
-  public function isAcceuilArtiste(){
+  public function isAccueilArtiste(){
     return $this->isFlagSet(self::FLAG_ACCEUIL_ARTISTE);
   }
 
-  public function isAcceuilProprete(){
+  public function isAccueilProprete(){
     return $this->isFlagSet(self::FLAG_ACCEUIL_PROPRETE);
   }
 
