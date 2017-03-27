@@ -58,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
  <link rel="stylesheet" href="assets/css/mqstyle.css" media="screen" type="text/css">
 </head>
 <body>
-  <div class="bio">
+  <div class="txtbg">
     <h1>Venez nous aider à organiser Belleville en vrai !</h1>
     <h2>Chaque année, une centaine de bénévoles (reconnaissables à leurs t shirts) sont présents pour rendre l’événement encore plus vivant et participatif.
     Munissez vous de votre bonne humeur et de vos muscles saillants et

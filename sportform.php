@@ -112,37 +112,37 @@
         <h2>Ta Catégorie :</h2>
         <p>Tu es dans quelle catégorie ?</p>
         <div class="radiobutt">
-          <div>
-            <label for="cpt">Petit(e)s (10-13 ans)</label>
+          <div>           
             <input id="cpt" type="radio" name="categorie" value="Petit">
+            <label for="cpt">Petit(e)s (10-13 ans)</label>
           </div>
           <div>
-            <label for="cm">Moyen(ne)s (14-17 ans)</label>
             <input id="cm" type="radio" name="categorie" value="Moyen">
+            <label for="cm">Moyen(ne)s (14-17 ans)</label>
           </div>
           <div>
-            <label for="cgd">Grand(e)s (18-25 ans)</label>
             <input type="radio" name="categorie" value="Grand">
+            <label for="cgd">Grand(e)s (18-25 ans)</label>
           </div>
         </div>
         <h2>Ton Quartier :</h2>
         <p>Quel est ton Quartier ?</p>
         <div class="radiobutt">
           <div>
-            <label for="reb">REBEVAL</label>
             <input id="reb" type="radio" name="quartier" value="rebeval">
+            <label for="reb">REBEVAL</label>
           </div>
           <div>
-            <label for="piat">PIAT</label>
             <input id="piat" type="radio" name="quartier" value="piat">
+            <label for="piat">PIAT</label>
           </div>
           <div>
-            <label for="ramp">RAMPONEAU</label>
             <input type="radio" name="quartier" value="ramponeau">
+            <label for="ramp">RAMPONEAU</label>
           </div>
           <div>
-            <label for="ori">ORILLON</label>
             <input id="ori" type="radio" name="quartier" value="orillon">
+            <label for="ori">ORILLON</label>
           </div>
         </div>
         <p>Quel Grand de ton Quartier participe à l'organisation de Belleville En Vrai 8 ?</p>
@@ -291,7 +291,7 @@
 
 <div class="divcol">
   <div>
-    <label for="pp1">Les 2 Joueur(se)s :</label>
+    <label for="pp1">Les 2 Pongistes (Tennis de Table) :</label>
     <input type="text" name="pingpong" placeholder="écris ici les prénoms du Joueur(se)1 / Joueur(se)2" >
   </div>
 </div>

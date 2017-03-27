@@ -1,5 +1,6 @@
 @media screen and (max-width: 768px) {
 
+<<<<<<< a138f59884c87b2a6199aa78976d7bbef72ade8f
   form {
     display: block;
     width: 100%;
@@ -47,5 +48,9 @@
     width: 77%;
     margin: auto;
     word-wrap: break-word;
+=======
+  .divrow, .divrowb, .divrowc, {
+    flex-direction: column;
+>>>>>>> mediaquery +chgmts index
   }
 }
