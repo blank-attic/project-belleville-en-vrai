@@ -10,6 +10,7 @@
 <body>
   <header id="hdrndx">
   </header>
+  <div class="txtbg">  
   <div class="bio">
     <h1>BELLEVILLE EN VRAI 8 C'est PARTI !</h1>
     <h2>UN TOURNOI JEUNE, SPORTIF ET FESTIF</h2>
@@ -25,6 +26,7 @@
   <div class="formlinks">
     <a href="beneform.php">INSCRIPTION BENEVOLE</a>
     <a href="sportform.php">INSCRIPTION TOURNOIS</a>
+  </div>
   </div>
 </body>
 </html>
