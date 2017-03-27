@@ -48,12 +48,19 @@ PAGES : 5 pages // INDEX / PROGRAMME / INSCRIPTIONS / BeV TV / PHOTOS / CONTACT 
 							------------------
 
 
-COULEURS :
+COULEURS : 
+
+
+Bleu Marine : #002255;
+Bleu Turquoise : #AAEEFF
+Jaune : #FFF600
+Orange : #FF7E00
 	
-		Background: svg 
-		Titre Page:blanc
-		Titre:jaune
-		Paragraphe : blanc
+		Background: svg; graphique + taches. 
+		Titre Page:blanc.
+		Paragraphe : blanc.
+		
+		
 
 
 
@@ -68,17 +75,16 @@ TYPOGRAPHIE :
 
 	Font:
 	
-		Titre Page:  Boulevard Saint Denis, <H1>
+		Titre Page:  Sansita, <H1>, White
 	
-		Titre :  Merriweather, <H3>   
+		Titre : Sansita, <H2>, Jaune   
 	
-		Paragraphe:  Merriweather Sans , 16px 
+		Paragraphe:  Sansita, 
 
 
-			<link href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
 
-			css :   font-family: 'Merriweather', serif;
-				font-family: 'Merriweather Sans', sans-serif;		
+			css :   font-family: 'Sansita		
 
 
 
