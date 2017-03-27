@@ -155,7 +155,12 @@ p {
 .radiobutt {
   display: flex;
   flex-direction: column;
+<<<<<<< Updated upstream
   font-size: 1.2em;
+=======
+  width: 40%;
+  font-size: 1.5em;
+>>>>>>> Stashed changes
   margin: auto;
   text-align: center;
   padding-bottom: 40px;

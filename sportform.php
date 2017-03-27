@@ -110,6 +110,7 @@
         <p>Tu es dans quelle catégorie ?</p>
         <div class="radiobutt">
           <div>
+<<<<<<< Updated upstream
             <label for="cpt">Petit(e)s (10-13 ans)</label>
             <input id="cpt" type="radio" name="categorie" value="Petit">
           </div>
@@ -120,12 +121,25 @@
           <div>
             <label for="cgd">Grand(e)s (18-25 ans)</label>
             <input type="radio" name="categorie" value="Grand">
+=======
+            <input id="cpt" type="radio" name="categorie" value="Petit">
+            <label for="cpt">Petit(e)s (10-13 ans)</label>
+          </div>
+          <div>
+            <input id="cm" type="radio" name="categorie" value="Moyen">
+            <label for="cm">Moyen(ne)s (14-17 ans)</label>
+          </div>
+          <div>
+            <input type="radio" name="categorie" value="Grand">
+            <label for="cgd">Grand(e)s (18-25 ans)</label>
+>>>>>>> Stashed changes
           </div>
         </div>
         <h2>Ton Quartier :</h2>
         <p>Quel est ton Quartier ?</p>
         <div class="radiobutt">
           <div>
+<<<<<<< Updated upstream
             <label for="reb">REBEVAL</label>
             <input id="reb" type="radio" name="quartier" value="rebeval">
           </div>
@@ -140,6 +154,22 @@
           <div>
             <label for="ori">ORILLON</label>
             <input id="ori" type="radio" name="quartier" value="orillon">
+=======
+            <input id="reb" type="radio" name="quartier" value="rebeval">
+            <label for="reb">REBEVAL</label>
+          </div>
+          <div>
+            <input id="piat" type="radio" name="quartier" value="piat">
+            <label for="piat">PIAT</label>
+          </div>
+          <div>
+            <input type="radio" name="quartier" value="ramponeau">
+            <label for="ramp">RAMPONEAU</label>
+          </div>
+          <div>
+            <input id="ori" type="radio" name="quartier" value="orillon">
+            <label for="ori">ORILLON</label>
+>>>>>>> Stashed changes
           </div>
         </div>
         <p>Quel Grand de ton Quartier participe à l'organisation de Belleville En Vrai 8 ?</p>
