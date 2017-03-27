@@ -21,8 +21,8 @@ if (!isset($_GET["teamname"])) {
 </head>
 <body>
 
-  <div class="bravo">
-    <h1>BRAVO TON EQUIPE EST INSCRITE POUR LE TOURNOIS !</h1>
+  <div class="txtbg">
+    <h1>BRAVO TON EQUIPE EST INSCRITE POUR LE TOURNOI !</h1>
     <h2>PREPAREZ VOUS, ENTRAINEZ VOUS !.. </h2>
     <h1>...Bonne Chance ! ET que la MEILLEURE EQUIPE GAGNE !</h1>
   </div>

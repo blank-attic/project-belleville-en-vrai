@@ -4,7 +4,6 @@ if (!isset($_GET["firstname"])) {
   header("location:index.php");
 }
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>

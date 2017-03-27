@@ -30,9 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
      if ($checkvolunteer["email"] !== $volunteer->getEmail()){
      //save in db
      if($dao->save($_DB, $volunteer)) {
-       echo "<h1 id='thxmsg'>MERCI ".$firstname." ! Tu es MA-GNI-FIQUE !</h1>";
-       // no auth needed cause no connection from benevole
-
+       header('Location: merci.php');
      }
    } else {
      echo "<li>Tu fais déja partie de la TEAM !!</li>";
@@ -128,7 +126,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
         <div>
           <input id="video" type="checkbox" name="tache[]" value="8" <?php echo (isset($_POST["tache"]) && in_array("8", $_POST["tache"])) ? "checked" : "";?>/>
-          <label for="video">Vidéo</label>
+          <label for="video">Vidéo / Retransmission Live</label>
         </div>
         <div>
           <input id="acloge" type="checkbox" name="tache[]" value="16" <?php echo (isset($_POST["tache"]) && in_array("16", $_POST["tache"])) ? "checked" : "";?>/>
@@ -147,20 +145,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <p>Choisis la taille de ton T-shirt Belleville en vrai 8 :</p>
       <div class="radiobutt">
         <div>
-          <label for="s">S</label>
           <input id="s" type="radio" name="tsize" value="S"<?php echo (isset($_POST["tsize"]) && ($_POST["tsize"] == "S")) ? "checked" : "";?>/>
+          <label for="s">S</label>
         </div>
         <div>
-          <label for="m">M</label>
           <input id="m" type="radio" name="tsize" value="M"<?php echo (isset($_POST["tsize"]) && ( $_POST["tsize"] == "M")) ? "checked" : "";?>/>
+          <label for="m">M</label>
         </div>
         <div>
-          <label for="l">L</label>
           <input id="l" type="radio" name="tsize" value="L"<?php echo (isset($_POST["tsize"]) && ( $_POST["tsize"] == "L")) ? "checked" : "";?>/>
+          <label for="l">L</label>
         </div>
         <div>
-          <label for="xl">XL</label>
           <input id="xl" type="radio" name="tsize" value="XL"<?php echo (isset($_POST["tsize"]) && ( $_POST["tsize"] == "XL")) ? "checked" : "";?>/>
+          <label for="xl">XL</label>
         </div>
       </div>
       <div id="volmsg">
