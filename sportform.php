@@ -288,7 +288,7 @@
 
 <div class="divcol">
   <div>
-    <label for="pp1">Les 2 Joueur(se)s :</label>
+    <label for="pp1">Les 2 Pongistes (Tennis de Table) :</label>
     <input type="text" name="pingpong" placeholder="écris ici les prénoms du Joueur(se)1 / Joueur(se)2" >
   </div>
 </div>

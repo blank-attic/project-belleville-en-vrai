@@ -154,10 +154,15 @@ p {
 
 .radiobutt {
   display: flex;
+  flex-direction: column;
   font-size: 1.2em;
   margin: auto;
-  justify-content: center;
+  text-align: center;
   padding-bottom: 40px;
+}
+
+label{
+  margin: 10px;
 }
 
 textarea{
@@ -214,9 +219,9 @@ textarea{
 }
 
 td, th {
-    text-align: center;
-    border-bottom:3px solid white;
-    border-left:1px solid grey;
+  text-align: center;
+  border-bottom:3px solid white;
+  border-left:1px solid grey;
 }
 .bigx {
   font-size: 2em;
