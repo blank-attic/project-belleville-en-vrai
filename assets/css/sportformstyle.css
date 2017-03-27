@@ -138,6 +138,7 @@ p {
   color: white;
   font-size: 1.1em;
 }
+<<<<<<< c9add48f4c0866432ef6581584c04717c4421937
 .check,  #volmsg, #bsub, #spsub{
   display: flex;
   flex-direction: column;
@@ -147,6 +148,8 @@ p {
   margin-bottom: 30px;
   justify-content: center;
 }
+=======
+>>>>>>> formulaires responsive git status
 
 .yel {
   color: #fff600;
@@ -192,7 +195,7 @@ textarea{
 #spsub, #adsub {
   background-color: #fff600;
   color: #002255;
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: bold;
   width: 45%;
   border: none;
