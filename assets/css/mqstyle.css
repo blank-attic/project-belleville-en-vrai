@@ -1,6 +1,7 @@
 @media screen and (max-width: 768px) {
 
   .divrow, .divrowb, .divrowc, {
+    
     flex-direction: column;
   }
 }
