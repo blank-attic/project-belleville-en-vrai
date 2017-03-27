@@ -112,7 +112,7 @@
         <h2>Ta Catégorie :</h2>
         <p>Tu es dans quelle catégorie ?</p>
         <div class="radiobutt">
-          <div>           
+          <div>
             <input id="cpt" type="radio" name="categorie" value="Petit">
             <label for="cpt">Petit(e)s (10-13 ans)</label>
           </div>
