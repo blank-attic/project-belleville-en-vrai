@@ -50,9 +50,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <!DOCTYPE html>
 <html>
 <head>
- <meta charset="utf-8">
- <title>Inscription Bénévole</title>
- <link rel="stylesheet" href="assets/css/ddtstyle.css" type="text/css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ce site est une présentation du Festival du quatier de Belleville, Belleville en Vrai"/>
+  <meta name="author" content="LAURENT ABEMANGO alias LAWD et BADIS NAKHLI et Abdoulaye NDAO"/>
+  <title>Inscription Bénévoles</title>
+  <link rel="stylesheet" href="assets/css/sportformstyle.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+  <link href="assets/css/mqstyle.css" rel="stylesheet" media="screen" type="text/css" />
 </head>
 <body>
     <form action="beneform.php" method="POST">
@@ -153,7 +158,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       </div>
       <div id="volmsg">
         <label for="message">As-tu quelques mots de plus à ajouter ?..</label><br>
-        <textarea id="message" name="volmsg" rows="5"><?php echo (isset($_POST["volmsg"]) ? $_POST["volmsg"] : "...");?></textarea>  
+        <textarea id="message" name="volmsg" rows="5"><?php echo (isset($_POST["volmsg"]) ? $_POST["volmsg"] : "...");?></textarea>
       </div>
       <div class="bsub">
         <input id="bsub" type="submit" value="CLIQUES ICI POUR T'INSCRIRE, MERCI !"/>
