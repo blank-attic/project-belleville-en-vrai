@@ -45,7 +45,7 @@ p {
   color: #ffffff;
 }
 
-.txtbg{  
+.txtbg{
   background-color: rgba(0, 34, 85, 0.7);
   width: 77%;
   color: #ffffff;
@@ -186,10 +186,4 @@ textarea{
 .formlinks > a:hover {
     text-shadow:1px 1px #000;
     background-color:#ff7e00;
-}
-
-.formlinks > a.disabled {
-   pointer-events: none;
-   cursor: default;
-   opacity:0.5;
 }

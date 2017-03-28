@@ -6,7 +6,7 @@
   <meta name="description" content="ce site est une présentation du Festival du Quartier BELLEVILLE, Belleville En Vrai"/>
   <meta name="author" content="Laurent Abemango alias LAWD / Badis Nakhli / Abdoulaye Ndao"/>
   <title>Inscriptions Tournoi</title>
-  <link rel="stylesheet" href="assets/css/ddtstyle.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/sportformstyle.css" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/mqstyle.css" media="screen" type="text/css">
 </head>
@@ -100,14 +100,14 @@
   }
   ?>
   <div class="bio">
-    <h1>C’est l’heure de s’inscrire pour pouvoir concourir et remporter cette nouvelle édition du tournoi du Grand Belleville !<h1>
-      <h2>Munissez de vos meilleures baskets, maillots de bain et tenues de sports pour montrer vos compétences sportives au grand jour.
-        Il vous suffit juste de remplir le formulaire suivant :</h2>
-      </div>
-      <div class="formbase" id="spform">
-        <form action="sportform.php" method="POST">
-          <h3>FORMULAIRE INSCRIPTION TOURNOI</h3>
-          <div class="space">
+    <h1>C'est l'heure d'inscrire votre équipe à la nouvelle édition de Belleville en Vrai les 19, 20 et 21 mai prochains.<h1>
+    <h2>Attention il faut être huit pour s'inscrire. Dans chaque catégorie, les quatre premières équipes de chaque quartier seront prioritaires, les autres seront sur liste d'attente.
+    Il vous suffit juste de remplir le formulaire suivant :</h2>
+    </div>
+    <div class="formbase" id="spform">
+      <form action="sportform.php" method="POST">
+        <h3>FORMULAIRE INSCRIPTION TOURNOI</h3>
+        <div class="space">
           </div>
           <h2>Ta Catégorie :</h2>
           <p>Tu es dans quelle catégorie ?</p>
@@ -271,7 +271,7 @@
             </div>
           </div>
           <br/>
-          <br/>          
+          <br/>
           <h3>Choisis parmi les 8 Joueurs de votre équipe :</h3>
 
           <div class="divcol">
