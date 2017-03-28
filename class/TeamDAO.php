@@ -44,6 +44,10 @@ class TeamDAO {
       return false;
     }
   }
+
+  public function getAllTeams($db) {
+    $request = $db->prepare("SELECT * FROM team");
+  }
 }
 
  ?>

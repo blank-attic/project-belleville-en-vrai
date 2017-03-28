@@ -59,6 +59,10 @@ class PlayerDAO {
             return false;
         }
     }
+
+    public function getPlayersInTeam($db, $team_id) {
+      $request = $db->prepare("SELECT * FROM player");
+    }
 }
 
 ?>
