@@ -18,7 +18,12 @@
   </div>
   <div class="formlinks">
     <a href="beneform.php">INSCRIPTION BENEVOLE</a>
+<<<<<<< Updated upstream
     <a href="sportform.php">INSCRIPTION TOURNOI</a>
+=======
+    <a href="sportform.php">INSCRIPTION TOURNOIS</a>
+    <a href="partiform.php">INSCRIPTION ARTISTE</a>
+>>>>>>> Stashed changes
   </div>
 </body>
 </html>
