@@ -8,6 +8,7 @@
   <title>Belleville En Vrai</title>
   <link rel="stylesheet" href="assets/css/ddtstyle.css" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/mqstyle.css" media="screen" type="text/css">
 </head>
 <body>
   <header id="hdrndx">
@@ -26,7 +27,7 @@
   </div>
   <div class="formlinks">
     <a href="beneform.php">INSCRIPTION BENEVOLE</a>
-    <a href="sportform.php">INSCRIPTION TOURNOIS</a>
+    <a href="sportform.php">INSCRIPTION TOURNOI</a>
   </div>
   </div>
 </body>

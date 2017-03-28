@@ -15,6 +15,7 @@ if (!isset($_GET["firstname"])) {
   <title>MERCI !!!</title>
   <link rel="stylesheet" href="assets/css/ddtstyle.css" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/mqstyle.css" media="screen" type="text/css">
 </head>
   <body>
     <div class="thxmsg">

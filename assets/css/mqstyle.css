@@ -6,6 +6,10 @@
     text-align: center;
   }
 
+  .formbase {
+    width: 90%;
+  }
+
   .divrow, .divrowb, .divrowc {
     flex-direction: column;
     justify-content: center;

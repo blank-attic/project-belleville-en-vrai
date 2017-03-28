@@ -17,6 +17,7 @@ spl_autoload_register(function ($class) {
   <title>Bénévoles</title>
   <link rel="stylesheet" href="assets/css/ddtstyle.css" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/mqstyle.css" media="screen" type="text/css">
 </head>
 <body>
   <h1>LISTE DE BENEVOLES BEV 8 (2017) :</h1>
