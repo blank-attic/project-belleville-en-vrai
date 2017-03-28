@@ -16,12 +16,11 @@ if (!isset($_GET["teamname"])) {
   <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
 </head>
 <body>
-  <header id="hdrndx">
-  </header>
+
   <div class="bravo">
     <h1>BRAVO TON EQUIPE EST INSCRITE POUR LE TOURNOIS !</h1>
     <h2>PREPAREZ VOUS, ENTRAINEZ VOUS !.. </h2>
-    <h1>...Bonne Chance ! ET que la Meilleure équipe GAGNE !</h1>
+    <h1>...Bonne Chance ! ET que la MEILLEURE EQUIPE GAGNE !</h1>
   </div>
   </body>
 </html>

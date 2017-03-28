@@ -20,7 +20,7 @@ class Volunteer {
   public function __construct($name, $firstname, $tel, $email, $dispo, $task, $tsize, $volmsg) {
     $this->name = $name;
     $this->firstname = $firstname;
-    $this->tel = $tel;
+    $this->tel = str_replace(' ','',$tel);
     $this->email = $email;
     //créé un objet dispo
     $this->dispo = new Dispo($dispo);
@@ -86,10 +86,10 @@ class Volunteer {
     }
 
     if (filter_var($this->email, FILTER_VALIDATE_EMAIL) === false) {
-      array_push($errorArray, "Vérifies ton e-mail s'il te plaît..." . $this->email . " ");
+      array_push($errorArray, "Vérifies ton e-mail s'il te plaît... : " . $this->email . " ");
     }
     if ($this->getDispos()->getValue()==0 || $this->getTask()->getValue()==0){
-      array_push($errorArray, "Choisi au moin une Disponibilité & une Tache SVP");
+      array_push($errorArray, "Choisis au moin une Disponibilité & une Tache SVP");
     }
 
     return $errorArray;

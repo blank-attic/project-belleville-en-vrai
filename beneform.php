@@ -26,10 +26,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
  if (count($errors) == 0) {
    $dao = new VolunteerDAO();
    //vérifie si le bénévole existe déja
-   $checkvolunteer = $dao->find($_DB, $volunteer->getFirstname(), $volunteer->getName(), $volunteer->getTel());
-   if ($checkvolunteer["prenom"] !== $volunteer->getFirstname()
-   || $checkvolunteer["nom"] !== $volunteer->getName()
-   || $checkvolunteer["tel"] !== $volunteer->getTel()) {
+   $checkvolunteer = $dao->find($_DB, $volunteer->getEmail());
+     if ($checkvolunteer["email"] !== $volunteer->getEmail()){
      //save in db
      if($dao->save($_DB, $volunteer)) {
        echo "<h1 id='thxmsg'>MERCI ".$firstname." ! Tu es MA-GNI-FIQUE !</h1>";
@@ -51,13 +49,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html>
 <head>
  <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
  <title>Inscription Bénévole</title>
- <link rel="stylesheet" href="assets/css/ddtstyle.css" type="text/css">
+ <link rel="stylesheet" href="assets/css/sportformstyle.css" type="text/css">
+ <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
 </head>
 <body>
+  <div class="bio">
+    <h1>Venez nous aider à organiser Belleville en vrai !</h1>
+    <h2>Chaque année, une centaine de bénévoles (reconnaissables à leurs t shirts) sont présents pour rendre l’événement encore plus vivant et participatif.
+    Munissez vous de votre bonne humeur et de vos muscles saillants et
+    remplissez le formulaire suivant :</h2>
+  </div>
+  <div class="formbase">
     <form action="beneform.php" method="POST">
-      <p>Remplis ce formulaire pour t'inscrire afin que l'on sache Qui, Quand et Quoi pour pouvoir organiser le Comment !</p>
-      <div class="divrow">
+      <h3>FORMULAIRE BENEVOLE </h3>
+      <div class="space">
+      </div>
+      <div class="divrowb">
         <div>
           <label for="firstname">TON PRENOM :</label>
           <input type="text" id="firstname" name="firstname" placeholder="écris ici ton prenom" value="<?php echo isset($_POST["firstname"]) ? $_POST["firstname"] : "";?>"/>
@@ -153,7 +162,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       </div>
       <div id="volmsg">
         <label for="message">As-tu quelques mots de plus à ajouter ?..</label><br>
-        <textarea id="message" name="volmsg" rows="5"><?php echo (isset($_POST["volmsg"]) ? $_POST["volmsg"] : "...");?></textarea>  
+        <textarea id="message" name="volmsg" rows="5"><?php echo (isset($_POST["volmsg"]) ? $_POST["volmsg"] : "...");?></textarea>
       </div>
       <div class="bsub">
         <input id="bsub" type="submit" value="CLIQUES ICI POUR T'INSCRIRE, MERCI !"/>

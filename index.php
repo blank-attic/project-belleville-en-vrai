@@ -10,8 +10,7 @@
 <body>
   <header id="hdrndx">
   </header>
-  <div class="txtbg">  
-  <div class="bio">
+  <div class="txtbg">
     <h1>BELLEVILLE EN VRAI 8 C'est PARTI !</h1>
     <h2>UN TOURNOI JEUNE, SPORTIF ET FESTIF</h2>
         <p>BELLEVILLE EN VRAI est avant tout un tournoi sportif puisqu’il propose aux jeunes de quatre quartiers du Grand Belleville (Rébeval – Ramponneau – Orillon – Piat) de s’affronter par équipes autour de cinq sports différents.</p>

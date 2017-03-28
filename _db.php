@@ -2,7 +2,7 @@
 
 //credentials
 $h = "localhost";
-$db = "BEV8";
+$db = "bev_8";
 $username = "root";
 $password = "";
 $charset = "utf8";
