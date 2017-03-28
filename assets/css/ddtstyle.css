@@ -1,6 +1,7 @@
 html, body {
   padding : 0;
   margin : 0;
+  min-height:100%;
 }
 
 body{
@@ -10,7 +11,7 @@ body{
   background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
-  /*background-attachment: fixed;*/
+  background-attachment: fixed;
   margin : 20px;
 }
 
@@ -37,21 +38,18 @@ h3 {
 }
 
 p {
-  font-size:1.4em;
+  font-size:1.3em;
   text-shadow: 2px 2px #000000;
   text-align: center;
   margin: 40px 0;
   color: #ffffff;
 }
 
-.formbase {
-  display: flex;
-  background-color: rgba(0, 34, 85, 0.92);
+.txtbg{  
+  background-color: rgba(0, 34, 85, 0.7);
   width: 77%;
   color: #ffffff;
-  /*border: 2px solid #fff600;*/
   border-radius: 10px;
-  justify-content: center;
   margin: auto;
 }
 
@@ -157,4 +155,41 @@ textarea{
   margin-bottom: 30px;
   border: 3px groove #ff7e00;
   cursor: pointer;
+}
+
+
+/* landing page buttons */
+
+.formlinks {
+    display:flex;
+    flex-direction:column;
+}
+
+.formlinks > a {
+    cursor:pointer;
+    display:block;
+    width:50%;
+    margin:20px auto;
+    text-align:center;
+    text-decoration:none;
+    font-family:Sansita;
+    color:#fff600;
+    background-color:#aaeeff;
+    padding:20px 0;
+    font-size:2em;
+    border-radius:5pt;
+    text-shadow:2px 2px #000;
+    border:3px groove #ff7e00;
+    transition: background-color 0.3s, text-shadow 0.3s;
+}
+
+.formlinks > a:hover {
+    text-shadow:1px 1px #000;
+    background-color:#ff7e00;
+}
+
+.formlinks > a.disabled {
+   pointer-events: none;
+   cursor: default;
+   opacity:0.5;
 }

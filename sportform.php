@@ -2,9 +2,13 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Inscription Participants</title>
-
-  <link rel="stylesheet" href="assets/css/sportformstyle.css" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ce site est une présentation du Festival du Quartier BELLEVILLE, Belleville En Vrai"/>
+  <meta name="author" content="Laurent Abemango alias LAWD / Badis Nakhli / Abdoulaye Ndao"/>
+  <title>Inscriptions Tournoi</title>
+  <link rel="stylesheet" href="assets/css/ddtstyle.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/mqstyle.css" media="screen" type="text/css">
 </head>
 <body>
   <?php
@@ -56,7 +60,7 @@
     $team = $dao->find($_DB, $team->getTeamname());
 
     if (count($errors) == 0 ||
-        isset($team["id"])) {
+    isset($team["id"])) {
       for ($i = 0 ; $i < count($name); $i++){
         //creation d'un nouveau player
         $player = new Player($name[$i], $tel, $bdate[$i]);
@@ -95,145 +99,137 @@
     }
   }
   ?>
-  <div class="formbase" id="spform">
-    <form action="sportform.php" method="POST">
-      <h2>Ta Catégorie :</h2>
-      <p>Tu es dans quelle catégorie ?</p>
-      <div class="radiobutt">
-        <div>
-          <label for="cpt">Petit(e)s</label>
-          <input id="cpt" type="radio" name="categorie" value="Petit">
+  <div class="bio">
+    <h1>C’est l’heure de s’inscrire pour pouvoir concourir et remporter cette nouvelle édition du tournoi du Grand Belleville !<h1>
+    <h2>Munissez de vos meilleures baskets, maillots de bain et tenues de sports pour montrer vos compétences sportives au grand jour.
+    Il vous suffit juste de remplir le formulaire suivant :</h2>
+    </div>
+    <div class="formbase" id="spform">
+      <form action="sportform.php" method="POST">
+        <h3>FORMULAIRE INSCRIPTION TOURNOI</h3>
+        <div class="space">
         </div>
-        <div>
-          <label for="cm">Moyen(ne)s</label>
-          <input id="cm" type="radio" name="categorie" value="Moyen">
+        <h2>Ta Catégorie :</h2>
+        <p>Tu es dans quelle catégorie ?</p>
+        <div class="radiobutt">
+          <div>
+            <label for="cpt">Petit(e)s (10-13 ans)</label>
+            <input id="cpt" type="radio" name="categorie" value="Petit">
+          </div>
+          <div>
+            <label for="cm">Moyen(ne)s (14-17 ans)</label>
+            <input id="cm" type="radio" name="categorie" value="Moyen">
+          </div>
+          <div>
+            <label for="cgd">Grand(e)s (18-25 ans)</label>
+            <input type="radio" name="categorie" value="Grand">
+          </div>
         </div>
-        <div>
-          <label for="cgd">Grand(e)s</label>
-          <input type="radio" name="categorie" value="Grand">
+        <h2>Ton Quartier :</h2>
+        <p>Quel est ton Quartier ?</p>
+        <div class="radiobutt">
+          <div>
+            <label for="reb">REBEVAL</label>
+            <input id="reb" type="radio" name="quartier" value="rebeval">
+          </div>
+          <div>
+            <label for="piat">PIAT</label>
+            <input id="piat" type="radio" name="quartier" value="piat">
+          </div>
+          <div>
+            <label for="ramp">RAMPONEAU</label>
+            <input type="radio" name="quartier" value="ramponeau">
+          </div>
+          <div>
+            <label for="ori">ORILLON</label>
+            <input id="ori" type="radio" name="quartier" value="orillon">
+          </div>
         </div>
-      </div>
-      <h2>Ton Quartier :</h2>
-      <p>Quel est ton Quartier ?</p>
-      <div class="radiobutt">
-        <div>
-          <label for="reb">REBEVAL</label>
-          <input id="reb" type="radio" name="quartier" value="rebeval">
+        <p>Quel Grand de ton Quartier participe à l'organisation de Belleville En Vrai 8 ?</p>
+        <div class="divcol">
+          <div>
+            <label for="ref">Notre référent est :</label>
+            <input id="ref" type="text" name="refname" value="" placeholder="Prénom du Référent">
+          </div>
         </div>
-        <div>
-          <label for="piat">PIAT</label>
-          <input id="piat" type="radio" name="quartier" value="piat">
+        <h2>Votre Equipe :</h2>
+        <p>Quel est le nom de votre équipe ?
+          <span id="tnwarnin">(pas de Zoo ou de Zou dans les noms d'équipe !!)</span>
+        </p>
+        <div class="divcol">
+          <div>
+            <label for="teamname">Notre équipe c'est :</label>
+            <input type="text" id="teamname" name="teamname" placeholder="Le nom de votre équipe ">
+          </div>
         </div>
-        <div>
-          <label for="ramp">RAMPONEAU</label>
-          <input type="radio" name="quartier" value="ramponeau">
+        <p>Qui fait partie de votre équipe ?</p>
+        <div class="divcol">
+          <div>
+            <label for="j1">Quel est le prénom du JOUEUR 1 (Capitaine) ?</label>
+            <input type="text" id="j1" name="name[]" placeholder="JOUEUR 1 (Cap)">
+          </div>
         </div>
-        <div>
-          <label for="ori">ORILLON</label>
-          <input id="ori" type="radio" name="quartier" value="orillon">
+        <div class="divrow">
+          <div>
+            <label for="telj1">Quel est son numéro de Téléphone :</label>
+            <input type="tel" id="telj1" name="tel" placeholder="numéro de tél." >
+          </div>
+          <div>
+            <label for="datej1">Quel est sa date de Naissance :</label>
+            <input type="date" id="datej1" name="bdate[]" placeholder="JJ/MM/AAAA">
+          </div>
         </div>
-      </div>
-      <p>Quel Grand de ton Quartier participe à l'organisation de Belleville En Vrai 8 ?</p>
-      <div class="divcol">
-        <div>
-          <label for="ref">Notre référent est :</label>
-          <input id="ref" type="text" name="refname" value="" placeholder="Prénom du Référent">
+        <br/>
+        <div class="divcol">
+          <div>
+            <label for="j2">Quel est le prénom du JOUEUR 2 ?</label>
+            <input type="text" id="j2" name="name[]" placeholder="JOUEUR 2">
+          </div>
         </div>
-      </div>
-      <h2>Votre Equipe :</h2>
-      <p>Quel est le nom de votre équipe ?
-        <span id="tnwarnin">(pas de Zoo ou de Zou dans les noms d'équipe !!)</span>
-      </p>
-      <div class="divcol">
+        <div class="divrow">
         <div>
-          <label for="teamname">Notre équipe c'est :</label>
-          <input type="text" id="teamname" name="teamname" placeholder="Le nom de votre équipe ">
-        </div>
-      </div>
-      <p>Qui fait partie de votre équipe ?</p>
-      <div class="divcol">
-        <div>
-          <label for="j1">Quel est le prénom du JOUEUR 1 (Capitaine) ?</label>
-          <input type="text" id="j1" name="name[]" placeholder="JOUEUR 1 (Cap)">
-        </div>
-      </div>
-      <div class="divrow">
-        <div>
-          <label for="telj1">Quel est son numéro de Téléphone :</label>
-          <input type="tel" id="telj1" name="tel" placeholder="numéro de tél." >
-        </div>
-        <div>
-          <label for="datej1">Quel est sa date de Naissance :</label>
-          <input type="date" id="datej1" name="bdate[]" placeholder="JJ/MM/AAAA">
+          <label for="datej2">Quel est sa date de Naissance :</label>
+          <input type="date" id="datej2" name="bdate[]" placeholder="JJ/MM/AAAA">
         </div>
       </div>
       <br/>
       <div class="divcol">
         <div>
-          <label for="j2">Quel est le prénom du JOUEUR 2 ?</label>
-          <input type="text" id="j2" name="name[]" placeholder="JOUEUR 2">
+          <label for="j3">Quel est le prénom du JOUEUR 3 ?</label>
+          <input type="text" id="j3" name="name[]" placeholder="JOUEUR 3">
         </div>
       </div>
       <div class="divrow">
-        <!-- <div>
-        <label for="telj2">Quel est son numéro de Téléphone :</label>
-        <input type="tel" id="telj2" name="tel2" value="" placeholder="numéro de tél.">
-      </div> -->
       <div>
-        <label for="datej2">Quel est sa date de Naissance :</label>
-        <input type="date" id="datej2" name="bdate[]" placeholder="JJ/MM/AAAA">
+        <label for="datej3">Quel est sa date de Naissance :</label>
+        <input type="date" id="datej3" name="bdate[]" placeholder="JJ/MM/AAAA">
       </div>
     </div>
     <br/>
     <div class="divcol">
       <div>
-        <label for="j3">Quel est le prénom du JOUEUR 3 ?</label>
-        <input type="text" id="j3" name="name[]" placeholder="JOUEUR 3">
+        <label for="j4">Quel est le prénom du JOUEUR 4 ?</label>
+        <input type="text" id="j4" name="name[]" placeholder="JOUEUR 4">
       </div>
     </div>
     <div class="divrow">
-      <!-- <div>
-      <label for="telj3">Quel est son numéro de Téléphone :</label>
-      <input type="tel" id="telj3" name="tel3" value="" placeholder="numéro de tél.">
-    </div> -->
     <div>
-      <label for="datej3">Quel est sa date de Naissance :</label>
-      <input type="date" id="datej3" name="bdate[]" placeholder="JJ/MM/AAAA">
+      <label for="datej4">Quel est sa date de Naissance :</label>
+      <input type="date" id="datej4" name="bdate[]" placeholder="JJ/MM/AAAA">
     </div>
   </div>
   <br/>
   <div class="divcol">
     <div>
-      <label for="j4">Quel est le prénom du JOUEUR 4 ?</label>
-      <input type="text" id="j4" name="name[]" placeholder="JOUEUR 4">
+      <label for="j5">Quel est le prénom du JOUEUR 5 ?</label>
+      <input type="text" id="j5" name="name[]" placeholder="JOUEUR 5">
     </div>
   </div>
   <div class="divrow">
-    <!-- <div>
-    <label for="telj4">Quel est son numéro de Téléphone :</label>
-    <input type="tel" id="telj4" name="tel4" value="" placeholder="numéro de tél.">
-  </div> -->
   <div>
-    <label for="datej4">Quel est sa date de Naissance :</label>
-    <input type="date" id="datej4" name="bdate[]" placeholder="JJ/MM/AAAA">
+    <label for="datej5">Quel est sa date de Naissance :</label>
+    <input type="date" id="datej5" name="bdate[]" placeholder="JJ/MM/AAAA">
   </div>
-</div>
-<br/>
-<div class="divcol">
-  <div>
-    <label for="j5">Quel est le prénom du JOUEUR 5 ?</label>
-    <input type="text" id="j5" name="name[]" placeholder="JOUEUR 5">
-  </div>
-</div>
-<div class="divrow">
-  <!-- <div>
-  <label for="telj5">Quel est son numéro de Téléphone :</label>
-  <input type="tel" id="telj5" name="tel5" value="" placeholder="numéro de tél.">
-</div> -->
-<div>
-  <label for="datej5">Quel est sa date de Naissance :</label>
-  <input type="date" id="datej5" name="bdate[]" placeholder="JJ/MM/AAAA">
-</div>
 </div>
 <br/>
 <div class="divcol">
@@ -243,10 +239,6 @@
   </div>
 </div>
 <div class="divrow">
-  <!-- <div>
-  <label for="telj6">Quel est son numéro de Téléphone :</label>
-  <input type="tel" id="telj6" name="tel6" value="" placeholder="numéro de tél.">
-</div> -->
 <div>
   <label for="datej6">Quel est sa date de Naissance :</label>
   <input type="date" id="datej6" name="bdate[]" placeholder="JJ/MM/AAAA">
@@ -260,10 +252,6 @@
   </div>
 </div>
 <div class="divrow">
-  <!-- <div>
-  <label for="telj7">Quel est son numéro de Téléphone :</label>
-  <input type="tel" id="telj7" name="tel7" value="" placeholder="numéro de tél.">
-</div> -->
 <div>
   <label for="datej7">Quel est sa date de Naissance :</label>
   <input type="date" id="datej7" name="bdate[]" placeholder="JJ/MM/AAAA">
@@ -277,10 +265,6 @@
   </div>
 </div>
 <div class="divrow">
-  <!-- <div>
-  <label for="telj8">Quel est son numéro de Téléphone :</label>
-  <input type="tel" id="telj8" name="tel8" value="" placeholder="numéro de tél.">
-</div> -->
 <div>
   <label for="datej8">Quel est sa date de Naissance :</label>
   <input type="date" id="datej8" name="bdate[]" placeholder="JJ/MM/AAAA">
@@ -288,50 +272,31 @@
 </div>
 <br/>
 <br/>
-<!-- <h2>Disciplines Sportives :</h2> -->
+
 <h3>Choisis parmi les 8 Joueurs de votre équipe :</h3>
 
-
-<!-- a partir de là  -->
-<!-- <p>Les Nageur(se)s :</p> -->
 <div class="divcol">
   <div>
     <label for="nat1">les 3 Nageur(se)s :</label>
     <input id="nat1"type="text" name="natation" placeholder="écris ici les prenoms Nageur(se)1 / Nageur(se)2 / Nageur(se)3" >
   </div>
-  <!-- <div>
-  <label for="nat2">Nageur(se) 2 :</label>
-  <input id="nat2"type="text" name="natation[]" placeholder="écris le prénom du Nageur(se) 2" >
 </div>
-<div>
-<label for="nat3">Nageur(se) 3 :</label>
-<input id="nat3"type="text" name="natation[]" placeholder="écris le prénom du Nageur(se) 3" >
-</div> -->
-</div>
-<!-- <p>Les Coureur(se)s :</p> -->
+
 <div class="divcol">
   <div>
     <label for="run1">Les 2 Coureur(se)s:</label>
     <input id="run1"type="text" name="course" placeholder="écris ici les prénoms Coureur(se)1 / Coureur(se)2" >
   </div>
-  <!-- <div>
-  <label for="run2">Coureur(se) 2 :</label>
-  <input id="run2"type="text" name="course" placeholder="écris le prénom du Coureur(se) 2" >
-</div> -->
 </div>
-<!-- <p>Les Joueur(se)s de PING-PONG :</p> -->
+
 <div class="divcol">
   <div>
     <label for="pp1">Les 2 Joueur(se)s :</label>
     <input type="text" name="pingpong" placeholder="écris ici les prénoms du Joueur(se)1 / Joueur(se)2" >
   </div>
-  <!-- <div>
-  <label for="pp2">Joueur(se) 2 :</label>
-  <input type="text" name="pingpong" placeholder="écris le prénom du Joueur(se) 2" >
-</div> -->
 </div>
-<div>
-  <input id="spsub" type="submit" name="sportsub" value="CLIQUES ICI POUR INSCRIRE VOTRE EQUIPE">
+<div class="divrow">
+  <input id="spsub" type="submit" name="submit" value="GO">
 </div>
 </form>
 </div>
