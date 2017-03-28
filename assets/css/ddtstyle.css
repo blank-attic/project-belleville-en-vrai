@@ -44,22 +44,14 @@ p {
   margin: 40px 0;
   color: #ffffff;
 }
-<<<<<<< HEAD
-.txtbg{
-=======
 
-.bluebg {
-
->>>>>>> 2d380b4b030afe779cc896fb568a257851b12fb7
-  display: flex;
+.txtbg{  
   background-color: rgba(0, 34, 85, 0.7);
   width: 77%;
   color: #ffffff;
   border-radius: 10px;
   margin: auto;
 }
-<<<<<<< HEAD
-=======
 
 .divrow {
   font-size: 1.2em;
@@ -201,4 +193,3 @@ textarea{
    cursor: default;
    opacity:0.5;
 }
->>>>>>> 2d380b4b030afe779cc896fb568a257851b12fb7
