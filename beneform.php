@@ -126,11 +126,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
         <div>
           <input id="video" type="checkbox" name="tache[]" value="8" <?php echo (isset($_POST["tache"]) && in_array("8", $_POST["tache"])) ? "checked" : "";?>/>
-          <label for="video">Vidéo / Retransmission Live</label>
+          <label for="video">Vidéo</label>
         </div>
         <div>
           <input id="acloge" type="checkbox" name="tache[]" value="16" <?php echo (isset($_POST["tache"]) && in_array("16", $_POST["tache"])) ? "checked" : "";?>/>
-          <label for="acloge">Accueil/Loges Artistes</label>
+          <label for="acloge">Live</label>
         </div>
         <div>
           <input id="cuisine" type="checkbox" name="tache[]" value="32" <?php echo (isset($_POST["tache"]) && in_array("32", $_POST["tache"])) ? "checked" : "";?>/>

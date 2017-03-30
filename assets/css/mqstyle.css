@@ -3,7 +3,7 @@
   form {
     display: block;
     width: 100%;
-    text-align: center;
+    /*text-align: center;*/
   }
 
   .formbase {
@@ -14,7 +14,7 @@
     flex-direction: column;
     justify-content: center;
   }
-  
+
   .divrow input {
     font-size: 0.9em;
     width: 100%;
@@ -35,9 +35,10 @@
   }
 
   .radiobutt {
-    width : 77%;
-    justify-content: space-around;
+    width : 50%;
+    justify-content: center;
   }
+
   label {
     font-size: 0.9em;
     margin-left: 20px;
