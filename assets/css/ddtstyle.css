@@ -56,8 +56,29 @@ p {
 header{
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
+.numbcd{
+  display: flex;
+  width: 100%;
+  font-size: 2.3em;
+  color : white;
+  /*background-color: rgba(0, 34, 85, 0.7);*/
+  justify-content: center;
+}
+
+.squarecd {
+  display: block;
+  margin: 12px;
+
+}
+
+/*.logo {
+  display: block;
+  width: 100%;
+  margin:auto;
+}*/
 
 /* landing page buttons */
 

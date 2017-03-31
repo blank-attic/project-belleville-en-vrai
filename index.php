@@ -12,10 +12,15 @@
 </head>
 <body>
   <header id="hdrndx">
-    <img src="assets/images/NewLogo_BEV_wht.png" alt="affiche bev 8">
+    <div class="logo">
+      <img src="assets/images/NewLogo_BEV_wht.png" alt="affiche bev 8">
+    </div>
   </header>
+  <?php
+  require ('car.php')
+  ?>
   <div class="txtbg">
-    <h1>BELLEVILLE EN VRAI 8 C'est PARTI !</h1>
+    <h1>BELLEVILLE EN VRAI 8 C'est BIENTOT !</h1>
     <h2>UN TOURNOI JEUNE, SPORTIF ET FESTIF</h2>
     <p>BELLEVILLE EN VRAI est avant tout un tournoi sportif puisqu’il propose aux jeunes de quatre quartiers du Grand Belleville (Rébeval – Ramponneau – Orillon – Piat) de s’affronter par équipes autour de cinq sports différents.</p>
     <h3>Au Programme :</h3>
