@@ -24,7 +24,7 @@ spl_autoload_register(function ($class) {
             <?php
             //create dao
             $dao = new PlayerDAO();
-            //get all volunteers
+            //get all volunteersoih
             $players = $dao->getAllPlayersAndTeam($_DB);
             echo "<table class='players'>";
             echo "<thead>";
@@ -37,7 +37,7 @@ spl_autoload_register(function ($class) {
             echo "<th>Nom de l'équipe</th>";
             echo "<th>Catégorie</th>";
             echo "<th>Quartier</th>";
-              echo "<th>Coureurs de l'équipe</th>";
+            echo "<th>Coureurs de l'équipe</th>";
             echo "<th>Nageurs de l'équipe</th>";
             echo "<th>Pongistes de l'équipe</th>";
             echo "</tr>";

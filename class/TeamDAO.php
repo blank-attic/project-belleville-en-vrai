@@ -47,6 +47,17 @@ class TeamDAO {
 
   public function getAllTeams($db) {
     $request = $db->prepare("SELECT * FROM team");
+
+    try {
+      $request->execute(array(
+        "teamname" => $teamname,
+      ));
+      return $request->fetch();
+        } catch (PDOException $e) {
+      print("error while writing in DB new team." . $e->getMessage());
+      return false;
+    }
+  }
   }
 }
 

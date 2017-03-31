@@ -62,6 +62,14 @@ class PlayerDAO {
 
     public function getPlayersInTeam($db, $team_id) {
       $request = $db->prepare("SELECT * FROM player");
+
+      try {
+          $request->execute();
+          return $request->fetchAll();
+      } catch (PDOException $e) {
+          print("error while writing in DB new volunteer." . $e->getMessage());
+          return false;
+      }
     }
 }
 
