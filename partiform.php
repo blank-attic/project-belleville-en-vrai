@@ -1,3 +1,4 @@
+
 <?php
 // //connection bdd
 require_once('_db.php');
@@ -53,8 +54,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Inscription Artistes , Groupes </title>
-  <link rel="stylesheet" href="assets/css/ddtstyle.css" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inscription Artiste</title>
+  <link rel="stylesheet" href="assets/css/sportformstyle.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+  <link rel="stylesheet" href="asset/css/mqstyle.css" media="screen" type="text/css">
 </head>
 <body>
   <div class="formbase">
