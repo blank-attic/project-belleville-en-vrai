@@ -12,6 +12,7 @@
 </head>
 <body>
   <header id="hdrndx">
+    <img src="assets/images/NewLogo_BEV_wht.png" alt="affiche bev 8">
   </header>
   <div class="txtbg">
     <h1>BELLEVILLE EN VRAI 8 C'est PARTI !</h1>

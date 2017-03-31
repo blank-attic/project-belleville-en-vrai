@@ -53,6 +53,11 @@ p {
   margin: auto;
 }
 
+header{
+  display: flex;
+  justify-content: center;
+}
+
 
 /* landing page buttons */
 
