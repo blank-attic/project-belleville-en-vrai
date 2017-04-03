@@ -17,7 +17,7 @@
     </div>
   </header>
   <?php
-  require ('car.php')
+  require ('car.php');
   ?>
   <div class="txtbg">
     <h1>BELLEVILLE EN VRAI 8 C'est BIENTOT !</h1>

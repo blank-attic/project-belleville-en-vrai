@@ -158,8 +158,8 @@ p {
   width: 50%;
   flex-direction: column;
   font-size: 1.2em;
-  margin: auto;
-
+  width: 40%;
+  font-size: 1.5em;
   padding-bottom: 40px;
 }
 
@@ -228,9 +228,9 @@ textarea{
 }
 
 td, th {
-    text-align: center;
-    border-bottom:3px solid white;
-    border-left:1px solid grey;
+  text-align: center;
+  border-bottom:3px solid white;
+  border-left:1px solid grey;
 }
 
 .bigx {

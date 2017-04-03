@@ -126,7 +126,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
         <div>
           <input id="video" type="checkbox" name="tache[]" value="8" <?php echo (isset($_POST["tache"]) && in_array("8", $_POST["tache"])) ? "checked" : "";?>/>
-          <label for="video">Vidéo</label>
+          <label for="video">Vidéo / Retransmission Live</label>
         </div>
         <div>
           <input id="acloge" type="checkbox" name="tache[]" value="16" <?php echo (isset($_POST["tache"]) && in_array("16", $_POST["tache"])) ? "checked" : "";?>/>
