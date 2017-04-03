@@ -1,5 +1,7 @@
 @media screen and (max-width: 768px) {
-
+  body{
+    margin: 5px;
+  }
   form {
     display: block;
     width: 100%;
@@ -48,5 +50,33 @@
     width: 77%;
     margin: auto;
     word-wrap: break-word;
-    }
+  }
+
+  #message {
+  width: 100%;
+  margin: auto;
+  }
+
+  .numbcd {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    font-size: 1.5em;
+    text-shadow:2px 1.2px #000;
+    margin: auto;
+  }
+
+   .txtbg {
+    width: 90%;
+  }
+
+  .logo img {
+  display: block;
+  width: 100%;
+  }
+
+  .formlinks {
+    font-size: 0.8em;
+  }
+
 }

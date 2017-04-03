@@ -1,28 +1,20 @@
-<!-- <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-
-  </body>
-</html> -->
-<div id="compte_a_rebours">
-  <noscript>Debut de l'évènement le 19 Mai 2017.</noscript>
-</div>
-<script type="text/javascript">
-function compte_a_rebours(){
-  var compte_a_rebours = document.getElementById("compte_a_rebours");
-  var date_actuelle = new Date();
-  var date_evenement = new Date("May 19 18:00:00 2017");
-  var total_secondes = (date_evenement - date_actuelle) / 1000;
-  var prefixe = "Compte à rebours terminé dans ";
-
-  if (total_secondes > 0){
-    var jours = Math.floor(total_secondes / (60 * 60 * 24));
-    var heures = Math.floor((total_secondes - (jours * 60 * 60 * 24)) / (60 * 60));
-    var minutes = Math.floor((total_secondes - ((jours * 60 * 60 * 24 + heures * 60 * 60))) / 60);
-    var secondes = Math.floor(total_secondes - ((jours * 60 * 60 * 24 + heures * 60 * 60 + minutes * 60)));
-  }
+<div id="compte_a_rebours"></div>
+<script type="text/JavaScript">
+var Affiche=document.getElementById("compte_a_rebours");
+function Rebour() {
+var date1 = new Date();
+var date2 = new Date ("May 19 19:00:00 2008");
+var sec = (date2 - date1) / 1000;
+var n = 24 * 3600;
+if (sec > 0) {
+j = Math.floor (sec / n);
+h = Math.floor ((sec - (j * n)) / 3600);
+mn = Math.floor ((sec - ((j * n + h * 3600))) / 60);
+sec = Math.floor (sec - ((j * n + h * 3600 + mn * 60)));
+Affiche.innerHTML = "BELLEVILLE EN VRAI débute dans : " + j +" j "+ h +" h "+ mn +" min "+ sec + " s ";
+window.status = "Temps restant : " + j +" j "+ h +" h "+ mn +" min "+ sec + " s ";
 }
+tRebour=setTimeout ("Rebour();", 1000);
+}
+Rebour();
+</script>
