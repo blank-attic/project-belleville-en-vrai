@@ -30,9 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
      if ($checkvolunteer["email"] !== $volunteer->getEmail()){
      //save in db
      if($dao->save($_DB, $volunteer)) {
-       echo "<h1 id='thxmsg'>MERCI ".$firstname." ! Tu es MA-GNI-FIQUE !</h1>";
-       // no auth needed cause no connection from benevole
-
+       header('Location: merci.php');
      }
    } else {
      echo "<li>Tu fais déja partie de la TEAM !!</li>";
@@ -50,12 +48,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="description" content="ce site est une présentation du Festival du Quartier BELLEVILLE, Belleville En Vrai"/>
+ <meta name="author" content="Laurent Abemango alias LAWD / Badis Nakhli / Abdoulaye Ndao"/>
  <title>Inscription Bénévole</title>
  <link rel="stylesheet" href="assets/css/sportformstyle.css" type="text/css">
  <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+ <link rel="stylesheet" href="assets/css/mqstyle.css" media="screen" type="text/css">
 </head>
 <body>
-  <div class="bio">
+  <div class="txtbg">
     <h1>Venez nous aider à organiser Belleville en vrai !</h1>
     <h2>Chaque année, une centaine de bénévoles (reconnaissables à leurs t shirts) sont présents pour rendre l’événement encore plus vivant et participatif.
     Munissez vous de votre bonne humeur et de vos muscles saillants et
@@ -129,7 +130,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
         <div>
           <input id="acloge" type="checkbox" name="tache[]" value="16" <?php echo (isset($_POST["tache"]) && in_array("16", $_POST["tache"])) ? "checked" : "";?>/>
-          <label for="acloge">Accueil/Loges Artistes</label>
+          <label for="acloge">Live</label>
         </div>
         <div>
           <input id="cuisine" type="checkbox" name="tache[]" value="32" <?php echo (isset($_POST["tache"]) && in_array("32", $_POST["tache"])) ? "checked" : "";?>/>
@@ -144,20 +145,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <p>Choisis la taille de ton T-shirt Belleville en vrai 8 :</p>
       <div class="radiobutt">
         <div>
-          <label for="s">S</label>
           <input id="s" type="radio" name="tsize" value="S"<?php echo (isset($_POST["tsize"]) && ($_POST["tsize"] == "S")) ? "checked" : "";?>/>
+          <label for="s">S</label>
         </div>
         <div>
-          <label for="m">M</label>
           <input id="m" type="radio" name="tsize" value="M"<?php echo (isset($_POST["tsize"]) && ( $_POST["tsize"] == "M")) ? "checked" : "";?>/>
+          <label for="m">M</label>
         </div>
         <div>
-          <label for="l">L</label>
           <input id="l" type="radio" name="tsize" value="L"<?php echo (isset($_POST["tsize"]) && ( $_POST["tsize"] == "L")) ? "checked" : "";?>/>
+          <label for="l">L</label>
         </div>
         <div>
-          <label for="xl">XL</label>
           <input id="xl" type="radio" name="tsize" value="XL"<?php echo (isset($_POST["tsize"]) && ( $_POST["tsize"] == "XL")) ? "checked" : "";?>/>
+          <label for="xl">XL</label>
         </div>
       </div>
       <div id="volmsg">
