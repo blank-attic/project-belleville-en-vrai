@@ -9,7 +9,7 @@
     </li>
     <li>
       <a href="index.php">
-        <img src="" alt="">
+        <img src="assets/images/NewLogo_BEV_wht.png" alt="logo_bev 8">
       </a>
     </li>
     <li>
