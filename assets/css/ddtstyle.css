@@ -46,16 +46,44 @@ p {
 }
 
 .txtbg{
-
   background-color: rgba(0, 34, 85, 0.7);
   width: 77%;
   color: #ffffff;
   border-radius: 10px;
   margin: auto;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  max-width: 200px;
+  margin: auto;
+
 
 }
 
+.numbcd{
+  display: flex;
+  width: 100%;
+  font-size: 2.3em;
+  color : white;
+  text-shadow:2px 1.2px #000;
+  justify-content: center;
+}
 
+.squarecd {
+  display: block;
+  margin: 12px;
+  background-color: rgba(0, 34, 85, 0.8);
+  border-radius: 10px;
+}
+
+/*.logo {
+  display: block;
+  width: 100%;
+  margin:auto;
+}*/
 
 /* landing page buttons */
 
@@ -77,8 +105,8 @@ p {
     padding:20px 0;
     font-size:2em;
     border-radius:5pt;
-    text-shadow:2px 2px #000;
-    border:3px groove #ff7e00;
+    text-shadow:2px 1.2px #000;
+    border:2px groove #ff7e00;
     transition: background-color 0.3s, text-shadow 0.3s;
 }
 
@@ -86,11 +114,3 @@ p {
     text-shadow:1px 1px #000;
     background-color:#ff7e00;
 }
-
-.formlinks > a.disabled {
-   pointer-events: none;
-   cursor: default;
-   opacity:0.5;
-}
-=======
->>>>>>> 14-index

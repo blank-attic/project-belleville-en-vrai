@@ -138,14 +138,15 @@ p {
   color: white;
   font-size: 1.1em;
 }
-.check,  #volmsg, #bsub, #spsub{
+
+.check,#volmsg, #bsub, #spsub{
   display: flex;
   flex-direction: column;
   width: 50%;
   font-size: 1.2em;
   margin: auto;
   margin-bottom: 30px;
-  justify-content: center;
+  /*justify-content: center;*/
 }
 
 .yel {
@@ -154,23 +155,25 @@ p {
 
 .radiobutt {
   display: flex;
+  width: 50%;
   flex-direction: column;
-<<<<<<< Updated upstream
   font-size: 1.2em;
-=======
   width: 40%;
   font-size: 1.5em;
->>>>>>> Stashed changes
-  margin: auto;
-  text-align: center;
   padding-bottom: 40px;
 }
 
-label{
-  margin: 10px;
+.txtbg{
+  background-color: rgba(0, 34, 85, 0.7);
+  width: 94%;
+  color: #ffffff;
+  border-radius: 10px;
+  margin: auto;
 }
 
 textarea{
+  display: flex;
+  width: 70%;
   color : #002255;
   font-size: 1.2em;
   font-weight: bold;
@@ -179,6 +182,7 @@ textarea{
   border-radius: 10px;
   box-sizing: border-box;
   resize: none;
+  /*margin: auto;*/
 }
 
 #bsub {
@@ -202,7 +206,7 @@ textarea{
 #spsub, #adsub {
   background-color: #fff600;
   color: #002255;
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: bold;
   width: 45%;
   border: none;
@@ -228,6 +232,7 @@ td, th {
   border-bottom:3px solid white;
   border-left:1px solid grey;
 }
+
 .bigx {
   font-size: 2em;
   color: #ff7e00;
@@ -237,5 +242,4 @@ td, th {
   width: 75%;
   margin: auto;
   background-color: rgba(0, 34, 85, 0.7);
-
 }
