@@ -1,0 +1,24 @@
+table de donnée pour les artiste :
+
+ID : INT , primary key , A_I ,
+
+NOM de l'artiste/groupe : TYNITEXT , UTF8_general_ci ,
+
+
+NOM du contact : TYNITEXT , UTF8_general_ci
+
+
+MAIL : TYNITEXT , UTF8_general_ci
+
+
+TEL : VARCHAR  , 10
+
+Discipline : TYNITEXT , UTF8_general_ci
+
+nombre de participants : VARCHAR , 2 ,
+
+description du projet : VARCHAR , 1OOO , UTF8_general_ci
+
+avez vous deja presenté ce projet : VARCHAR , 1000, UTF8_general_ci
+
+lien illustrant le projet : VARCHAR , 1000, UTF8_general_ci
