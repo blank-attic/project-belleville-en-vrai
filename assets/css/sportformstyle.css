@@ -138,6 +138,7 @@ p {
   color: white;
   font-size: 1.1em;
 }
+
 .check,#volmsg, #bsub, #spsub{
   display: flex;
   flex-direction: column;
@@ -205,7 +206,7 @@ textarea{
 #spsub, #adsub {
   background-color: #fff600;
   color: #002255;
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: bold;
   width: 45%;
   border: none;
