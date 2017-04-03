@@ -57,6 +57,10 @@ header{
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  max-width: 200px;
+  margin: auto;
+
+
 }
 
 .numbcd{
@@ -64,14 +68,15 @@ header{
   width: 100%;
   font-size: 2.3em;
   color : white;
-  /*background-color: rgba(0, 34, 85, 0.7);*/
+  text-shadow:2px 1.2px #000;
   justify-content: center;
 }
 
 .squarecd {
   display: block;
   margin: 12px;
-
+  background-color: rgba(0, 34, 85, 0.8);
+  border-radius: 10px;
 }
 
 /*.logo {
@@ -100,8 +105,8 @@ header{
     padding:20px 0;
     font-size:2em;
     border-radius:5pt;
-    text-shadow:2px 2px #000;
-    border:3px groove #ff7e00;
+    text-shadow:2px 1.2px #000;
+    border:2px groove #ff7e00;
     transition: background-color 0.3s, text-shadow 0.3s;
 }
 
