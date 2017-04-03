@@ -1,44 +1,48 @@
 @media screen and (max-width: 768px) {
 
-form {
-  display: block;
-  width: 100%;
-  text-align: center;
-}
+  form {
+    display: block;
+    width: 100%;
+    /*text-align: center;*/
+  }
 
-.divrow, .divrowb, .divrowc {
+  .formbase {
+    width: 90%;
+  }
+
+  .divrow, .divrowb, .divrowc {
     flex-direction: column;
     justify-content: center;
   }
-
-.divrow input {
-  font-size: 0.9em;
-  width: 100%;
-}
-
-.divrowb input {
-  font-size: 0.9em;
-  width: 100%;
-}
-
-.divrowc input {
-  font-size: 0.9em;
-}
-
-.divcol input {
-  font-size: 0.9em;
-  width: 100%;
+  
+  .divrow input {
+    font-size: 0.9em;
+    width: 100%;
   }
 
-.radiobutt {
-  width : 77%;
-  justify-content: space-around;
-}
-label {
-  font-size: 0.9em;
-  margin-left: 20px;
-}
+  .divrowb input {
+    font-size: 0.9em;
+    width: 100%;
+  }
 
+  .divrowc input {
+    font-size: 0.9em;
+  }
+
+  .divcol input {
+    font-size: 0.9em;
+    width: 100%;
+  }
+
+  .radiobutt {
+    width : 50%;
+    justify-content: center;
+  }
+
+  label {
+    font-size: 0.9em;
+    margin-left: 20px;
+  }
 
   p, h1, h2, h3 {
     width: 77%;

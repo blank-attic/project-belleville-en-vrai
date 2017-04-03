@@ -44,119 +44,18 @@ p {
   margin: 40px 0;
   color: #ffffff;
 }
+
 .txtbg{
-  display: flex;
   background-color: rgba(0, 34, 85, 0.7);
   width: 77%;
   color: #ffffff;
   border-radius: 10px;
-  justify-content: center;
   margin: auto;
 }
-<<<<<<< HEAD
 
-.divrow {
-  font-size: 1.2em;
+header{
   display: flex;
-  /*flex-direction: row;*/
   justify-content: center;
-  margin: 20px;
-}
-
-.divcol {
-  font-size: 1.2em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 20px;
-}
-
-.divrow input {
-  width: 70%;
-  padding: 5px 10px;
-  margin: 15px 5px;
-  background-color: transparent;
-  border : none;
-  border-bottom:2px solid #fff600;
-  box-sizing: border-box;
-  color: white;
-  font-size: 1.1em;
-}
-
-.divcol input {
-  padding: 5px 10px;
-  margin: 10px 0;
-  margin-bottom: 30px;
-  width: 95%;
-  background-color: transparent;
-  border : none;
-  border-bottom: 2px solid #fff600;
-  box-sizing: border-box;
-  color: white;
-  font-size: 1.1em;
-}
-.check,  #volmsg, #bsub, #spsub{
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  font-size: 1.2em;
-  margin: auto;
-  margin-bottom: 30px;
-  /*justify-content: center;*/
-}
-
-.yel {
-  color: #fff600;
-}
-
-.radiobutt {
-  display: flex;
-  font-size: 1.2em;
-  margin: auto;
-  justify-content: center;
-  padding-bottom: 40px;
-}
-
-textarea{
-  color : #002255;
-  font-size: 1.2em;
-  font-weight: bold;
-  /*background-color: #fff600;*/
-  border: 2px solid #ff7e00;
-  border-radius: 10px;
-  box-sizing: border-box;
-  resize: none;
-}
-
-#bsub {
-  background-color: #fff600;
-  color: #002255;
-  font-size: 1.2em;
-  font-weight: bold;
-  width: 50%;
-  border: none;
-  border-radius: 5px;
-  margin-bottom: 30px;
-  border: 3px groove #ff7e00;
-  cursor: pointer;
-}
-
-#choixtache {
-  color: #fff600;
-  font-size: 0.9em;
-}
-
-#spsub {
-  background-color: #fff600;
-  color: #002255;
-  font-size: 1.1em;
-  font-weight: bold;
-  width: 45%;
-  border: none;
-  border-radius: 5px;
-  margin-bottom: 30px;
-  border: 3px groove #ff7e00;
-  cursor: pointer;
 }
 
 
@@ -189,11 +88,3 @@ textarea{
     text-shadow:1px 1px #000;
     background-color:#ff7e00;
 }
-
-.formlinks > a.disabled {
-   pointer-events: none;
-   cursor: default;
-   opacity:0.5;
-}
-=======
->>>>>>> 14-index
