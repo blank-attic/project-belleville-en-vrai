@@ -25,7 +25,7 @@ class TeamDAO {
       return false;
     }
 
-    return true;
+      return true;
   }
 
   public function find($db, $teamname) {
@@ -33,7 +33,7 @@ class TeamDAO {
     //prepare request
     $request = $db->prepare("SELECT * FROM team WHERE (teamname = :teamname) LIMIT 1");
 
-    //execute request
+    //execute re$_DBquest
     try {
       $request->execute(array(
         "teamname" => $teamname,
@@ -49,15 +49,12 @@ class TeamDAO {
     $request = $db->prepare("SELECT * FROM team");
 
     try {
-      $request->execute(array(
-        "teamname" => $teamname,
-      ));
-      return $request->fetch();
+      $request->execute();
+      return $request->fetchAll();
         } catch (PDOException $e) {
       print("error while writing in DB new team." . $e->getMessage());
       return false;
     }
-  }
   }
 }
 
