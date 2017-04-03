@@ -84,6 +84,6 @@ spl_autoload_register(function ($class) {
     echo "</tbody>";
     echo "</table>";
     ?>
-  </div>  
+  </div>
 </body>
 </html>

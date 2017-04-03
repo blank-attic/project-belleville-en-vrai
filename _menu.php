@@ -13,10 +13,10 @@
       </a>
     </li>
     <li>
-
+      <a href="bevtv.php">BEV TV</a>
     </li>
     <li>
-
+      <a href="gallery.php">Galerie</a>
     </li>
   </ul>
 </nav>
