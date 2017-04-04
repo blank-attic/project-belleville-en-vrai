@@ -1,0 +1,81 @@
+@media screen and (max-width: 768px) {
+  body{
+    margin: 5px;
+  }
+  form {
+    display: block;
+    width: 100%;
+    /*text-align: center;*/
+  }
+
+  .formbase {
+    width: 90%;
+  }
+
+  .divrow, .divrowb, .divrowc {
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .divrow input {
+    font-size: 0.9em;
+    width: 100%;
+  }
+
+  .divrowb input {
+    font-size: 0.9em;
+    width: 100%;
+  }
+
+  .divrowc input {
+    font-size: 0.9em;
+  }
+
+  .divcol input {
+    font-size: 0.9em;
+    width: 100%;
+  }
+
+  .radiobutt {
+    width : 50%;
+    justify-content: center;
+  }
+
+  label {
+    font-size: 0.9em;
+    margin-left: 20px;
+  }
+
+  p, h1, h2, h3 {
+    width: 77%;
+    margin: auto;
+    word-wrap: break-word;
+  }
+
+  #message {
+  width: 100%;
+  margin: auto;
+  }
+
+  .numbcd {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    font-size: 1.5em;
+    text-shadow:2px 1.2px #000;
+    margin: auto;
+  }
+
+   .txtbg {
+    width: 90%;
+  }
+
+  .logo img {
+  display: block;
+  width: 100%;
+  }
+
+  .formlinks {
+    font-size: 0.8em;
+  }
+}

@@ -1,0 +1,97 @@
+						SPEC BELLEVILLE EN VRAI 2017
+
+
+
+
+
+
+
+							STRUCTURE :
+							-----------
+
+
+
+PAGES : 5 pages // INDEX / PROGRAMME / INSCRIPTIONS / BeV TV / PHOTOS / CONTACT / CREDITS (cachés?)
+
+
+------------------------------------------------------------------------------------------------------------------------------
+
+
+
+	INDEX : ...Présentation du Festival BEV 
+	        ...Présentation des Organisateurs
+		...Gallery Photos 
+
+
+	PROGRAMME : ...Carte de Evénements interactive ;)
+
+	INSCRIPTIONS : ...Formulaires Bénévolat / Participants / Open MIC
+
+
+	BEV TV : ...Streaming
+		 ...VIDEOS
+
+
+	PHOTOS : GALLERY PAR ANNEES
+
+
+	CONTACT.
+
+
+	CREDITS.
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+
+							CHARTE GRAPHIQUE :
+							------------------
+
+
+COULEURS :
+	
+		Background: svg 
+		blanc
+                orange ff7e00
+	       	jaune fff600
+		bleu 002255
+		turqouise aaeeff
+		Paragraphe : blanc
+
+
+
+
+
+
+
+
+
+TYPOGRAPHIE :
+
+
+	Font:	
+	
+		// Titre Page:  Sansita, <H1>
+	
+		// Titre :  Sansita , <H3>   
+	
+		// Paragraphe:  Sansita , 16px 
+
+
+			<link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+
+			css :   font-family: 'Sansita', sans-serif;
+				
+		
+
+
+
+
+
+
+
+
+
+
+
+
+  

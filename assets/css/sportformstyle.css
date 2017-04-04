@@ -1,0 +1,245 @@
+html, body {
+  padding : 0;
+  margin : 0;
+}
+
+body{
+  font-family: 'Sansita', sans-serif;
+  color : #ffffff;
+  background: #002255 url('../images/bevsplat_bg.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin : 20px;
+}
+
+h1 {
+  /*color: #ffffff;*/
+  font-size:2.1em;
+  text-align: center;
+  font-weight: bolder;
+  text-shadow: 3px 3px #000000;
+}
+
+h2 {
+  /*color: #ffffff;*/
+  font-size:1.8em;
+  text-align: center;
+  text-shadow: 2px 2px #000000;
+}
+
+h3 {
+  color: #fff600;
+  font-size: 1.5em;
+  text-align: center;
+  text-shadow: 1px 1px #000000;
+}
+
+p {
+  font-size:1.4em;
+  text-shadow: 2px 2px #000000;
+  text-align: center;
+  margin: 40px 0;
+  color: #ffffff;
+}
+
+.space {
+  width: 100%;
+  height: 30px;
+}
+
+.formbase {
+  display: flex;
+  background-color: rgba(0, 34, 85, 0.88);
+  width: 77%;
+  color: #ffffff;
+  border-radius: 10px;
+  justify-content: center;
+  margin: auto;
+}
+
+.divrow {
+  font-size: 1.2em;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  padding-bottom: 40px;
+}
+
+.divrowb {
+  font-size: 1.2em;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  padding-bottom: 40px;
+}
+
+.divrowc {
+  font-size: 1.2em;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  padding-bottom: 40px;
+}
+
+.divcol {
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+}
+
+.divrow input {
+  width: 55%;
+  padding: 5px 10px;
+  margin: 15px 0px;
+  background-color: transparent;
+  border : none;
+  border-bottom:2px solid #fff600;
+  box-sizing: border-box;
+  color: white;
+  font-size: 1.2em;
+}
+
+.divrowb input {
+  width: 65%;
+  padding: 5px 20px;
+  margin: 5px 0px;
+  background-color: transparent;
+  border : none;
+  border-bottom:2px solid #fff600;
+  box-sizing: border-box;
+  color: white;
+  font-size: 1.2em;
+}
+
+.divrowc input {
+  padding: 5px 10px;
+  margin: 0 15px;
+  background-color: transparent;
+  border : none;
+  border-bottom:2px solid #fff600;
+  box-sizing: border-box;
+  color: white;
+  font-size: 1.2em;
+}
+
+.divcol input {
+  padding: 5px 10px;
+  margin: 10px 0;
+  margin-bottom: 30px;
+  width: 70%;
+  background-color: transparent;
+  border : none;
+  border-bottom: 2px solid #fff600;
+  box-sizing: border-box;
+  color: white;
+  font-size: 1.1em;
+}
+
+.check,#volmsg, #bsub, #spsub{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  font-size: 1.2em;
+  margin: auto;
+  margin-bottom: 30px;
+  /*justify-content: center;*/
+}
+
+.yel {
+  color: #fff600;
+}
+
+.radiobutt {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  font-size: 1.2em;
+  width: 40%;
+  font-size: 1.5em;
+  padding-bottom: 40px;
+}
+
+.txtbg{
+  background-color: rgba(0, 34, 85, 0.7);
+  width: 94%;
+  color: #ffffff;
+  border-radius: 10px;
+  margin: auto;
+}
+
+textarea{
+  display: flex;
+  width: 70%;
+  color : #002255;
+  font-size: 1.2em;
+  font-weight: bold;
+  /*background-color: #fff600;*/
+  border: 2px solid #ff7e00;
+  border-radius: 10px;
+  box-sizing: border-box;
+  resize: none;
+  /*margin: auto;*/
+}
+
+#bsub {
+  background-color: #fff600;
+  color: #002255;
+  font-size: 1.2em;
+  font-weight: bold;
+  width: 50%;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  border: 3px groove #ff7e00;
+  cursor: pointer;
+}
+
+#choixtache {
+  color: #fff600;
+  font-size: 0.9em;
+}
+
+#spsub, #adsub {
+  background-color: #fff600;
+  color: #002255;
+  font-size: 1em;
+  font-weight: bold;
+  width: 45%;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  border: 3px groove #ff7e00;
+  cursor: pointer;
+}
+
+.bluebg {
+
+  display: flex;
+  background-color: rgba(0, 34, 85, 0.8);
+  width: 100%;
+  color: #ffffff;
+  border-radius: 10px;
+  margin: auto;
+  /*justify-content: flex-start;*/
+}
+
+td, th {
+  text-align: center;
+  border-bottom:3px solid white;
+  border-left:1px solid grey;
+}
+
+.bigx {
+  font-size: 2em;
+  color: #ff7e00;
+}
+
+.bio{
+  width: 75%;
+  margin: auto;
+  background-color: rgba(0, 34, 85, 0.7);
+}

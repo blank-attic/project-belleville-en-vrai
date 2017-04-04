@@ -1,0 +1,116 @@
+html, body {
+  padding : 0;
+  margin : 0;
+  min-height:100%;
+}
+
+body{
+  font-family: 'Sansita', sans-serif;
+  color : #ffffff;
+  background: #002255 url('../images/bevsplat_bg.svg');
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin : 20px;
+}
+
+h1 {
+  /*color: #ffffff;*/
+  font-size:2.5em;
+  text-align: center;
+  font-weight: bolder;
+  text-shadow: 3px 3px #000000;
+}
+
+h2 {
+  /*color: #ffffff;*/
+  font-size:2em;
+  text-align: center;
+  text-shadow: 2px 2px #000000;
+}
+
+h3 {
+  /*color: #ffffff;*/
+  font-size: 1.5em;
+  text-align: center;
+  text-shadow: 1px 1px #000000;
+}
+
+p {
+  font-size:1.3em;
+  text-shadow: 2px 2px #000000;
+  text-align: center;
+  margin: 40px 0;
+  color: #ffffff;
+}
+
+.txtbg{
+  background-color: rgba(0, 34, 85, 0.7);
+  width: 77%;
+  color: #ffffff;
+  border-radius: 10px;
+  margin: auto;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  max-width: 200px;
+  margin: auto;
+
+
+}
+
+.numbcd{
+  display: flex;
+  width: 100%;
+  font-size: 2.3em;
+  color : white;
+  text-shadow:2px 1.2px #000;
+  justify-content: center;
+}
+
+.squarecd {
+  display: block;
+  margin: 12px;
+  background-color: rgba(0, 34, 85, 0.8);
+  border-radius: 10px;
+}
+
+/*.logo {
+  display: block;
+  width: 100%;
+  margin:auto;
+}*/
+
+/* landing page buttons */
+
+.formlinks {
+    display:flex;
+    flex-direction:column;
+}
+
+.formlinks > a {
+    cursor:pointer;
+    display:block;
+    width:50%;
+    margin:20px auto;
+    text-align:center;
+    text-decoration:none;
+    font-family:Sansita;
+    color:#fff600;
+    background-color:#aaeeff;
+    padding:20px 0;
+    font-size:2em;
+    border-radius:5pt;
+    text-shadow:2px 1.2px #000;
+    border:2px groove #ff7e00;
+    transition: background-color 0.3s, text-shadow 0.3s;
+}
+
+.formlinks > a:hover {
+    text-shadow:1px 1px #000;
+    background-color:#ff7e00;
+}
