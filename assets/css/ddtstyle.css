@@ -114,3 +114,24 @@ header{
     text-shadow:1px 1px #000;
     background-color:#ff7e00;
 }
+
+#vid {
+  display: flex;
+  margin-top:  200px;
+
+
+}
+
+#vid iframe {
+  padding-top: 0.5em;
+  margin-top:  10px;
+  margin: auto;
+}
+
+#viddiv {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  flex-wrap:wrap;
+  background-color: rgba(0, 34, 85, 0.7);
+}
