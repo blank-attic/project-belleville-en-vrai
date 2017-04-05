@@ -2,21 +2,21 @@
 <nav>
   <ul>
     <li>
-      <a href="http://bellevillenvrai.fr/inscriptions/">Participer</a>
+      <a href="http://bellevillenvrai.fr/inscriptions/" class="menutabz">PARTICIPER</a>
     </li>
     <li>
-      <a href="programme.php">Programme</a>
+      <a href="programme.php" class="menutabz">PROGRAMME</a>
     </li>
-    <li>
+    <li class="ndxbutt">
       <a href="index.php">
-        <img src="assets/images/NewLogo_BEV_wht.png" alt="logo_bev 8">
+        <img src="assets/images/bev_butt1.png" alt="logo_bev 8" class="ndxbutt">
       </a>
     </li>
     <li>
-      <a href="bevtv.php">BEV TV</a>
+      <a href="bevtv.php" class="menutabz">BEV TV</a>
     </li>
     <li>
-      <a href="gallery.php">Galerie</a>
+      <a href="gallery.php" class="menutabz">GALERIE</a>
     </li>
   </ul>
 </nav>

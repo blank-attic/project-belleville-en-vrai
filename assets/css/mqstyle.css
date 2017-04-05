@@ -1,0 +1,122 @@
+@media screen and (max-width: 768px) {
+  body{
+    margin: 5px;
+  }
+  form {
+    display: block;
+    width: 100%;
+    /*text-align: center;*/
+  }
+
+  .formbase {
+    width: 100%;
+  }
+
+  .divrow, .divrowb, .divrowc {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .divrow input {
+    font-size: 0.9em;
+    width: 100%;
+  }
+
+  .divrowb input {
+    font-size: 0.9em;
+    width: 100%;
+  }
+
+  .divrowc input {
+    font-size: 0.9em;
+  }
+
+  .divcol input {
+    font-size: 0.9em;
+    width: 100%;
+  }
+
+  .radiobutt {
+    width : 50%;
+    justify-content: center;
+  }
+
+  label {
+    font-size: 0.9em;
+    margin-left: 20px;
+  }
+
+  p, h1, h2, h3 {
+    width: 100%;
+    margin: auto;
+    word-wrap: break-word;
+  }
+
+  #message {
+  width: 100%;
+  margin: auto;
+  }
+
+  .numbcd {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    font-size: 1.5em;
+    text-shadow:2px 1.2px #000;
+    margin: auto;
+  }
+
+   .txtbg {
+    width: 90%;
+  }
+
+  .logo img {
+  display: block;
+  width: 100%;
+  }
+
+  .space {
+    width: 100%;
+    height: 30px;
+  }
+
+  nav {
+    /*position: fixed;*/
+    width: 100%;
+    margin-bottom: 100px;
+    background-color: transparent;
+  }
+
+  nav a {
+    height: auto;
+    margin: 3px;
+  }
+
+  nav ul {
+    display: flex;
+    font-size: 0px;
+    /*margin: auto;*/
+    flex-direction: column;
+  }
+
+  nav > ul > li {
+    width: 50%;
+
+  }
+
+  .ndxbutt {
+    position: relative;
+    margin-bottom: 5px;
+    order: -1;
+  }
+
+  .menutabz {
+    display: block;
+    background-color: rgba(0, 34, 85, 0.9);
+    border-radius: 10px 0;
+  }
+
+  .formlinks {
+    font-size: 0.8em;
+  }
+}
