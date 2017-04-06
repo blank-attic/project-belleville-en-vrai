@@ -115,11 +115,24 @@ header{
     background-color:#ff7e00;
 }
 
+.livelogo{
+  display: block;
+  top: 10px;
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+  z-index: 3;
+}
+
+.vidlogo{
+  display: block;
+  text-align: center;
+  padding-top: 30px;
+  z-index: 3;
+}
+
 #vid {
   display: flex;
-  margin-top:  200px;
-
-
 }
 
 #vid iframe {
@@ -128,10 +141,10 @@ header{
   margin: auto;
 }
 
-#viddiv {
+#viddiv, .mainlive {
   display: flex;
   position: relative;
   justify-content: space-around;
   flex-wrap:wrap;
-  background-color: rgba(0, 34, 85, 0.7);
+  background-color: rgba(0, 34, 85, 0.77);
 }

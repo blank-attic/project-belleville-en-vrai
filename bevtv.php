@@ -5,13 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="ce site est une présentation du Festival du Quartier BELLEVILLE, Belleville En Vrai"/>
   <meta name="author" content="Laurent Abemango alias LAWD / Badis Nakhli / Abdoulaye Ndao"/>
-  <title>BEV TV</title>
-  <link rel="stylesheet" href="assets/css/ddtstyle.css" type="text/css">
+  <title>BELLEVILLE EN VRAI</title>
   <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/ddtstyle.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/menustyle.css" type="text/css">
   <link rel="stylesheet" href="assets/css/mqstyle.css" media="screen" type="text/css">
 </head>
   <body>
-    
+
+    <?php
+    require ('_menu.php');
+    ?>
+    <div class="">
+      <?php
+    require ('_live.php')
+      ?>
+    </div>
+    <div class="vidlogo">
+      <img src="assets/images/bev_vidlogo.png" alt="belleville en vrai videos">
+    </div>
     <main id="vid">
       <div id="viddiv">
        <div>
