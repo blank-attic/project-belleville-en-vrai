@@ -63,7 +63,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
   <div class="formbase">
   <form action="partiform.php" method="POST">
-    <p>Remplis ce formulaire si tu est un Artiste ou un Groupe est que tu veux nous montrer ton art  </p>
+    <p> Munissez vous de votre instrument de musique, de votre pinceau, ou tout simplement de votre voix pour venir vous exprimer ! Une scène ouverte est organisée sur la place Alphonse Allais le samedi 20 mai. Remplissez le formulaire suivant pour proposer votre projet . </p>
     <div class="divrow">
       <div>
         <label for="nom">ARTISTE, GROUPE :</label>
