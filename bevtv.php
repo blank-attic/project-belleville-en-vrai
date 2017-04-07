@@ -7,6 +7,7 @@
   <meta name="author" content="Laurent Abemango alias LAWD / Badis Nakhli / Abdoulaye Ndao"/>
   <title>BELLEVILLE EN VRAI</title>
   <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+  <link href="assets/vendor/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="assets/css/ddtstyle.css" type="text/css">
   <link rel="stylesheet" href="assets/css/menustyle.css" type="text/css">
   <link rel="stylesheet" href="assets/css/mqstyle.css" media="screen" type="text/css">
@@ -44,5 +45,8 @@
        </div>
      </div>
    </main>
+   <?php
+    require('_footer.php');
+    ?>
   </body>
 </html>

@@ -148,3 +148,29 @@ header{
   flex-wrap:wrap;
   background-color: rgba(0, 34, 85, 0.77);
 }
+
+footer{
+  display: flex;
+  margin-top: 200px;
+
+}
+
+.footnav {
+  padding-top: 8px;
+  margin-bottom:5px;
+  background-color: rgba(0, 34, 85, 0.9);
+  border-radius: 10px;
+}
+
+/*.footnav ul {
+  width: 100%;
+}*/
+.footnav li {
+  font-weight: lighter;
+  width: 100%;
+}
+
+.footnav a{
+  font-size: 0.85em;
+  text-align: center;
+}
