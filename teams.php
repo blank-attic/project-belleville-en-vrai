@@ -52,48 +52,55 @@ spl_autoload_register(function ($class) {
               echo "<td>$v[refname]</td>";
               echo "<td>$v[quartier]</td>";
               echo "</tr>";
-              }
-
-
-            // $dao = new PlayerDAO();
-            // //get all volunteersoih
-            // $players = $dao->getAllPlayersAndTeam($_DB);
-            // echo "<table class='players'>";
-            // echo "<thead>";
-            // echo "<tr>";
-            // echo "<th>Prénom</th>";
-            // echo "<th>Date de naissance</th>";
-            // echo "<th>Référent</th>";
-            // echo "<th>Tel chef d'équipe</th>";
-            // echo "<th>Chef d'équipe ?</th>";
-            // echo "<th>Nom de l'équipe</th>";
-            // echo "<th>Catégorie</th>";
-            // echo "<th>Quartier</th>";
-            // echo "<th>Coureurs de l'équipe</th>";
-            // echo "<th>Nageurs de l'équipe</th>";
-            // echo "<th>Pongistes de l'équipe</th>";
-            // echo "</tr>";
-            // echo "</thead>";
-            // echo "<tbody>";
-            // foreach ($players as $k => $v) {
-            //     echo "<tr class='volunteer'>";
-            //     echo "<td>$v[name]</td>";
-            //     echo "<td>$v[bdate]</td>";
-            //     echo "<td>$v[refname]</td>";
-            //     echo "<td>$v[tel]</td>";
-            //     echo ($v["team_leader"] === 1 ? "<td class='bigx'>x</td>" : "<td></td>");
-            //     echo "<td>$v[teamname]</td>";
-            //     echo "<td>$v[categorie]</td>";
-            //     echo "<td>$v[quartier]</td>";
-            //     echo "<td>$v[course]</td>";
-            //     echo "<td>$v[natation]</td>";
-            //     echo "<td>$v[pingpong]</td>";
-            //     echo "</tr>";
-            // }
-            //
-            // echo "</tbody>";
-            // echo "</table>";
+            }
+            echo "</tbody>";
+            echo "</table>";
             ?>
-        </div>
+          </div>
+          <div class="space">           
+          </div>
+          <div class="bluebg">
+
+            <?php
+            $dao = new PlayerDAO();
+            //get all volunteersoih
+            $players = $dao->getAllPlayersAndTeam($_DB);
+            echo "<table class='players'>";
+            echo "<thead>";
+            echo "<tr>";
+            echo "<th>Prénom</th>";
+            echo "<th>Date de naissance</th>";
+            echo "<th>Référent</th>";
+            echo "<th>Tel chef d'équipe</th>";
+            echo "<th>Chef d'équipe ?</th>";
+            echo "<th>Nom de l'équipe</th>";
+            echo "<th>Catégorie</th>";
+            echo "<th>Quartier</th>";
+            echo "<th>Coureurs de l'équipe</th>";
+            echo "<th>Nageurs de l'équipe</th>";
+            echo "<th>Pongistes de l'équipe</th>";
+            echo "</tr>";
+            echo "</thead>";
+            echo "<tbody>";
+            foreach ($players as $k => $v) {
+                echo "<tr class='players'>";
+                echo "<td>$v[name]</td>";
+                echo "<td>$v[bdate]</td>";
+                echo "<td>$v[refname]</td>";
+                echo "<td>$v[tel]</td>";
+                echo ($v["team_leader"] === 1 ? "<td class='bigx'>x</td>" : "<td></td>");
+                echo "<td>$v[teamname]</td>";
+                echo "<td>$v[categorie]</td>";
+                echo "<td>$v[quartier]</td>";
+                echo "<td>$v[course]</td>";
+                echo "<td>$v[natation]</td>";
+                echo "<td>$v[pingpong]</td>";
+                echo "</tr>";
+            }
+
+            echo "</tbody>";
+            echo "</table>";
+            ?>
+          </div>
     </body>
 </html>

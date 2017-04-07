@@ -55,7 +55,7 @@ class PlayerDAO {
             $request->execute();
             return $request->fetchAll();
         } catch (PDOException $e) {
-            print("error while writing in DB new volunteer." . $e->getMessage());
+            print("error while writing in DB new player ." . $e->getMessage());
             return false;
         }
     }
@@ -67,7 +67,7 @@ class PlayerDAO {
           $request->execute();
           return $request->fetchAll();
       } catch (PDOException $e) {
-          print("error while writing in DB new volunteer." . $e->getMessage());
+          print("error while writing in DB new player in team." . $e->getMessage());
           return false;
       }
     }
