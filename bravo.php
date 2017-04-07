@@ -1,12 +1,3 @@
-<?php
-require_once ("_db.php");
-if (!isset($_GET["teamname"])) {
-  header('Location: index.php');
-}
-
-?>
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,9 +13,15 @@ if (!isset($_GET["teamname"])) {
 <body>
 
   <div class="txtbg">
-    <h1>BRAVO TON EQUIPE EST INSCRITE POUR LE TOURNOI !</h1>
-    <h2>PREPAREZ VOUS, ENTRAINEZ VOUS !.. </h2>
-    <h1>...Bonne Chance ! ET que la MEILLEURE EQUIPE GAGNE !</h1>
+    <div class="thxmsg">
+
+      <?php
+        echo "<h1>BRAVO ". (isset($_GET["teamname"]) ? $_GET["teamname"] : '')." !</h1><h1>VOTRE EQUIPE EST INSCRITE POUR LE TOURNOI !</h1>
+        <h2>PREPAREZ VOUS, ENTRAINEZ VOUS !.. </h2>
+        <h1>...Bonne Chance !</h1><h1> ET que la MEILLEURE EQUIPE GAGNE !</h1>";
+       ?>
+     </div>
+
   </div>
   </body>
 </html>

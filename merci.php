@@ -1,7 +1,7 @@
 <?php
 require_once('_db.php');
 if (!isset($_GET["firstname"])) {
-  header("location:index.php");
+  header("location:merci.php?firstname=['firstname']");
 }
 ?>
 <!DOCTYPE html>
@@ -18,9 +18,8 @@ if (!isset($_GET["firstname"])) {
 </head>
   <body>
     <div class="thxmsg">
-
       <?php
-        echo "<h1 id='thxmsg'>  Je te remercie pour ta contribution ".$_GET["firstname"]."  pour toute autre information tu peux toujours nous contacter sur : participation@bellevillenvrai.fr </h1>";
+        echo "<h1 id='thxmsg'>MERCI ".(isset($_GET["firstname"]) ? $_GET["firstname"] : '')." pour ta contribution !</h1><h1>Et pour toute autre information tu peux toujours nous contacter sur : inscriptionsbev@gmail.com </h1>";
        ?>
      </div>
 

@@ -35,12 +35,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     || $checkparti["tel"] !== $parti->getTel()) {
       //save in db
       if($dao->save($_DB, $parti)) {
-        echo "<h1 id='thxmsg'>MERCI ".$nom." ! JE TE SOUHAITE UN BON COURAGE SUR LA SCÈNE DE BELLEVILLE EN VRAI !</h1>";
-        // no auth needed cause no connection from benevole
+       header('Location: merci.php?nom=' . $nom);        
 
       }
     } else {
-      echo "<li>Tu fais deja partie des artiste present !!</li>";
+      echo "<li>Tu fais déja partie des artistes présents !!</li>";
     }
   } else {
     for ($i = 0; $i < count($errors); $i++) {

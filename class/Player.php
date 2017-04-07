@@ -70,7 +70,7 @@ class Player {
 
     //birthday date check
     if (empty($this->bdate)) {
-      array_push($errorArray, "Il manque un date anniversaire...");
+      array_push($errorArray, "Il manque une date anniversaire...");
     }
 
     return $errorArray;

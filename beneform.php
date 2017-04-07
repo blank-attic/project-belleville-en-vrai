@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
      if ($checkvolunteer["email"] !== $volunteer->getEmail()){
      //save in db
      if($dao->save($_DB, $volunteer)) {
-       header('Location: merci.php');
+       header('Location: merci.php?firstname=' . $firstname);
      }
    } else {
      echo "<li>Tu fais déja partie de la TEAM !!</li>";

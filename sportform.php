@@ -81,10 +81,9 @@
             }
 
             $player->setTeamId($team["id"]);
-            var_dump($player);
+            // var_dump($player);
             //save in db
             if($dao->save($_DB, $player)) {
-              header('Location: bravo.php');
             }
           } else {
             echo "<li>l'un de vos Joueur est déja présent dans une autre équipe !</li>";
@@ -96,6 +95,8 @@
         }
         echo "</ul>";
       }
+      header('Location: bravo.php?teamname=' . $teamname);
+      die ;
     }
   }
   ?>
