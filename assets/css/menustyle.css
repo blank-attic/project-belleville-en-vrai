@@ -36,6 +36,7 @@ nav a {
   text-decoration: none;
   padding-bottom: 5px;
   cursor: pointer;
+
 }
 
 nav a:hover {
@@ -63,12 +64,10 @@ nav li a + *:hover {
 
 ul {
   padding: 0px;
-
 }
 
 .menutabz {
   display: inline;
-
 }
 
 .ndxbutt {

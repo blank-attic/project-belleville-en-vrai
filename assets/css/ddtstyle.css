@@ -119,5 +119,69 @@ header{
   height: 600px;
   width: 800px;
   margin: auto;
-  font-size: 3em;
+  font-size: 1.2em;
+}
+
+.livelogo{
+  display: block;
+  top: 10px;
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+  z-index: 3;
+}
+
+.vidlogo{
+  display: block;
+  text-align: center;
+  padding-top: 30px;
+  z-index: 3;
+}
+
+#vid {
+  display: flex;
+}
+
+#vid iframe {
+  padding-top: 0.5em;
+  margin-top:  10px;
+  margin: auto;
+}
+
+#viddiv, .mainlive {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  flex-wrap:wrap;
+  background-color: rgba(0, 34, 85, 0.77);
+}
+
+footer {
+  display: flex;
+  margin-top: 200px;
+}
+
+.footnav {
+  padding-top: 8px;
+  margin-bottom:5px;
+  background-color: rgba(0, 34, 85, 0.9);
+  border-radius: 10px;
+}
+
+/*.footnav ul {
+  width: 100%;
+}*/
+.footnav li {
+  font-weight: lighter;
+  width: 100%;
+}
+
+.footnav a{
+  font-size: 0.85em;
+  text-align: center;
+}
+
+#ou{
+  color: #ff7e00;
+  font-size: 1.5em;
 }
