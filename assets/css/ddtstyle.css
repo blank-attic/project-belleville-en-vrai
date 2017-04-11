@@ -152,7 +152,6 @@ header{
 footer{
   display: flex;
   margin-top: 200px;
-
 }
 
 .footnav {
@@ -173,4 +172,10 @@ footer{
 .footnav a{
   font-size: 0.85em;
   text-align: center;
+}
+
+.titp{
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #fff600;
 }
