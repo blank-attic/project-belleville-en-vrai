@@ -18,18 +18,22 @@
      ?>
     <div class="txtbg" id="quisect">
       <h1>BELLEVILLE EN VRAI C'EST QUI ?</h1>
+      <div class="space"></div>
+      <div class="space"></div>
       <div>
         <img src="assets/images/pazapas.JPG" alt="pazpas logo" />
         <h2>PAZAPAS :</h2>
         <p>Née en 2001, l’association Pazapas Belleville est composée de jeunes habitants du quartier de Belleville. L’association a vocation à mettre en place des projets <span class="titp">par et pour les jeunes du quartier</span> dans les domaines de la culture, du sport, de la solidarité internationale et de l’implication citoyenne.</p>
-
+        <div class="space"></div>
         <p><span class="titp">Belleville en Vrai est le projet phare de l’association.</span> Plus de cinquante jeunes participent directement à l’organisation de l’événement, décidant collectivement des modalités des épreuves ainsi que du contenu de la programmation artistique <span class="titp">lors de réunions publiques.</span></p>
       </div>
+      <div class="space"></div>
       <div class="space"></div>
       <div>
         <img src="assets/images/bc.png" alt="belleville citoyenne logo" class="imgqui"/>
         <h2>Belleville Citoyenne :</h2>
         <p>En organisant à la fois des activités artistiques récurrentes (<a href="http://bellevillecitoyenne.fr/on-fait-du-theatre-au-sous-sol/" class="txtlink" target="_blank">On fait du théâtre au sous sol</a>), une formation professionnalisante dans les nouvelles technologies (<a href="http://blank.bellevillecitoyenne.fr/" class="txtlink" target="_blank">_blank </a>) ainsi que des événements culturels sur l’espace public (Festival Irrueption).</p>
+        <div class="space"></div>
         <p><span class="titp">Belleville Citoyenne</span> initie des projets locaux et participatifs avec les habitants et notamment des jeunes. </p>
       </div>
     </div>
