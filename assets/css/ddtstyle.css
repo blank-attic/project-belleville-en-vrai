@@ -207,3 +207,8 @@ footer{
   font-size:1.3em;
   text-align: left;
 }
+
+#quisect img {
+  max-width: 200px;
+  border-radius: 30px;
+}

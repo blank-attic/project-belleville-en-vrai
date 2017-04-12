@@ -13,34 +13,24 @@
   <link rel="stylesheet" href="assets/css/mqstyle.css" media="screen" type="text/css">
 </head>
   <body>
-    <!-- <?php
+    <?php
       require('_menu.php');
-     ?> -->
-    <div class="txtbg">
+     ?>
+    <div class="txtbg" id="quisect">
       <h1>BELLEVILLE EN VRAI C'EST QUI ?</h1>
       <div>
+        <img src="assets/images/pazapas.JPG" alt="pazpas logo" />
         <h2>PAZAPAS :</h2>
         <p>Née en 2001, l’association Pazapas Belleville est composée de jeunes habitants du quartier de Belleville. L’association a vocation à mettre en place des projets <span class="titp">par et pour les jeunes du quartier</span> dans les domaines de la culture, du sport, de la solidarité internationale et de l’implication citoyenne.</p>
 
-        <p><span class="titp">Au programme : </span>football, natation, tennis de table, cross et basket. S’ajoute à cela un quizz de culture générale pour également muscler ses méninges. </p>
-        <div class="space"></div>
-        <p>Chaque année l’événement rassemble près de 500 jeunes entre 10 et 25 ans, garçons et filles, répartis en équipe de huit et en trois catégories : les petit.e.s (10-13 ans), les moyen.ne.s (14-17 ans) et les grand.e.s (18-25 ans). Pendant deux jours, les jeunes de chaque équipe doivent gagner un maximum de points par épreuve pour prétendre au titre honorifique de <br/><span class="titp">champions ou championnes du quartier !</span></p>
+        <p><span class="titp">Belleville en Vrai est le projet phare de l’association.</span> Plus de cinquante jeunes participent directement à l’organisation de l’événement, décidant collectivement des modalités des épreuves ainsi que du contenu de la programmation artistique <span class="titp">lors de réunions publiques.</span></p>
       </div>
+      <div class="space"></div>
       <div>
-        <div class="space"></div>
-        <h2>UN FESTIVAL CULTUREL ET CITOYEN !!!</h2>
-        <p>L’événement prévoit également d’occuper <span class="titp">l’espace public</span> par de multiples activités associatives et culturelles visant à rassembler les bellevillois autour d’une expérience de <span class="titp">citoyenneté alternative.</span> </p>
-
-        <p>Par le biais de la culture, <span class="titp">Belleville en Vrai</span> a donc pour but de rassembler, sur l’espace public, des publics hétérogènes autour d’intérêts communs. Nous organisons ainsi :</p>
-          <ul>
-            <li class="litxt"><span class="titp">Un espace d’expression libre :</span> avec selon les éditions des scènes ouvertes, des débats sur des sujets de société, des émissions de radio « live », un studio photo… </li>
-            <li class="litxt"><span class="titp">Des ateliers d’initiation :</span> au graff, au bricolage, à la science…</li>
-            <li class="litxt"><span class="titp">Un temps fort musical  pour clôturer l’événement :</span> remise des trophées par les parrains et marraines de l’événement, programmation d’artistes locaux et reconnus !</li>
-          </ul>
-          <div class="space"></div>
-          <div class="space"></div>
-            <p class="linkp">Pour proposer un projet : <a href="partiform.php" class="txtlink"><i class="fa fa-user-plus" aria-hidden="true"></i> PARTICIPER</a>  ///
-            Pour nous donner un coup de main le jour J : <a href="beneform.php" class="txtlink"><i class="fa fa-user-plus" aria-hidden="true"></i> AIDER</a></p>
+        <img src="assets/images/bc.png" alt="belleville citoyenne logo" class="imgqui"/>
+        <h2>Belleville Citoyenne :</h2>
+        <p>En organisant à la fois des activités artistiques récurrentes (<a href="http://bellevillecitoyenne.fr/on-fait-du-theatre-au-sous-sol/" class="txtlink" target="_blank">On fait du théâtre au sous sol</a>), une formation professionnalisante dans les nouvelles technologies (<a href="http://blank.bellevillecitoyenne.fr/" class="txtlink" target="_blank">_blank </a>) ainsi que des événements culturels sur l’espace public (Festival Irrueption).</p>
+        <p><span class="titp">Belleville Citoyenne</span> initie des projets locaux et participatifs avec les habitants et notamment des jeunes. </p>
       </div>
     </div>
     <?php
