@@ -9,6 +9,7 @@
   }
 
   .formbase {
+
     width: 90%;
   }
 
@@ -47,7 +48,7 @@
   }
 
   p, h1, h2, h3 {
-    width: 100%;
+    width: 77%;
     margin: auto;
     word-wrap: break-word;
   }
@@ -73,6 +74,23 @@
   .logo img {
   display: block;
   width: 100%;
+  }
+
+  .formlinks {
+    font-size: 0.8em;
+  }
+
+  .vidlogo {
+    top: 10px;
+  }
+
+  #vid iframe{
+    width: 100%;
+    height: auto;
+  }
+
+  #viddiv {
+    width: 100%;
   }
 
   .space {
@@ -119,4 +137,5 @@
   .formlinks {
     font-size: 0.8em;
   }
+
 }

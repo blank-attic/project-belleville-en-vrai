@@ -51,6 +51,12 @@ p {
   color: #ffffff;
   border-radius: 10px;
   margin: auto;
+  padding: 10px;
+}
+
+.space {
+  width: 100%;
+  height: 20px;
 }
 
 header{
@@ -113,4 +119,91 @@ header{
 .formlinks > a:hover {
     text-shadow:1px 1px #000;
     background-color:#ff7e00;
+}
+
+.livelogo{
+  display: block;
+  top: 10px;
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+  z-index: 3;
+}
+
+.vidlogo{
+  display: block;
+  text-align: center;
+  padding-top: 30px;
+  z-index: 3;
+}
+
+#vid {
+  display: flex;
+}
+
+#vid iframe {
+  padding-top: 0.5em;
+  margin-top:  10px;
+  margin: auto;
+}
+
+#viddiv, .mainlive {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  flex-wrap:wrap;
+  background-color: rgba(0, 34, 85, 0.77);
+}
+
+footer{
+  display: flex;
+  margin-top: 200px;
+}
+
+.footnav {
+  padding-top: 8px;
+  margin-bottom:5px;
+  background-color: rgba(0, 34, 85, 0.9);
+  border-radius: 10px;
+}
+
+/*.footnav ul {
+  width: 100%;
+}*/
+.footnav li {
+  font-weight: lighter;
+  width: 100%;
+}
+
+.footnav a{
+  font-size: 0.85em;
+  text-align: center;
+}
+
+#ou {
+  font-size: 1.3em;
+  color: #ff7e00;
+}
+
+.titp{
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #fff600;
+}
+
+.litxt {
+  font-size:1.3em;
+  text-shadow: 2px 2px #000000;
+  text-align: left;
+}
+.txtlink {
+  font-weight: bold;
+  color: #ff7e00;
+  text-shadow: 2px 2px #000000;
+  text-align: left;
+}
+
+.linkp {
+  font-size:1.3em;
+  text-align: left;
 }
