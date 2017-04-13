@@ -196,6 +196,7 @@ footer{
   text-shadow: 2px 2px #000000;
   text-align: left;
 }
+
 .txtlink {
   font-weight: bold;
   color: #ff7e00;
@@ -208,11 +209,17 @@ footer{
   text-align: left;
 }
 
-
-
 #quisect img {
   display: block;
   max-width: 200px;
   border-radius: 30px;
   margin: auto;
+}
+
+.galleria {
+  margin: auto;
+}
+
+.galleria-container{
+  background-color: transparent;
 }

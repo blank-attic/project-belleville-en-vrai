@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="assets/css/ddtstyle.css" type="text/css">
   <link rel="stylesheet" href="assets/css/menustyle.css" type="text/css">
   <link rel="stylesheet" href="assets/css/mqstyle.css" media="screen" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.4.5/galleria.min.js"></script>
 </head>
   <body>
     <?php
@@ -19,6 +21,28 @@
     <div class="txtbg" id="quisect">
       <h1>BELLEVILLE EN VRAI C'EST QUI ?</h1>
       <div class="space"></div>
+      <div class="galleria">
+           <img src="assets/images/bev_costume/bev_costume_5.jpg">
+           <img src="assets/images/bev_costume/bev_costume_8.jpg">
+           <img src="assets/images/bev_costume/bev_costume_2.jpg">
+           <img src="assets/images/bev_costume/bev_costume_3.jpg">
+           <img src="assets/images/bev_costume/bev_costume_4.jpg">
+           <img src="assets/images/bev_costume/bev_costume_20.jpg">
+           <img src="assets/images/bev_costume/bev_costume_6.jpg">
+           <img src="assets/images/bev_costume/bev_costume_7.jpg">
+           <img src="assets/images/bev_costume/bev_costume_9.jpg">
+           <img src="assets/images/bev_costume/bev_costume_10.jpg">
+           <img src="assets/images/bev_costume/bev_costume_11.jpg">
+           <img src="assets/images/bev_costume/bev_costume_13.jpg">
+           <img src="assets/images/bev_costume/bev_costume_14.jpg">
+           <img src="assets/images/bev_costume/bev_costume_15.jpg">
+           <img src="assets/images/bev_costume/bev_costume_16.jpg">
+           <img src="assets/images/bev_costume/bev_costume_17.jpg">
+           <img src="assets/images/bev_costume/bev_costume_18.jpg">
+           <img src="assets/images/bev_costume/bev_costume_1.jpg">
+           <img src="assets/images/bev_costume/bev_costume_19.jpg">
+       </div>
+       <h6>Photos : Clément Duquenne</h6>
       <div class="space"></div>
       <div>
         <img src="assets/images/pazapas.JPG" alt="pazpas logo" />
@@ -30,9 +54,9 @@
       <div class="space"></div>
       <div class="space"></div>
       <div>
-        <img src="assets/images/bc.png" alt="belleville citoyenne logo" class="imgqui"/>
+        <img src="assets/images/bc_wht.png" alt="belleville citoyenne logo" class="imgqui"/>
         <h2>Belleville Citoyenne :</h2>
-        <p>En organisant à la fois des activités artistiques récurrentes (<a href="http://bellevillecitoyenne.fr/on-fait-du-theatre-au-sous-sol/" class="txtlink" target="_blank">On fait du théâtre au sous sol</a>), une formation professionnalisante dans les nouvelles technologies (<a href="http://blank.bellevillecitoyenne.fr/" class="txtlink" target="_blank">_blank </a>) ainsi que des événements culturels sur l’espace public (Festival Irrueption).</p>
+        <p>En organisant à la fois des activités artistiques récurrentes (<a href="http://bellevillecitoyenne.fr/on-fait-du-theatre-au-sous-sol/" class="txtlink" target="_blank">On fait du théâtre au sous sol</a>), une formation professionnalisante dans les nouvelles technologies (<a href="http://blank.bellevillecitoyenne.fr/" class="txtlink" target="_blank">_blank </a>) ainsi que des événements culturels sur l’espace public (Festival Irrueption, Block Belleville).</p>
         <div class="space"></div>
         <p><span class="titp">Belleville Citoyenne</span> initie des projets locaux et participatifs avec les habitants et notamment des jeunes. </p>
       </div>
@@ -40,5 +64,17 @@
     <?php
       require('_footer.php');
      ?>
+     <script>
+ (function() {
+           Galleria.loadTheme('https://cdnjs.cloudflare.com/ajax/libs/galleria/1.4.5/themes/classic/galleria.classic.min.js');
+           Galleria.configure({
+             transition: 'fade',
+             imageMargin: 10,
+             height: 600,
+
+            });
+           Galleria.run('.galleria',{autoplay: 3000});
+       }());
+       </script>
   </body>
 </html>
