@@ -14,22 +14,31 @@
       attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
  }).addTo(mymap);
 
-  L.marker([48.8714538,2.3788977]).addTo(mymap)
+ var blackIcon = new L.Icon({
+  iconUrl: 'assets/images/marker-icon-2x-black.png',
+  shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41]
+});
+
+  L.marker([48.8714538,2.3788977], {icon: blackIcon}).addTo(mymap)
   .bindPopup('Vendredi 19 Mai<h3>Piscine A.Nakache</h3>18h00: Epreuves de Natation<br/>Métro: Belleville')
   .openPopup();
-  L.marker([48.871489,2.378383]).addTo(mymap)
-  .bindPopup('Vendredi 19 Mai<h3>19h00: BLOCK PARTY !!!</h3>Métro: Belleville');
-  L.marker([48.8710678,2.3847051]).addTo(mymap)
+  L.marker([48.871489,2.378383], {icon: blackIcon}).addTo(mymap)
+  .bindPopup('Vendredi 19 Mai<h3>19h00:<br/> SURPRISES !!!</h3>Métro: Belleville');
+  L.marker([48.8710678,2.3847051], {icon: blackIcon}).addTo(mymap)
   .bindPopup('Samedi 20 Mai<h3>Parc de Belleville</h3>09h30: Epreuves du Cross <br/>Dimanche 21 Mai<br/>14h00-17h00 : Animation foot par Tatane<br/>Métro: Belleville, Couronnes, Pyrénées');
-  L.marker([48.87064,2.382127]).addTo(mymap)
+  L.marker([48.87064,2.382127], {icon: blackIcon}).addTo(mymap)
   .bindPopup('Samedi 20 Mai<h3>Place Alphonse Allais</h3>09h00: Chantier participatif<br/>12h00: Scène d’expression libre<br/>15h00 : Conférence gesticulée<br/>16h30 : Goûter partagé – Vélo Smoothy Mixer<br/>18h : Scène Artistes Quartier<br/>Métro: Belleville, Couronnes');
-  L.marker([48.870012, 2.376315]).addTo(mymap)
+  L.marker([48.870012, 2.376315], {icon: blackIcon}).addTo(mymap)
   .bindPopup('Dimanche 21 Mai<h3>Gymnase Orillon</h3>10h00: Finales Basket<br/>Métro: Belleville');
-  L.marker([48.8754096,2.3779683]).addTo(mymap)
+  L.marker([48.8754096,2.3779683], {icon: blackIcon}).addTo(mymap)
   .bindPopup('Dimanche 21 Mai<h3>TEP Jandelle</h3>12h00: Finales Foot<br/>Métro: Belleville');
-  L.marker([48.8715766,2.385567]).addTo(mymap)
+  L.marker([48.8715766,2.385567], {icon: blackIcon}).addTo(mymap)
   .bindPopup('Dimanche 21 Mai<h3>Belvédère du Parc de Belleville</h3>Ateliers participatifs<br/>Expositions<br/>Métro: Pyrénées');
-  L.marker([48.871587,2.385070]).addTo(mymap)
+  L.marker([48.871587,2.385070], {icon: blackIcon}).addTo(mymap)
   .bindPopup('Dimanche 21 Mai<h3>Amphithéatre du Parc de Belleville</h3>16h00 : Spectacle Danse Contemporaine<br/>17h00-20h00 : Concerts<br/>20h00 : Remise des Trophées<br/>Métro: Pyrénées');
 
 

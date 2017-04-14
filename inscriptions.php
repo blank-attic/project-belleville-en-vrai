@@ -13,7 +13,7 @@
 <body>
   <header id="hdrndx">
     <div class="logo">
-      <img src="assets/images/NewLogo_BEV_wht.png" alt="affiche bev 8">
+      <a href="index.php"><img src="assets/images/NewLogo_BEV_wht.png" alt="affiche bev 8"></a>
     </div>
   </header>
   <?php
