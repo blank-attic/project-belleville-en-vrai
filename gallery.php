@@ -10,24 +10,10 @@
   <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/mqstyle.css" media="screen" type="text/css">
 </head>
-  <body>
-    <?php
-      require('_menu.php');
-     ?>
-    <div class="txtbg">
-      <header id="hdrndx">
-        <div class="logo">
-          <img src="assets/images/NewLogo_BEV_wht.png" alt="affiche bev 8">
-        </div>
-      </header>
-      <div class="credz">
-
-      </div>
-    </div>
-    <div>
-      <?php
-      require('_footer.php');
-      ?>
-    </div>
+<body>
+<?php
+  require('_menu.php');
+  require("_galler.php");
+ ?>
   </body>
 </html>
