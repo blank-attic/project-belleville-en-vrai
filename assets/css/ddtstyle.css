@@ -168,6 +168,12 @@ footer{
   text-align: center;
 }
 
+#mapbev {
+  height: 600px;
+  width: 800px;
+  margin: auto;
+}
+
 #ou {
   font-size: 1.3em;
   color: #ff7e00;
