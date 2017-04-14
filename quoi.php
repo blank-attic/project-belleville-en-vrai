@@ -39,7 +39,9 @@
           </ul>
           <div class="space"></div>
           <div class="space"></div>
+
             <p class="linkp">Pour proposer un projet : <a href="partiform.php" class="txtlink"><i class="fa fa-user-plus" aria-hidden="true"></i> PARTICIPER</a>  ///
+
             Pour nous donner un coup de main le jour J : <a href="beneform.php" class="txtlink"><i class="fa fa-user-plus" aria-hidden="true"></i> AIDER</a></p>
       </div>
     </div>
