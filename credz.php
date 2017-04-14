@@ -10,30 +10,24 @@
   <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/mqstyle.css" media="screen" type="text/css">
 </head>
-<body>
-  <header id="hdrndx">
-    <div class="logo">
-      <img src="assets/images/NewLogo_BEV_wht.png" alt="affiche bev 8">
-    </div>
-  </header>
-  <?php
-  require ('car.php');
-  ?>
-  <div>
+  <body>
     <?php
       require('_menu.php');
      ?>
-  </div>
-  <div class="space"></div>
-  <div class="txtbg">
-    <div class="vidprez">
-      <iframe src="https://player.vimeo.com/video/211642278" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <div class="txtbg">
+      <header id="hdrndx">
+        <div class="logo">
+          <img src="assets/images/NewLogo_BEV_wht.png" alt="affiche bev 8">
+        </div>
+      </header>
+      <div class="credz">
+        
+      </div>
     </div>
-  </div>
-  <div>
-    <?php
-    require('_footer.php');
-    ?>
-  </div>
-</body>
+    <div>
+      <?php
+      require('_footer.php');
+      ?>
+    </div>
+  </body>
 </html>
