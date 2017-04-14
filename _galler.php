@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="utf-8">
   <title>galerie Belleville en vrai </title>
   <link href="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/css/lightgallery.css" rel="stylesheet">
   <style>
-  body{
-    background-color: #152836
-  }
+
   .demo-gallery > ul {
     margin-bottom: 0;
   }
@@ -122,15 +120,17 @@
   }
   .home .demo-gallery {
     padding-bottom: 80px;
+    text-align: center;
   }
   #lightgallery li {
     list-style-type: none;
   }
+
   </style>
 </head>
-<body class="home">
 
-  <div class="demo-gallery">
+
+  <div id="galgen" class="demo-gallery">
     <ul id="lightgallery" class="list-unstyled row">
       <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="assets/images/img/1.jpg, assets/images/img/2.jpg, assets/images/img/3.jpg, assets/images/img/4.jpg,assets/images/img/5.jpg, assets/images/img/6.jpg, assets/images/img/7.jpg, assets/images/img/8.jpg, assets/images/img/9.jpg, assets/images/img/10.jpg, assets/images/img/11.jpg, assets/images/img/12.jpg, assets/images/img/13.jpg, assets/images/img/14.jpg, assets/images/img/15.jpg, assets/images/img/16.jpg, assets/images/img/17.jpg, assets/images/img/18.jpg, assets/images/img/19.jpg, assets/images/img/20.jpg, assets/images/img/21.jpg, assets/images/img/22.jpg, assets/images/img/23.jpg, assets/images/img/24.jpg, assets/images/img/25.jpg, assets/images/img/26.jpg, assets/images/img/27.jpg, assets/images/img/28.jpg, assets/images/img/29.jpg, assets/images/img/30.jpg, assets/images/img/31.jpg, assets/images/img/32.jpg, assets/images/img/33.jpg, assets/images/img/34.jpg, assets/images/img/35.jpg, assets/images/img/36.jpg, assets/images/img/37.jpg, assets/images/img/38.jpg, assets/images/img/39.jpg, assets/images/img/40.jpg, assets/images/img/41.jpg, assets/images/img/42.jpg, assets/images/img/43.jpg, assets/images/img/44.jpg, assets/images/img/45.jpg, assets/images/img/46.jpg, assets/images/img/47.jpg, assets/images/img/48jpg, assets/images/img/49.jpg, assets/images/img/50.jpg, assets/images/img/51.jpg, assets/images/img/52.jpg, assets/images/img/53.jpg, assets/images/img/54.jpg, assets/images/img/55.jpg, assets/images/img/56.jpg, assets/images/img/57.jpg, assets/images/img/58.jpg, assets/images/img/59.jpg," data-src="assets/images/img/1.jpg" data-sub-html="<h4>Belleville en vrai !!</h4><p> EDITION 7.</p>" data-pinterest-text="Pin it1" data-tweet-text="BEV7">
         <a href="">
@@ -440,5 +440,4 @@
           <script>
           lightGallery(document.getElementById('lightgallery'));
           </script>
-          </body>
-        </html>
+          </html>

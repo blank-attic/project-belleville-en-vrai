@@ -2,7 +2,7 @@
 <nav>
   <ul>
     <li>
-      <a href="http://bellevillenvrai.fr/inscriptions/" class="menutabz"><i class="fa fa-user-plus" aria-hidden="true"></i> PARTICIPER</a>
+      <a href="inscriptions.php" class="menutabz"><i class="fa fa-user-plus" aria-hidden="true"></i> PARTICIPER</a>
     </li>
     <li>
       <a href="programme.php" class="menutabz"><i class="fa fa-list-alt" aria-hidden="true"></i> PROGRAMME</a>
