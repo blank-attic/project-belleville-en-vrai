@@ -12,28 +12,17 @@
   <link rel="stylesheet" href="assets/css/menustyle.css" type="text/css">
   <link rel="stylesheet" href="assets/css/mqstyle.css" media="screen" type="text/css">
 </head>
-<body>
-
-  <div>
-    <?php
-      require('_menu.php');
-     ?>
-  </div>
-  <div class="txtbg">
-  <div>
-    <h1>BELLEVILLE en VRAI c'est dans :</h1>
-    <?php
-    require ('car.php');
-    ?>
-  </div>
-  <div class="space"></div>
-    <div class="vidprez">
-<iframe src="https://player.vimeo.com/video/211642278?color=ff7e00" width="1000" height="563" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>    </div>
-  </div>
-  <div>
-    <?php
-    require('_footer.php');
-    ?>
-  </div>
-</body>
+  <body>
+    <div>
+      <?php
+        require('_menu.php');
+       ?>
+    </div>
+    <div class="txtbg">
+    <div>
+      <h1>Pour plus d'information, contactez nous :</h1>
+      <h2><a class="contlink2" href="mailto:participation@bellevillenvrai.fr"><i class="fa fa-envelope" aria-hidden="true"></i>   participation@bellevillenvrai.fr</a></h2>
+      <h2><a class="contlink" href="https://www.facebook.com/pg/Belleville-en-Vrai-167646066632163"><i class="fa fa-facebook-square" aria-hidden="true"></i>    facebook</a></h2>
+      <h2><a class="contlink" href="https://twitter.com/blvenvrai"><i class="fa fa-twitter-square" aria-hidden="true"></i>    twitter</a></h2>
+  </body>
 </html>

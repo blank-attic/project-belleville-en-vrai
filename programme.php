@@ -12,28 +12,16 @@
   <link rel="stylesheet" href="assets/css/menustyle.css" type="text/css">
   <link rel="stylesheet" href="assets/css/mqstyle.css" media="screen" type="text/css">
 </head>
-<body>
-
-  <div>
+  <body>
     <?php
       require('_menu.php');
      ?>
-  </div>
-  <div class="txtbg">
-  <div>
-    <h1>BELLEVILLE en VRAI c'est dans :</h1>
+    <header>
+      <img src="assets/images/bev_prog.png" alt="programme image by LAWD">
+    </header>
     <?php
-    require ('car.php');
+      require('_carto.php');
     ?>
-  </div>
-  <div class="space"></div>
-    <div class="vidprez">
-<iframe src="https://player.vimeo.com/video/211642278?color=ff7e00" width="1000" height="563" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>    </div>
-  </div>
-  <div>
-    <?php
-    require('_footer.php');
-    ?>
-  </div>
-</body>
+
+  </body>
 </html>
