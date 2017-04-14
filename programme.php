@@ -22,6 +22,8 @@
     <?php
       require('_carto.php');
     ?>
-
+    <?php
+    require('_footer.php');
+    ?>
   </body>
 </html>

@@ -16,6 +16,7 @@
 <?php
   require('_menu.php');
   require("_galler.php");
+  require ('_footer.php');
  ?>
   </body>
 </html>

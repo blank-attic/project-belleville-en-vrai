@@ -36,5 +36,8 @@
         <a href="partiform.php">INSCRIPTION ARTISTE</a>
       </div>
     </div>
+    <?php
+    require('_footer.php');
+    ?>
   </body>
 </html>

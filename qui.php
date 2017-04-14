@@ -11,8 +11,8 @@
   <link rel="stylesheet" href="assets/css/ddtstyle.css" type="text/css">
   <link rel="stylesheet" href="assets/css/menustyle.css" type="text/css">
   <link rel="stylesheet" href="assets/css/mqstyle.css" media="screen" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.4.5/galleria.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.4.5/galleria.min.js"></script> -->
 </head>
   <body>
     <?php
@@ -21,7 +21,7 @@
     <div class="txtbg" id="quisect">
       <h1>BELLEVILLE EN VRAI C'EST QUI ?</h1>
       <div class="space"></div>
-      <div class="galleria">
+      <!-- <div class="galleria">
            <img src="assets/images/bev_costume/bev_costume_5.jpg">
            <img src="assets/images/bev_costume/bev_costume_8.jpg">
            <img src="assets/images/bev_costume/bev_costume_2.jpg">
@@ -42,11 +42,11 @@
            <img src="assets/images/bev_costume/bev_costume_1.jpg">
            <img src="assets/images/bev_costume/bev_costume_19.jpg">
        </div>
-       <h6>Photos : Clément Duquenne</h6>
+       <h6>Photos : Clément Duquenne</h6> -->
       <div class="space"></div>
       <div>
         <img src="assets/images/pazapas.JPG" alt="pazpas logo" />
-        <h2>PAZAPAS :</h2>
+        <h2>PAZAPAS BELLEVILLE:</h2>
         <p>Née en 2001, l’association Pazapas Belleville est composée de jeunes habitants du quartier de Belleville. L’association a vocation à mettre en place des projets <span class="titp">par et pour les jeunes du quartier</span> dans les domaines de la culture, du sport, de la solidarité internationale et de l’implication citoyenne.</p>
         <div class="space"></div>
         <p><span class="titp">Belleville en Vrai est le projet phare de l’association.</span> Plus de cinquante jeunes participent directement à l’organisation de l’événement, décidant collectivement des modalités des épreuves ainsi que du contenu de la programmation artistique <span class="titp">lors de réunions publiques.</span></p>
@@ -64,7 +64,7 @@
     <?php
       require('_footer.php');
      ?>
-     <script>
+     <!-- <script>
  (function() {
            Galleria.loadTheme('https://cdnjs.cloudflare.com/ajax/libs/galleria/1.4.5/themes/classic/galleria.classic.min.js');
            Galleria.configure({
@@ -75,6 +75,6 @@
             });
            Galleria.run('.galleria',{autoplay: 3000});
        }());
-       </script>
+       </script> -->
   </body>
 </html>
