@@ -71,7 +71,7 @@
              transition: 'fade',
              imageMargin: 10,
              height: 600,
-
+             lightbox: true
             });
            Galleria.run('.galleria',{autoplay: 3000});
        }());
