@@ -207,3 +207,8 @@ footer{
   font-size:1.3em;
   text-align: left;
 }
+
+#tofgraf {
+  border: 4px solid #ffffff;
+  border-radius: 13px;
+}

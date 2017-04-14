@@ -16,6 +16,11 @@
     <?php
       require('_menu.php');
      ?>
+  <header>
+    <div class="tophdr">
+      <img src="assets/images/bev_graff.jpg" alt="Belleville en vrai graff" id="tofgraf">
+    </div>
+  </header>
     <div class="txtbg">
       <h1>BELLEVILLE EN VRAI C'EST :</h1>
       <div>
@@ -39,7 +44,7 @@
           </ul>
           <div class="space"></div>
           <div class="space"></div>
-            <p class="linkp">Pour proposer un projet : <a href="partiform.php" class="txtlink"><i class="fa fa-user-plus" aria-hidden="true"></i> PARTICIPER</a>  ///  
+            <p class="linkp">Pour proposer un projet : <a href="partiform.php" class="txtlink"><i class="fa fa-user-plus" aria-hidden="true"></i> PARTICIPER</a>  ///
             Pour nous donner un coup de main le jour J : <a href="beneform.php" class="txtlink"><i class="fa fa-user-plus" aria-hidden="true"></i> AIDER</a></p>
       </div>
     </div>
