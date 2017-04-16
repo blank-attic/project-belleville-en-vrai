@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 14-index
 <!DOCTYPE html>
 <html>
 <head>

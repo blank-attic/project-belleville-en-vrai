@@ -11,7 +11,9 @@
     var mymap = L.map('mapbev').setView([48.8723, 2.380], 16);
 
     L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors | by LAWD'
+
+      attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors | markers by LAWD'
+
  }).addTo(mymap);
 
  var blackIcon = new L.Icon({

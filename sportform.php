@@ -275,14 +275,14 @@
       <h3>Choisis parmi les 8 Joueurs de votre équipe :</h3>
         <div class="divcol">
           <div>
-            <label for="nat1">les 3 Nageur(se)s :</label>
-            <input id="nat1"type="text" name="natation" placeholder="écris ici les prenoms Nageur(se)1 / Nageur(se)2 / Nageur(se)3" >
+            <label for="nat1">les 2 Nageur(se)s :</label>
+            <input id="nat1"type="text" name="natation" placeholder="écris ici les prenoms Nageur(se)1 / Nageur(se)2 " >
           </div>
         </div>
         <div class="divcol">
           <div>
-            <label for="run1">Les 2 Coureur(se)s:</label>
-            <input id="run1"type="text" name="course" placeholder="écris ici les prénoms Coureur(se)1 / Coureur(se)2" >
+            <label for="run1">Les 3 Coureur(se)s:</label>
+            <input id="run1"type="text" name="course" placeholder="écris ici les prénoms Coureur(se)1 / Coureur(se)2 / Coureur(se)3" >
           </div>
         </div>
         <div class="divcol">
