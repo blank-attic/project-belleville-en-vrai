@@ -24,11 +24,11 @@
       <h2><a class="contlink2" href="mailto:participation@bellevillenvrai.fr"><i class="fa fa-envelope" aria-hidden="true"></i>   participation@bellevillenvrai.fr</a></h2>
       <h2><a class="contlink" href="https://www.facebook.com/pg/Belleville-en-Vrai-167646066632163"><i class="fa fa-facebook-square" aria-hidden="true"></i>    facebook</a></h2>
       <h2><a class="contlink" href="https://twitter.com/blvenvrai"><i class="fa fa-twitter-square" aria-hidden="true"></i>    twitter</a></h2>
-<<<<<<< HEAD
+
     </div>
-=======
-    </div>  
->>>>>>> 14-index
+
+    </div>
+
       <?php
       require('_footer.php');
       ?>

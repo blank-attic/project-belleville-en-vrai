@@ -155,12 +155,13 @@ p {
 
 .radiobutt {
   display: flex;
-  width: 50%;
+  /*width: 50%;*/
   flex-direction: column;
   font-size: 1.2em;
   width: 40%;
   font-size: 1.5em;
   padding-bottom: 40px;
+  margin: auto;
 }
 
 .txtbg{

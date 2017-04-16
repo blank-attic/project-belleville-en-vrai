@@ -131,11 +131,7 @@
     width: 100%;
     text-align: center;
   }
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> 14-index
   #lightgallery li {
     list-style-type: none;
   }
