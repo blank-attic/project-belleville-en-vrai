@@ -176,7 +176,7 @@ footer{
 
 #ou {
   font-size: 1.3em;
-  color: #ff7e00;
+  color: #fff600;
 }
 
 .titp{
@@ -259,4 +259,18 @@ footer{
 
 .yello  {
   color: #fff600;
+}
+
+.vidprez {
+  display: block;
+  width: 96%;
+  margin: auto;
+}
+
+.player.sidedock {
+  display: none;
+  font-size: 0;
+}
+.player {
+  background-color: transparent;
 }

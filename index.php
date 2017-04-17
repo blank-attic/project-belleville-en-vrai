@@ -19,17 +19,13 @@
       require('_menu.php');
      ?>
   </div>
-  <div class="txtbg">
-  <div>
-    <h1>BELLEVILLE en VRAI c'est dans :</h1>
-    <?php
-    require ('car.php');
-    ?>
+
+    <div>
+<iframe class="vidprez" src="https://player.vimeo.com/video/211642278?color=fff600&title=0&byline=0&portrait=0" width="1180" height="664" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
   </div>
-  <div class="space"></div>
-    <div class="vidprez">
-<iframe src="https://player.vimeo.com/video/211642278?color=ff7e00" width="1000" height="563" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>    </div>
-  </div>
+  <?php
+  require ('car.php');
+  ?>
   <div>
     <?php
     require('_footer.php');
