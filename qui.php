@@ -18,6 +18,7 @@
     <?php
       require('_menu.php');
      ?>
+     
     <div class="txtbg" id="quisect">
       <h1>BELLEVILLE EN VRAI C'EST QUI ?</h1>
       <div class="space"></div>

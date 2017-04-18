@@ -1,8 +1,8 @@
-<div class="mainlive">
+<!-- <div class="mainlive">
   <div class="livelogo">
     <img src="assets/images/bev_livelogo.png" alt="belleville en vrai Le Live">
   </div>
-  integration du live facebook
+  integration du live facebook -->
   <!-- Load Facebook SDK for JavaScript -->
   <!-- <div id="fb-root"></div>
   <script>(function(d, s, id) {

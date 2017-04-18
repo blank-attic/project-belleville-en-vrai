@@ -18,7 +18,7 @@
   ?>
   <header>
     <div class="tophdr">
-      <img src="assets/images/bev_graff.jpg" alt="Belleville en vrai graff" id="tofgraf">
+      <img src="assets/images/bev_group14.JPG" alt="Belleville en vrai tournoi" class="tof">
     </div>
   </header>
   <div class="txtbg">
@@ -31,6 +31,11 @@
       <div class="space"></div>
       <p>Chaque année l’événement rassemble près de 500 jeunes entre 10 et 25 ans, garçons et filles, répartis en équipe de huit et en trois catégories : les petit.e.s (10-13 ans), les moyen.ne.s (14-17 ans) et les grand.e.s (18-25 ans). Pendant deux jours, les jeunes de chaque équipe doivent gagner un maximum de points par épreuve pour prétendre au titre honorifique de <br/><span class="titp">champions ou championnes du quartier !</span></p>
     </div>
+  </div>
+    <div>
+      <img src="assets/images/bev_group13.jpg" alt="Belleville en vrai tournoi" class="tof">
+    </div>
+    <div class="txtbg">
     <div>
       <div class="space"></div>
       <h2>UN FESTIVAL CULTUREL ET CITOYEN !!!</h2>
@@ -43,6 +48,10 @@
         <li class="litxt"><span class="titp">Un temps fort musical  pour clôturer l’événement :</span> remise des trophées par les parrains et marraines de l’événement, programmation d’artistes locaux et reconnus !</li>
       </ul>
       <div class="space"></div>
+    </div>
+      <div>
+        <img src="assets/images/bev_graff.jpg" alt="Belleville en vrai tournoi" class="tof">
+      </div>
       <div class="space"></div>
       <p class="linkp">Pour proposer un projet : <a href="partiform.php" class="txtlink"><i class="fa fa-user-plus" aria-hidden="true"></i> PARTICIPER</a>  ///
 

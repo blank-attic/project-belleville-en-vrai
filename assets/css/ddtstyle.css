@@ -200,13 +200,16 @@ footer{
 
 .linkp {
   font-size:1.3em;
-  text-align: left;
+  text-align: center;
 }
 
 
-#tofgraf {
+.tof{
+  display: block;
   border: 2px groove #ffffff;
-  border-radius: 13px;
+  border-radius: 7px;
+  max-width: 900px;
+  margin: auto;
 }
 #quisect img {
   display: block;
@@ -214,6 +217,7 @@ footer{
   border-radius: 30px;
   margin: auto;
 }
+
 
 .galleria {
   margin: auto;
@@ -224,6 +228,7 @@ footer{
 }
 
 .contlink {
+  width: 100%;
   color: #ff7e00;
   text-decoration: none;
 }
@@ -273,4 +278,64 @@ footer{
 }
 .player {
   background-color: transparent;
+}
+
+/*formulaire contact*/
+
+#page-wrap {
+	width: 660px;
+	background: white;
+	padding: 20px 50px 20px 50px;
+	margin: 20px auto;
+	min-height: 500px;
+	height: auto !important;
+	height: 500px;
+}
+
+#contact-area {
+	width: 600px;
+	margin-top: 25px;
+  margin: auto;
+}
+
+#contact-area input, #contact-area textarea {
+	padding: 5px;
+	width: 470px;
+	font-size: 1.4em;
+	margin: 0px 0px 10px 0px;
+	border: 2px solid #ff7e00;
+  border-radius: 5px;
+}
+
+#contact-area textarea {
+	height: 90px;
+}
+
+#contact-area textarea:focus, #contact-area input:focus {
+	border: 2px solid #900;
+}
+
+#contact-area input.submit-button {
+	width: 100px;
+	float: right;
+  color: #002255;
+  font-weight: bold;
+  background-color: #fff600;
+  border-radius: 5px;
+}
+
+label {
+	float: left;
+	text-align: right;
+	margin-right: 15px;
+	width: 100px;
+	padding-top: 5px;
+	font-size: 1.4em;
+}
+
+.errmess {
+  width: 100%;
+  background-color: #aaeeff;
+  font-size:4em;
+  font-weight: bold;
 }

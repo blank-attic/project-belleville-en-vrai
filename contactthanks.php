@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,25 +12,16 @@
   <link rel="stylesheet" href="assets/css/mqstyle.css" media="screen" type="text/css">
 </head>
 <body>
-  <header id="hdrndx">
-    <div class="logo">
-      <a href="index.php"><img src="assets/images/NewLogo_BEV_wht.png" alt="affiche bev 8"></a>
-    </div>
-  </header>
-  <?php
-  require ('car.php');
-  ?>
-  <div class="txtbg">
-    <h1>BELLEVILLE EN VRAI 8 C'est BIENTOT !</h1>   
-    <h2>...Construisons 3 Jours de Fête, ENSEMBLE !</h2>
-    <div class="formlinks">
-      <a href="beneform.php">INSCRIPTION BENEVOLE</a>
-      <a href="sportform.php">INSCRIPTION TOURNOI</a>
-      <a href="partiform.php">INSCRIPTION ARTISTE</a>
-    </div>
-  </div>
-  <?php
-  require('_footer.php');
-  ?>
+	<div id="page-wrap">
+		<div>
+			<p><a href="index.php"><img src="assets/images/NewLogo_BEV_wht.png" alt="bellevillenvrai" /></a></p>
+		</div>
+		<div>
+			<h1>Votre message a été envoyé !</h1>
+		</div>
+		<div>
+			<p><a href="index.php">Retour vers BELLEVILLE EN VRAI</a></p>
+		</div>
+	</div>
 </body>
 </html>

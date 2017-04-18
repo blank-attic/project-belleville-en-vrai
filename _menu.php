@@ -17,6 +17,9 @@
     </li>
     <li>
       <a href="gallery.php" class="menutabz"><i class="fa fa-picture-o" aria-hidden="true"></i> GALERIE</a>
+      <ul>
+        <li><a href="costume_gallery.php" class="subtabz">BEV en COSTUME</a></li>
+      </ul>
     </li>
   </ul>
 </nav>
