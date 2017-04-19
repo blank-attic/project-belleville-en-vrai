@@ -19,7 +19,7 @@ nav ul {
 }
 
 nav > ul > li {
-  /*display: inline-block;*/
+  display: inline-block;
   font-size: 23px;
   font-weight: bold;
   width: 20%;
@@ -40,26 +40,29 @@ nav a {
 }
 
 nav a:hover {
-  height: 62.5px;
   color: #aaeeff;
 }
-
+/* pour faire disparaitre les sous menus */
 nav li a + * {
   display: none;
   position:absolute;
-  font-size: 23px;
   width: 20%;
 }
-
+/* pour faire apparaitre les sous menus en hover */
 nav li a:hover + *{
   display: block;
-  font-size: 23px;
+  font-size: 20px;
   list-style-type: none;
+  /*margin:5px;*/
 }
 
 nav li a + *:hover {
   display: block;
   list-style-type: none;
+  /*background-color: #fff600;*/
+  font-size: 19px;
+  color: #002255;
+  height: auto;
 }
 
 ul {

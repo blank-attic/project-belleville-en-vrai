@@ -78,19 +78,19 @@ header{
     text-align:center;
     text-decoration:none;
     font-family:Sansita;
-    color:#fff600;
-    background-color:#aaeeff;
+    color:#002255;
+    background-color:#ff7e00;
     padding:20px 0;
     font-size:2em;
     border-radius:5pt;
-    text-shadow:2px 2px #000;
+    text-shadow:2px 2px #fff600;
     border:3px groove #ff7e00;
     transition: background-color 0.3s, text-shadow 0.3s;
 }
 
 .formlinks > a:hover {
     text-shadow:1px 1px #000;
-    background-color:#ff7e00;
+    background-color:#fff600;
 }
 
 .numbcd{
@@ -226,6 +226,10 @@ footer{
 .galleria-container{
   background-color: transparent;
 }
+h6 {
+  font-size: 1.5em;
+  text-align: center;
+}
 
 .contlink {
   width: 100%;
@@ -271,26 +275,16 @@ footer{
   width: 96%;
   margin: auto;
 }
-
+/*
 .player.sidedock {
   display: none;
   font-size: 0;
 }
 .player {
   background-color: transparent;
-}
+}*/
 
 /*formulaire contact*/
-
-#page-wrap {
-	width: 660px;
-	background: white;
-	padding: 20px 50px 20px 50px;
-	margin: 20px auto;
-	min-height: 500px;
-	height: auto !important;
-	height: 500px;
-}
 
 #contact-area {
 	width: 600px;
@@ -315,14 +309,6 @@ footer{
 	border: 2px solid #900;
 }
 
-#contact-area input.submit-button {
-	width: 100px;
-	float: right;
-  color: #002255;
-  font-weight: bold;
-  background-color: #fff600;
-  border-radius: 5px;
-}
 
 label {
 	float: left;
@@ -333,9 +319,20 @@ label {
 	font-size: 1.4em;
 }
 
-.errmess {
-  width: 100%;
-  background-color: #aaeeff;
-  font-size:4em;
+.phatbutt {
+  display: block;
+  width: 59%;
+  margin: auto;
+
+}
+
+#subcont {
+  color: #002255;
   font-weight: bold;
+  background-color: #ff7e00;
+  cursor: pointer;
+}
+
+#subcont:hover {
+  background-color: #fff600;
 }

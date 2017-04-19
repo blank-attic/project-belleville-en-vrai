@@ -17,26 +17,110 @@
     <?php
     require('_menu.php');
     ?>
-    <div id="errmess">
-
-    </div>
   </div>
-  <div class="txtbg">
-    <h1>Pour plus d'information, contactez nous :</h1>
-    <div id="contact-area">
-      <form method="post" action="contacttraitement.php">
-        <label for="Name">Nom:</label>
-        <input type="text" name="Name" id="Name" placeholder="entrez votre nom"/>
+    <?php
+    //validate functions
+    function validate_email($p, $key) {
+      if (isset($p[$key])) {
+        $p[$key] = filter_var($p[$key], FILTER_SANITIZE_EMAIL);
+      }
+      if (filter_var($p[$key], FILTER_VALIDATE_EMAIL)) {
+        return true;
+      }
+      return false;
+    }
 
-        <label for="Email">Email:</label>
-        <input type="text" name="Email" id="Email" placeholder="entrez votre e-mail"/>
+    function validate_input($p, $key, $min, $max) {
+      if (isset($p[$key]) && $p[$key] >= $min && $p[$key] <= $max) {
+        return true;
+      }
+      return false;
+    }
+     ?>
+    <?php
+      if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        //validate inputs
+        $email_ok = validate_email($_POST, "expediteur");
+        $subject_ok = validate_input($_POST, "objet", 5, 50);
+        $message_ok = validate_input($_POST, "message", 20, 140);
 
-        <label for="Message">Message:</label><br />
-        <textarea name="Message" rows="20" cols="20" id="Message" placeholder="votre Message..."></textarea>
+        //check if validation is ok
+        if ($email_ok && $subject_ok && $message_ok) {
+          //send mail
+          $EmailTo = "majorgrafismz@gmail.com";
+          $okmail = mail("majorgrafismz@gmail.com",
+                          $_POST["objet"],
+                          $_POST["message"],
+                          $_POST["expediteur"]);
 
-        <input type="submit" name="submit" value="Envoi" class="submit-button" />
-      </form>
+          //if mail errored
+          if (!$okmail) {
+            $error = "Votre e-mail n'a pas été envoyé.";
+          }
+        } else {
+          //if validation failed
+          $error = "Mauvais paramétres : ";
+          //if email errored
+          if (!$email_ok) {
+            $error .= "<li> Entrez une adresse mail valide.</li>";
+          }
+          //if subject errored
+          if (!$subject_ok) {
+            $error .= "<li> l'Objet doit avoir entre 5 et 50 caractéres.</li>";
+          }
+
+          //if message errored
+          if (!$message_ok) {
+            $error .= "<li>le Message doit avoir entre 20 et 140 caractéres.</li>";
+          }
+        }
+      }
+     ?>
+    <div class="error">
+     <?php
+     if (isset($error)) {
+       echo "<ul>$error</ul>";
+     }
+     ?>
     </div>
+    <div id="contact-area">
+    <form action="contact.php" method="post">
+      <div>
+        <label for="expediteur">Ton Mail :</label>
+        <input id="expediteur"
+        class="<?php
+        if (isset($email_ok) && !$email_ok) {
+          echo 'error';
+        }
+        ?>"
+        type="text" name="expediteur" value="<?php if (isset($_POST['expediteur'])) {
+          echo $_POST['expediteur'];
+        }?>" />
+      </div>
+      <!-- <div>
+        <label for="cc">cc</label>
+        <input id="cc" type="text" name="cc" />
+      </div>
+      <div>
+        <label for="cci">cci</label>
+        <input type="text" name="cci" />
+      </div> -->
+      <div>
+        <label for="objet">objet :</label>
+        <input type="text" name="objet" value="<?php if (isset($_POST['objet'])) {
+          echo $_POST['objet'];
+        }?>"/>
+      </div>
+      <div>
+        <label for="message">message :</label>
+        <textarea name="message" rows="8" cols="40" value="<?php if (isset($_POST['message'])) {
+          echo $_POST['message'];
+        }?>"></textarea>
+      </div>
+      <div class="phatbutt">
+        <input type="submit" id="subcont" value="Envoyer" />
+      </div>
+    </form>
   </div>
   <div class="space"></div>
   <div class="space"></div>
