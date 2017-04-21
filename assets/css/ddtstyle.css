@@ -99,6 +99,7 @@ header{
   font-size: 2.3em;
   color : white;
   text-shadow:2px 1.2px #000;
+  text-align: center;
   justify-content: center;
 }
 
@@ -144,15 +145,21 @@ iframe {
 }
 
 footer{
-  display: flex;
+  display: block;
   margin-top: 200px;
+}
+
+.footdiv {
+  /*display: block;*/
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .footnav {
   padding-top: 8px;
-  margin-bottom:5px;
+  margin-bottom:1px;
   background-color: rgba(0, 34, 85, 0.9);
-  border-radius: 10px;
 }
 
 /*.footnav ul {
@@ -161,12 +168,33 @@ footer{
 .footnav li {
   font-weight: lighter;
   width: 100%;
+  height: 36px;
 }
 
-.footnav a{
-  font-size: 0.85em;
+.footnav a {
+  font-size: 0.9em;
   text-align: center;
 }
+
+div#foot2.footnav2 {
+  background-color: transparent;
+  margin-bottom: 5px;
+  text-align: center;
+
+}
+
+div#foot2.footnav2 a {
+  height: auto;
+  font-size: 2em;
+  color: #ffffff;
+  margin: 5px;
+  cursor: pointer;
+}
+
+div#foot2.footnav2 a:hover {
+  color: #fff600;
+}
+
 
 #mapbev {
   height: 600px;
@@ -242,7 +270,6 @@ h6 {
   text-decoration: none;
 }
 
-
 .contlink:hover, .contlink2:hover {
   color: #aaeeff;
 }
@@ -252,7 +279,7 @@ h6 {
   flex-direction: column;
   width:80%;
   background-color: rgba(0, 34, 85, 0.9);
-  /*font-size: 1.3em;*/
+  font-size: 80%;
   justify-content: center;
   margin: auto;
   border-radius: 10px;

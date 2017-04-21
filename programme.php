@@ -41,7 +41,7 @@
       <h2><span class="yello">12h :</span> Scène d’Expression Libre</h2>
       <h2><span class="yello">14h :</span> Animation Sportive</h2>
       <h2><span class="yello">17h :</span> Conférence gesticulée / Débat</h2>
-      <h2><span class="yello">18h - 21h :</span> Scène quartier : scène amateur ouverte via <a href="partiform.php"class="contlink">Appel à Participation</a></h2>
+      <h2><span class="yello">18h - 21h :</span> Scène quartier : scène amateur ouverte via <a href="partiform.php"class="contlink"> Appel à Participation</a></h2>
       <h2>Toute la journée, retransmission Live des Epreuves et des Scores, point temporaire d’accès au Droit</h2>
       <h3>Place Alphonse Allais | Métro : Belleville, Couronnes</h3>
     </div>
@@ -55,7 +55,7 @@
       <h3>15 cité Jandelle | Métro : Belleville</h3>
 
       <h2><span class="yello">15h30 - 16h00 :</span> Batucada - Déambulation</h2>
-      <h3>du TEP Jandelle à l’Amphithéâtre du Parc de Belleville</h3>
+      <h3>du TEP Jandelle à l'Amphithéâtre du Parc de Belleville</h3>
     </div>
     <div class="space"></div>
 
@@ -65,7 +65,7 @@
       <h3>Rue Piat | Métro : Pyrénées</h3>
     </div>
     <div class="space"></div>
-    <h2 class="yello">A l' Amphithéâtre du Parc de Belleville </h2>
+    <h2 class="yello">A l'Amphithéâtre du Parc de Belleville </h2>
     <div class="progtxt">
       <h2><span class="yello">15h :</span> Jeux de la Jongle – Spectacle participatif</h2>
       <h2><span class="yello">16h :</span> Démonstration arts martiaux & Démonstration Double Dutch</h2>

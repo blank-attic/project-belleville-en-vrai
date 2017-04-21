@@ -31,7 +31,7 @@
     }
 
     function validate_input($p, $key, $min, $max) {
-      if (isset($p[$key]) && $p[$key] >= $min && $p[$key] <= $max) {
+      if (isset($p[$key]) && strlen($p[$key]) >= $min && strlen($p[$key]) <= $max) {
         return true;
       }
       return false;
@@ -47,10 +47,10 @@
         //check if validation is ok
         if ($email_ok && $subject_ok && $message_ok) {
           //send mail
-          $EmailTo = "majorgrafismz@gmail.com";
+          // $EmailTo = "majorgrafismz@gmail.com";
           $okmail = mail("majorgrafismz@gmail.com",
                           $_POST["objet"],
-                          $_POST["message"],
+                          wordwrap($_POST["message"], 70,"\r\n"),
                           $_POST["expediteur"]);
 
           //if mail errored
@@ -79,7 +79,7 @@
     <div class="error">
      <?php
      if (isset($error)) {
-       echo "<ul>$error</ul>";
+       echo "<ul><h3>$error</h3></ul>";
      }
      ?>
     </div>

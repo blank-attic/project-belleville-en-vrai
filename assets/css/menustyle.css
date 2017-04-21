@@ -5,7 +5,7 @@ body {
 
 nav {
   width: 100%;
-  /*margin-top: 30px;*/
+  padding-top: 10px;
   margin-bottom: 150px;
   background-color: rgba(0, 34, 85, 0.9);
   z-index: 5;
@@ -47,13 +47,15 @@ nav li a + * {
   display: none;
   position:absolute;
   width: 20%;
+  margin-left:15px;
 }
 /* pour faire apparaitre les sous menus en hover */
 nav li a:hover + *{
   display: block;
-  font-size: 20px;
+  font-size: 19px;
   list-style-type: none;
-  /*margin:5px;*/
+  text-align: right;
+  margin-left:15px;
 }
 
 nav li a + *:hover {
@@ -63,6 +65,7 @@ nav li a + *:hover {
   font-size: 19px;
   color: #002255;
   height: auto;
+  text-align: right;
 }
 
 ul {
