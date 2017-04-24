@@ -17,16 +17,16 @@
       require('_menu.php');
      ?>
     <div class="txtbg">
-      <header id="hdrndx">
-        <div class="logo">
-          <img src="assets/images/NewLogo_BEV_wht.png" alt="affiche bev 8">
-        </div>
-      </header>
       <div class="credz">
-        <h1>site créé par : Badis Nakhli, Laurent Abemango pour LAWD et Abdoulaye Ndao</h1>
-        <h2>Remerciements: _BLANK , Belleville Citoyenne</h2>
+        <h2>Remerciements :  _BLANK , Belleville Citoyenne, nos Familles, le Cosmos !</h2>
       </div>
     </div>
+    <header id="hdrndx">
+      <div class="logo">
+        <img src="assets/images/NewLogo_BEV_wht.png" alt="affiche bev 8">
+      </div>
+    </header>
+    <h3>site créé par : Badis Nakhli, Laurent Abemango pour LAWD et Abdoulaye Ndao</h3>
     <div>
       <?php
       require('_footer.php');
