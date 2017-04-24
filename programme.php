@@ -41,7 +41,7 @@
       <h2><span class="yello">12h :</span> Scène d’Expression Libre</h2>
       <h2><span class="yello">14h :</span> Animation Sportive</h2>
       <h2><span class="yello">17h :</span> Conférence gesticulée / Débat</h2>
-      <h2><span class="yello">18h - 21h :</span> Scène quartier : scène amateur ouverte via <a href="partiform.php"class="contlink"> Appel à Participation</a></h2>
+      <h2><span class="yello">18h - 21h :</span> Scène quartier : scène amateur ouverte via <a href="partiform.php"class="contlink">- Appel à Participation -</a></h2>
       <h2>Toute la journée, retransmission Live des Epreuves et des Scores, point temporaire d’accès au Droit</h2>
       <h3>Place Alphonse Allais | Métro : Belleville, Couronnes</h3>
     </div>
