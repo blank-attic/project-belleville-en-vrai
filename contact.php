@@ -46,9 +46,8 @@
 
         //check if validation is ok
         if ($email_ok && $subject_ok && $message_ok) {
-          //send mail
-          // $EmailTo = "majorgrafismz@gmail.com";
-          $okmail = mail("majorgrafismz@gmail.com",
+          //send mail          
+          $okmail = mail("participation@bellevillenvrai.fr",
                           $_POST["objet"],
                           wordwrap($_POST["message"], 70,"\r\n"),
                           $_POST["expediteur"]);
