@@ -19,7 +19,7 @@
     <div class="txtbg">
       <div class="credz">
         <h2>
-          <span class="yello">Crédits :</span> site créé par les _BLANKERS : Badis Nakhli, Laurent Abemango pour LAWD et Abdoulaye Ndao.
+          <span class="yello">Crédits :</span> site conceptualisé & réalisé par les <span class="yello">_BLANKERS</span> : <br/> Badis Nakhli, Laurent Abemango pour LAWD et Abdoulaye Ndao.
         </h2>
       </div>
     </div>

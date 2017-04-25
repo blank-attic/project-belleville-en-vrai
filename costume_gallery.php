@@ -55,9 +55,6 @@
              });
             Galleria.run('.galleria',{autoplay: 3000});
         }());
-        </script>
-        <?php
-        require('_footer.php');
-         ?>
+        </script>        
   </body>
 </html>
