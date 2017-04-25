@@ -63,6 +63,13 @@ header {
   justify-content: center;
 }
 
+.logo img {
+  display: block;
+  max-width: 50%;
+  margin: auto;
+  padding-top: 10px;
+}
+
 /* landing page buttons */
 
 .formlinks {
@@ -79,11 +86,11 @@ header {
     text-decoration:none;
     font-family:Sansita;
     color:#002255;
-    background-color:#ff7e00;
+    background-color:#ffffff;
     padding:20px 0;
     font-size:2em;
     border-radius:5pt;
-    text-shadow:2px 2px #fff600;
+    text-shadow:2px 2px #ff7e00;
     border:3px groove #ff7e00;
     transition: background-color 0.3s, text-shadow 0.3s;
 }
@@ -160,17 +167,16 @@ footer{
   width: 100%;
   margin: 0;
   padding: 0;
+  background-color: #002255;
+  /*rgba(0, 34, 85, 0.93);*/
 }
 
 .footnav {
   padding-top: 8px;
-  margin-bottom:1px;
-  background-color: rgba(0, 34, 85, 0.9);
+  /*conflit de marge*/
+  margin-bottom:0px;
 }
 
-/*.footnav ul {
-  width: 100%;
-}*/
 .footnav li {
   font-weight: lighter;
   width: 100%;
@@ -178,22 +184,23 @@ footer{
 }
 
 .footnav a {
-  font-size: 0.9em;
+  font-size: 0.8em;
   text-align: center;
 }
 
 div#foot2.footnav2 {
-  background-color: transparent;
-  margin-bottom: 5px;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
   text-align: center;
 
 }
 
 div#foot2.footnav2 a {
   height: auto;
-  font-size: 2em;
+  font-size: 1.7em;
   color: #ffffff;
   margin: 5px;
+  margin-bottom: 1px;
   cursor: pointer;
 }
 
@@ -398,4 +405,14 @@ label {
   /*margin-bottom: 10px;*/
   margin: 8px;
   border-radius: 10pt;
+}
+
+/*page credz*/
+
+.whitelink {
+  color: #ffffff;
+  text-decoration: none;
+}
+.whitelink:hover {
+  color: #aaeeff;
 }

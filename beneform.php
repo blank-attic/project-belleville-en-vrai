@@ -53,9 +53,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
  <title>Inscription Bénévole</title>
  <link rel="stylesheet" href="assets/css/sportformstyle.css" type="text/css">
  <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+ <link href="assets/vendor/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+ <link rel="stylesheet" href="assets/css/menustyle.css" type="text/css">
  <link rel="stylesheet" href="assets/css/mqstyle.css" media="screen" type="text/css">
 </head>
 <body>
+  <?php
+  require('_menu.php');
+   ?>
   <div class="txtbg">
     <h1>Venez nous aider à organiser Belleville en vrai !</h1>
     <h2>Chaque année, une centaine de bénévoles (reconnaissables à leurs t shirts) sont présents pour rendre l’événement encore plus vivant et participatif.
@@ -170,5 +175,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       </div>
     </form>
   </div>
+  <?php
+  require('_footer.php');
+   ?>
 </body>
 </html>

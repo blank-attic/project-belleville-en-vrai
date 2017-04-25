@@ -25,7 +25,7 @@
       <div class="space"></div>
       <div>
         <img src="assets/images/pazapas.JPG" alt="pazpas logo" />
-        <h2>PAZAPAS BELLEVILLE:</h2>
+        <h2>PAZAPAS Belleville :</h2>
         <p>Née en 2001, l’association Pazapas Belleville est composée de jeunes habitants du quartier de Belleville. L’association a vocation à mettre en place des projets <span class="titp">par et pour les jeunes du quartier</span> dans les domaines de la culture, du sport, de la solidarité internationale et de l’implication citoyenne.</p>
         <div class="space"></div>
         <p><span class="titp">Belleville en Vrai est le projet phare de l’association.</span> Plus de cinquante jeunes participent directement à l’organisation de l’événement, décidant collectivement des modalités des épreuves ainsi que du contenu de la programmation artistique <span class="titp">lors de réunions publiques.</span></p>

@@ -21,5 +21,8 @@
   require("_galler.php");
   ?>
 </div>
+<?php
+require('_footer.php');
+ ?>
   </body>
 </html>

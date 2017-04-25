@@ -18,7 +18,9 @@
      ?>
     <div class="txtbg">
       <div class="credz">
-        <h2>Remerciements :  _BLANK , Belleville Citoyenne, nos Familles, le Cosmos !</h2>
+        <h2>
+          <span class="yello">Crédits :</span> site créé par les _BLANKERS : Badis Nakhli, Laurent Abemango pour LAWD et Abdoulaye Ndao.
+        </h2>
       </div>
     </div>
     <header id="hdrndx">
@@ -26,7 +28,6 @@
         <img src="assets/images/NewLogo_BEV_wht.png" alt="affiche bev 8">
       </div>
     </header>
-    <h3>site créé par : Badis Nakhli, Laurent Abemango pour LAWD et Abdoulaye Ndao</h3>
     <div>
       <?php
       require('_footer.php');

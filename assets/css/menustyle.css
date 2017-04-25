@@ -7,7 +7,8 @@ nav {
   width: 100%;
   padding-top: 10px;
   margin-bottom: 150px;
-  background-color: rgba(0, 34, 85, 0.9);
+  background-color: #002255;
+  /*rgba(0, 34, 85, 0.9);*/
   z-index: 5;
 }
 

@@ -8,6 +8,8 @@
   <title>Inscriptions Tournoi</title>
   <link rel="stylesheet" href="assets/css/sportformstyle.css" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+  <link href="assets/vendor/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="assets/css/menustyle.css" type="text/css">
   <link rel="stylesheet" href="assets/css/mqstyle.css" media="screen" type="text/css">
 </head>
 <body>
@@ -99,6 +101,9 @@
     }
   }
   ?>
+  <?php
+  require('_menu.php');
+   ?>
   <div class="bio">
     <h1>C'est l'heure d'inscrire votre équipe à la nouvelle édition de Belleville en Vrai les 19, 20 et 21 mai prochains.</h1>
     <h2>Attention il faut être huit pour s'inscrire. Dans chaque catégorie, les quatre premières équipes de chaque quartier seront prioritaires, les autres seront sur liste d'attente.
@@ -296,5 +301,8 @@
         </div>
       </form>
     </div>
+    <?php
+    require('_footer.php');
+     ?>
   </body>
 </html>

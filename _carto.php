@@ -26,14 +26,14 @@
 });
 
   L.marker([48.8714538,2.3788977], {icon: blackIcon}).addTo(mymap)
-  .bindPopup('Vendredi 19 Mai<h3>Piscine A.Nakache</h3>18h00: Epreuves de Natation<br/>Métro: Belleville')
+  .bindPopup('Vendredi 19 Mai<h3>Piscine A.Nakache</h3>18h00: Epreuve de Natation<br/>Métro: Belleville')
   .openPopup();
   L.marker([48.871489,2.378383], {icon: blackIcon}).addTo(mymap)
   .bindPopup('Vendredi 19 Mai<h3>19h00:<br/> SURPRISES !!!</h3>Métro: Belleville');
   L.marker([48.8710678,2.3847051], {icon: blackIcon}).addTo(mymap)
-  .bindPopup('Samedi 20 Mai<h3>Parc de Belleville</h3>09h30: Epreuves du Cross <br/>Dimanche 21 Mai<br/>14h00-17h00 : Animation foot par Tatane<br/>Métro: Belleville, Couronnes, Pyrénées');
+  .bindPopup('Samedi 20 Mai<h3>Parc de Belleville</h3>09h30: Epreuves du Cross <br/>Dimanche 21 Mai<br/>14h00-17h00 : Animation Foot<br/>Métro: Belleville, Couronnes, Pyrénées');
   L.marker([48.87064,2.382127], {icon: blackIcon}).addTo(mymap)
-  .bindPopup('Samedi 20 Mai<h3>Place Alphonse Allais</h3>09h00: Chantier participatif<br/>12h00: Scène d’expression libre<br/>15h00 : Conférence gesticulée<br/>16h30 : Goûter partagé – Vélo Smoothy Mixer<br/>18h : Scène Artistes Quartier<br/>Métro: Belleville, Couronnes');
+  .bindPopup('Samedi 20 Mai<h3>Place Alphonse Allais</h3>09h00: Chantier participatif<br/>12h00: Scène d’expression libre<br/>15h00 : Conférence gesticulée<br/>16h30 : Goûter partagé<br/>18h00 : Scène Artistes Quartier<br/>Métro: Belleville, Couronnes');
   L.marker([48.870012, 2.376315], {icon: blackIcon}).addTo(mymap)
   .bindPopup('Dimanche 21 Mai<h3>Gymnase Orillon</h3>10h00: Finales Basket<br/>Métro: Belleville');
   L.marker([48.8754096,2.3779683], {icon: blackIcon}).addTo(mymap)

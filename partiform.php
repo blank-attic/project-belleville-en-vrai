@@ -58,52 +58,57 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <title>Inscription Artiste</title>
   <link rel="stylesheet" href="assets/css/sportformstyle.css" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+  <link href="assets/vendor/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="assets/css/menustyle.css" type="text/css">
   <link rel="stylesheet" href="asset/css/mqstyle.css" media="screen" type="text/css">
 </head>
 <body>
+  <?php
+  require('_menu.php');
+   ?>
   <div class="formbase">
   <form action="partiform.php" method="POST">
-    <p>Remplis ce formulaire si tu est un Artiste ou un Groupe est que tu veux nous montrer ton art  </p>
+    <p>Munissez vous de votre instrument de musique, de votre pinceau, ou tout simplement de votre voix pour venir vous exprimer ! Une scène ouverte est organisée sur la place Alphonse Allais le samedi 20 mai. Remplissez le formulaire suivant pour proposer votre projet :</p>
     <div class="divrow">
       <div>
         <label for="nom">ARTISTE, GROUPE :</label>
         <input type="text" id="nom" name="nom" placeholder="Nom de l'artiste/groupe " value="<?php echo isset($_POST["nom"]) ? $_POST["nom"] : "";?>"/>
       </div>
       <div>
-        <label for="contact">QUI EST TON RÉFÉRENT :</label>
+        <label for="contact">TON CONTACT :</label>
         <input type="text" id="ndc" name="contact" placeholder="Nom du contact" value="<?php echo isset($_POST["contact"]) ? $_POST["contact"] : "";?>"/>
       </div>
     </div>
     <div class="divcol">
       <div>
-        <label for="tel">TON NUMERO DE TEL :</label>
-        <input type="tel  " id="tel" name="tel" placeholder="écris ici ton numéro de téléphone" value="<?php echo isset($_POST["tel"]) ? $_POST["tel"] : "";?>"/>
+        <label for="tel">SON NUMERO DE TEL :</label>
+        <input type="tel  " id="tel" name="tel" placeholder="écris ici son numéro de téléphone" value="<?php echo isset($_POST["tel"]) ? $_POST["tel"] : "";?>"/>
       </div>
       <div>
-        <label for="email">TON E-MAIL :</label>
-        <input type="email" id="email" name="email" placeholder="écris ici ton E-mail" value="<?php echo isset($_POST["email"]) ? $_POST["email"] : "";?>"/>
+        <label for="email">SON E-MAIL :</label>
+        <input type="email" id="email" name="email" placeholder="écris ici son E-mail" value="<?php echo isset($_POST["email"]) ? $_POST["email"] : "";?>"/>
       </div>
     <div>
-    <label for="discipline">DISCIPLINE ARTISTIQUE:</label>
+    <label for="discipline">DISCIPLINE ARTISTIQUE :</label>
     <input type="text" id="discipline" name="discipline" placeholder="écris ici ta discipline" value="<?php echo isset($_POST["discipline"]) ? $_POST["discipline"] : "";?>"/>
   </div>
 </div>
 <div class="divcol">
   <div>
     <label for="participants">NOMBRE DE PARTICIPANTS :</label>
-    <input type="text" id="participants" name="participants" placeholder="combien de personne participe" value="<?php echo isset($_POST["participants"]) ? $_POST["participants"] : "";?>"/>
+    <input type="text" id="participants" name="participants" placeholder="combien de participants" value="<?php echo isset($_POST["participants"]) ? $_POST["participants"] : "";?>"/>
   </div>
 </div>
 <div id="artprojet">
-  <label for="message">Description du projet ..</label><br>
+  <h3>Description du projet ...</h3>
   <textarea id="message" name="artprojet" rows="5"><?php echo (isset($_POST["artprojet"]) ? $_POST["artprojet"] : "...");?></textarea>
 </div>
 <div id="artprojet2">
-  <label for="message">Avez vous déjà présenté ce projet. Si oui où et quand ?..</label><br>
+  <h3>Avez vous déjà présenté ce projet. Si oui où et quand ?..</h3>
   <textarea id="message" name="artprojet2" rows="5"><?php echo (isset($_POST["artprojet2"]) ? $_POST["artprojet2"] : "...");?></textarea>
 </div>
 <div id="lien">
-  <label for="message">Lien illustrant vos projets (site, youtube, soundcloud...)</label><br>
+  <h3>Lien(s) vers vos projets (site, youtube, soundcloud...) :</h3>
   <textarea id="message" name="lien" rows="5"><?php echo (isset($_POST["lien"]) ? $_POST["lien"] : "...");?></textarea>
 </div>
 <div class="bsub">
@@ -111,5 +116,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </div>
 </form>
 </div>
+<?php
+require('_footer.php');
+ ?>
 </body>
 </html>

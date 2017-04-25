@@ -12,29 +12,24 @@
   <link rel="stylesheet" href="assets/css/menustyle.css" type="text/css">
   <link rel="stylesheet" href="assets/css/mqstyle.css" media="screen" type="text/css">
 </head>
-<body>
-  <?php
-  require('_menu.php');
-   ?>
-  <header id="hdrndx">
-    <div class="logo">
-      <a href="index.php"><img src="assets/images/NewLogo_BEV_wht.png" alt="affiche bev 8"></a>
+  <body>
+    <?php
+      require('_menu.php');
+     ?>
+    <div class="txtbg">
+      <div class="credz">
+        <h2><span class="yello">MERCI ! :</span>A Tous les Participants, Tous les Bénévoles et Tous nos <a href="partnaz.php" class="whitelink">Partennaires</a>.</h2>
+      </div>
     </div>
-  </header>
-  <?php
-  require ('car.php');
-  ?>
-  <div class="txtbg">
-    <h1>BELLEVILLE EN VRAI 8 C'est BIENTOT !</h1>
-    <h2>...Construisons 3 Jours de Fête, ENSEMBLE !</h2>
-    <div class="formlinks">
-      <a href="beneform.php">INSCRIPTION BENEVOLE</a>
-      <a href="sportform.php">INSCRIPTION TOURNOI</a>
-      <a href="partiform.php">INSCRIPTION ARTISTE</a>
+    <header id="hdrndx">
+      <div class="logo">
+        <img src="assets/images/NewLogo_BEV_wht.png" alt="affiche bev 8">
+      </div>
+    </header>
+    <div>
+      <?php
+      require('_footer.php');
+      ?>
     </div>
-  </div>
-  <?php
-  require('_footer.php');
-  ?>
-</body>
+  </body>
 </html>
