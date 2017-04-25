@@ -18,7 +18,7 @@
      ?>
     <div class="txtbg">
       <div class="credz">
-        <h2><span class="yello">MERCI ! :</span>A Tous les Participants, Tous les Bénévoles et Tous nos <a href="partnaz.php" class="whitelink">Partennaires</a>.</h2>
+        <h2><span class="yello">MERCI ! </span> A Tous les Participants, Tous les Bénévoles et Tous nos <a href="partnaz.php" class="whitelink">Partennaires</a>.</h2>
       </div>
     </div>
     <header id="hdrndx">
