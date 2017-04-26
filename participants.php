@@ -45,10 +45,10 @@ spl_autoload_register(function ($class) {
     echo "<tbody>";
     foreach ($volunteers as $k => $v) {
       echo "<tr class='volunteer'>";
-      echo "<td>$v[nom]</td>";
-      echo "<td>$v[contact]</td>";
       echo "<td>$v[email]</td>";
+      echo "<td>$v[nom]</td>";
       echo "<td>$v[tel]</td>";
+      echo "<td>$v[contact]</td>";
       echo "<td>$v[discipline]</td>";
       echo "<td>$v[participants]</td>";
       echo "<td>$v[descriptions]</td>";
