@@ -26,7 +26,7 @@ spl_autoload_register(function ($class) {
   <div class="bluebg">
     <?php
     //create dao
-    $dao = new VolunteerDAO();
+    $dao = new ParticipationDAO();
     //get all volunteers
     $volunteers = $dao->getAll($_DB);
     echo "<table class='volunteers'>";
