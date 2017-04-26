@@ -4,7 +4,7 @@
 $h = "localhost";
 $db = "BEV_8";
 $username = "root";
-$password = "";
+$password = "q6dxa7ry";
 $charset = "utf8";
 
 //connexion string
