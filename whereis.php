@@ -20,10 +20,12 @@
       <div class="">
       <h1>BELLEVILLE EN VRAI C'EST ICI  <i class="fa fa-map-marker" aria-hidden="true" id="ou"></i></h1>
       </div>
-      <?php
-        require('_carto.php');
-       ?>
+      <div class="space">
+      </div>
     </div>
+    <?php
+    require('_carto.php');
+    ?>
     <div class="">
       <?php
       require('_footer.php')

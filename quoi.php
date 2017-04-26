@@ -49,6 +49,7 @@
       </ul>
       <div class="space"></div>
     </div>
+  </div>
       <div>
         <img src="assets/images/bev_graff.jpg" alt="Belleville en vrai tournoi" class="tof">
       </div>

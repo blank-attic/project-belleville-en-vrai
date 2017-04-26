@@ -46,7 +46,7 @@
 
         //check if validation is ok
         if ($email_ok && $subject_ok && $message_ok) {
-          //send mail          
+          //send mail
           $okmail = mail("participation@bellevillenvrai.fr",
                           $_POST["objet"],
                           wordwrap($_POST["message"], 70,"\r\n"),
@@ -82,6 +82,9 @@
      }
      ?>
     </div>
+    <div class="txtbg">
+
+
     <div id="contact-area">
     <form action="contact.php" method="post">
       <div>
@@ -96,15 +99,7 @@
           echo $_POST['expediteur'];
         }?>" />
       </div>
-      <!-- <div>
-        <label for="cc">cc</label>
-        <input id="cc" type="text" name="cc" />
-      </div>
-      <div>
-        <label for="cci">cci</label>
-        <input type="text" name="cci" />
-      </div> -->
-      <div>
+        <div>
         <label for="objet">objet :</label>
         <input type="text" name="objet" value="<?php if (isset($_POST['objet'])) {
           echo $_POST['objet'];
@@ -122,12 +117,7 @@
     </form>
   </div>
   <div class="space"></div>
-  <div class="space"></div>
-  <div>
-    <!-- <h2><a class="contlink2" href="mailto:participation@bellevillenvrai.fr"><i class="fa fa-envelope" aria-hidden="true"></i>   participation@bellevillenvrai.fr</a></h2> -->
-    <h2><a class="contlink" href="https://www.facebook.com/pg/Belleville-en-Vrai-167646066632163" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i>    facebook</a>
-      &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<a class="contlink" href="https://twitter.com/blvenvrai" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i>    twitter</a></h2>
-    </div>
+
 
     <?php
     require('_footer.php');

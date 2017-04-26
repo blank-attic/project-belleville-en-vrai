@@ -16,13 +16,13 @@
   <?php
   require('_menu.php');
    ?>
-<div class="txtbg">
+<div class="">
   <?php
   require("_galler.php");
   ?>
 </div>
 <?php
-require('_footer.php');
+// require('_footer.php');
  ?>
   </body>
 </html>

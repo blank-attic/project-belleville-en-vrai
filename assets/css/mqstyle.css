@@ -2,15 +2,16 @@
   body{
     margin: 5px;
   }
+
+  /*formulaires*/
+
   form {
     display: block;
     width: 100%;
-    /*text-align: center;*/
   }
 
   .formbase {
     width: 94%;
-
   }
 
   .divrow, .divrowb, .divrowc {
@@ -68,7 +69,8 @@
   }
 
    .txtbg {
-    width: 94%;
+    min-width: 90%;
+
   }
 
   .logo img {
@@ -87,6 +89,7 @@
 
   .vidlogo {
     top: 10px;
+    max-width: 350px;
   }
 
   iframe{
@@ -98,7 +101,7 @@
   #viddiv {
     width: 100%;
   }
-
+/*menu*/
   nav {
     /*position: fixed;*/
     width: 100%;
@@ -120,7 +123,6 @@
 
   nav > ul > li {
     width: 50%;
-
   }
 
   .ndxbutt {
@@ -134,10 +136,46 @@
     background-color: rgba(0, 34, 85, 0.9);
     border-radius: 10px 0;
   }
-
+  /*----------------------*/
+  /*carto*/
+  #mapbev {
+    max-height: 400px;
+    max-width: 300px;
+    margin: auto;
+  }
+  /*----------------------*/
+  /*lien page contact*/
   .formlinks {
     font-size: 0.8em;
   }
+
+  .phatbutt {
+    width: 100%;
+    margin: auto;
+  }
+
+  #contact-area, #contact-area input, #contact-area textarea {
+    max-width: 280px;
+    margin: auto;
+  }
+  /*----------------------*/
+/*program page*/
+  .prog {
+    width: 90%;
+  }
+
+  .progtxt h2  {
+  margin: 10px;
+  }
+/*----------------------*/
+
+.tof {
+  max-width: 300px;
+  margin: auto;
+}
+
+
+
 
   footer {
     margin-top: 30px;
