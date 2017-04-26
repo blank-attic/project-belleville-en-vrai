@@ -47,6 +47,22 @@ class ParticipationDAO {
       return false;
     }
   }
+
+  public function getAll($db) {
+
+      //prepare request
+      $request = $db->prepare("SELECT * FROM artistes");
+
+      //execute request
+      try {
+          $request->execute();
+          return $request->fetchAll();
+      } catch (PDOException $e) {
+          print("error while writing in DB new volunteer." . $e->getMessage());
+          return false;
+      }
+  }
+
 }
 
  ?>
