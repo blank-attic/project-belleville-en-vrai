@@ -43,6 +43,8 @@ nav a {
 nav a:hover {
   color: #aaeeff;
 }
+
+
 /* pour faire disparaitre les sous menus */
 nav li a + * {
   display: none;
@@ -64,10 +66,9 @@ nav li a + *:hover {
   list-style-type: none;
   /*background-color: #fff600;*/
   font-size: 19px;
-  color: #002255;
-  height: auto;
   text-align: right;
 }
+
 
 ul {
   padding: 0px;
@@ -80,4 +81,18 @@ ul {
 .ndxbutt {
   display: block;
   margin: auto;
+}
+
+.menusub li > a {
+  height: 20px;
+  width: 80%;
+  color: #fff600;
+  background-color: #025;
+  padding: 5px;
+  margin: 2px;
+  margin-left: 15px;
+}
+
+.menusub li > a:hover {
+  color: #aef;
 }

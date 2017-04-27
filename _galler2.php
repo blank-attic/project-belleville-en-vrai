@@ -8,12 +8,13 @@
 
   .demo-gallery > ul {
     margin-bottom: 0;
+    margin: auto;
   }
   .demo-gallery > ul > li {
     float: left;
     margin-bottom: 15px;
     margin-right: 20px;
-    width: 200px;
+    width: 300px;
   }
   .demo-gallery > ul > li a {
     border: 3px solid #FFF;

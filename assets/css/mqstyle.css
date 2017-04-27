@@ -1,6 +1,12 @@
 @media screen and (max-width: 768px) {
-  body{
-    margin: 5px;
+
+  html, body {
+  padding: 0;
+  margin: 0;
+  }
+
+  body {
+    margin: 2px;
   }
 
   /*formulaires*/
@@ -11,7 +17,7 @@
   }
 
   .formbase {
-    width: 94%;
+    width: 96%;
   }
 
   .divrow, .divrowb, .divrowc {
@@ -69,8 +75,7 @@
   }
 
    .txtbg {
-    min-width: 90%;
-
+    min-width: 96%;
   }
 
   .logo img {
@@ -159,14 +164,17 @@
     margin: auto;
   }
   /*----------------------*/
+
 /*program page*/
   .prog {
-    width: 90%;
+    width: 94%;
   }
 
-  .progtxt h2  {
+  .progtxt h2 {
   margin: 10px;
+  flex-wrap:wrap;
   }
+
 /*----------------------*/
 
 .tof {
@@ -174,7 +182,18 @@
   margin: auto;
 }
 
+.galleria-container .galleria-stage {
+  padding: 0;
+  margin: auto;
+}
 
+.demo-gallery > ul > li  {
+  margin: auto;
+}
+
+.menusub li > a {
+  text-align: center;
+}
 
 
   footer {

@@ -3,11 +3,14 @@ html, body {
   margin : 0;
   min-height:100%;
 }
+html {
+  border: 10px solid #fff;
+}
 
 body{
   font-family: 'Sansita', sans-serif;
   color : #ffffff;
-  background: #002255 url('../images/bevsplat_bg.svg');
+  background: #025 url('../images/bevsplat_bg.svg');
   background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -46,13 +49,13 @@ p {
 }
 
 .txtbg {
-  display:
+  display:block;
   background-color: rgba(0, 34, 85, 0.7);
   width: 77%;
   color: #ffffff;
   border-radius: 10px;
   margin: auto;
-  }
+}
 
 .space {
   width: 100%;
@@ -74,31 +77,31 @@ header {
 /* landing page buttons */
 
 .formlinks {
-    display:flex;
-    flex-direction:column;
+  display:flex;
+  flex-direction:column;
 }
 
 .formlinks > a {
-    cursor:pointer;
-    display:block;
-    width:50%;
-    margin:20px auto;
-    text-align:center;
-    text-decoration:none;
-    font-family:Sansita;
-    color:#002255;
-    background-color:#ffffff;
-    padding:20px 0;
-    font-size:2em;
-    border-radius:5pt;
-    text-shadow:2px 2px #ff7e00;
-    border:3px groove #ff7e00;
-    transition: background-color 0.3s, text-shadow 0.3s;
+  cursor:pointer;
+  display:block;
+  width:50%;
+  margin:20px auto;
+  text-align:center;
+  text-decoration:none;
+  font-family:Sansita;
+  color:#002255;
+  background-color:#ffffff;
+  padding:20px 0;
+  font-size:2em;
+  border-radius:5pt;
+  text-shadow:2px 2px #ff7e00;
+  border:3px groove #ff7e00;
+  transition: background-color 0.3s, text-shadow 0.3s;
 }
 
 .formlinks > a:hover {
-    text-shadow:1px 1px #000;
-    background-color:#fff600;
+  text-shadow:1px 1px #000;
+  background-color:#fff600;
 }
 
 /*compte à rebours*/
@@ -255,6 +258,7 @@ div#foot2.footnav2 a:hover {
   max-width: 900px;
   margin: auto;
 }
+
 #quisect img {
   display: block;
   max-width: 200px;
@@ -306,6 +310,7 @@ h6 {
   margin: auto;
   border-radius: 15px;
   /*border: 15px solid #ffffff;*/
+  flex-wrap:wrap;
 }
 
 .progtxt h2  {
@@ -313,6 +318,7 @@ h6 {
   text-align: left;
   margin-left: 23%;
   margin-right: 8%;
+  word-wrap: break-word;
 }
 
 .yello  {
@@ -328,36 +334,36 @@ h6 {
 /*formulaire contact*/
 
 #contact-area {
-	width: 600px;
-	margin-top: 25px;
+  width: 600px;
+  margin-top: 25px;
   margin: auto;
 }
 
 #contact-area input, #contact-area textarea {
-	padding: 5px;
-	width: 470px;
-	font-size: 1.4em;
-	margin: 0px 0px 10px 0px;
-	border: 2px solid #ff7e00;
+  padding: 5px;
+  width: 470px;
+  font-size: 1.4em;
+  margin: 0px 0px 10px 0px;
+  border: 2px solid #ff7e00;
   border-radius: 5px;
 }
 
 #contact-area textarea {
-	height: 90px;
+  height: 90px;
 }
 
 #contact-area textarea:focus, #contact-area input:focus {
-	border: 2px solid #aaeeff;
+  border: 2px solid #aaeeff;
 }
 
 
 label {
-	float: left;
-	text-align: right;
-	margin-right: 15px;
-	width: 100px;
-	padding-top: 5px;
-	font-size: 1.4em;
+  float: left;
+  text-align: right;
+  margin-right: 15px;
+  width: 100px;
+  padding-top: 5px;
+  font-size: 1.4em;
 }
 
 .phatbutt {
@@ -392,6 +398,7 @@ label {
 .contlink:hover, .contlink2:hover {
   color: #aaeeff;
 }
+
 /*page partnaz logos*/
 .partnazlogo {
   display: flex;
@@ -415,6 +422,7 @@ label {
   color: #ffffff;
   text-decoration: none;
 }
+
 .whitelink:hover {
   color: #aaeeff;
 }
