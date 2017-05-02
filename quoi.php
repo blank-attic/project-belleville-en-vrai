@@ -32,7 +32,7 @@
       <p>Chaque année l’événement rassemble près de 500 jeunes entre 10 et 25 ans, garçons et filles, répartis en équipe de huit et en trois catégories : les petit.e.s (10-13 ans), les moyen.ne.s (14-17 ans) et les grand.e.s (18-25 ans). Pendant deux jours, les jeunes de chaque équipe doivent gagner un maximum de points par épreuve pour prétendre au titre honorifique de <br/><span class="titp">champions ou championnes du quartier !</span></p>
     </div>
   </div>
-    <div>
+    <div class="imagewut">
       <img src="assets/images/bev_group13.jpg" alt="Belleville en vrai tournoi" class="tof">
     </div>
     <div class="txtbg">
@@ -50,7 +50,7 @@
       <div class="space"></div>
     </div>
   </div>
-      <div>
+      <div class="imagewut">
         <img src="assets/images/bev_graff.jpg" alt="Belleville en vrai tournoi" class="tof">
       </div>
       <div class="space"></div>
