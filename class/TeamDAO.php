@@ -1,13 +1,9 @@
 <?php
-
 class TeamDAO {
-
   //save in db
   public function save($db, $team) {
-
     //prepare request
     $request = $db->prepare("INSERT INTO team (teamname, categorie, quartier, refname, natation, course, pingpong) VALUES (:teamname, :categorie, :quartier, :refname, :natation, :course, :pingpong)");
-
     //execute request
     try {
       $request->execute(array(
@@ -18,22 +14,17 @@ class TeamDAO {
         "natation" => $team->getNatation(),
         "course" => $team->getCourse(),
         "pingpong" => $team->getPingPong(),
-
       ));
     } catch (PDOException $e) {
       print("error while writing in DB new team." . $e->getMessage());
       return false;
     }
-
-    return true;
+      return true;
   }
-
   public function find($db, $teamname) {
-
     //prepare request
     $request = $db->prepare("SELECT * FROM team WHERE (teamname = :teamname) LIMIT 1");
-
-    //execute request
+    //execute re$_DBquest
     try {
       $request->execute(array(
         "teamname" => $teamname,
@@ -44,6 +35,15 @@ class TeamDAO {
       return false;
     }
   }
+  public function getAllTeams($db) {
+    $request = $db->prepare("SELECT * FROM team ORDER BY categorie");
+    try {
+      $request->execute();
+      return $request->fetchAll();
+        } catch (PDOException $e) {
+      print("error while writing in DB new team." . $e->getMessage());
+      return false;
+    }
+  }
 }
-
  ?>
