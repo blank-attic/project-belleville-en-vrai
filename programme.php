@@ -69,7 +69,7 @@
       <h2><span class="yello">15h :</span> JEUX DE LA JONGLE – Spectacle participatif de jonglerie</h2>
       <h2><span class="yello">16h :</span> OUVERTURE – Performances et spectacles de danse</h2>
       <h2><span class="yello">17h :</span> CONCERTS ET REMISE DES PRIX</h2>
-      <h2>BLVL MAFIA - MAKADERO – 19 RESEAUX – CHILLA – LINO</h2>
+      <h2><span class="yello">BLVL MAFIA - MAKADERO – 19 RESEAUX – CHILLA – LINO – BORIS VIANDE</span></h2>
       <h3>Rue Piat | Métro : Pyrénées</h3>
     </div>
   </div>
